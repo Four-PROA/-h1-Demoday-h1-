@@ -4,9 +4,260 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Página Inicial</title>
+     <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icon-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light dimension_text_nav">
+      <div class="container-fluid ">
+        <a class="navbar-brand" href="#">Logo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse row" id="navbarNav">
+          <ul class="navbar-nav justify-content-center col-10">
+            <li class="nav-item">
+              <a class="nav-link m-2" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link m-2" href="#">Como funciona</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link m-2" href="#">Serviços</a>
+            </li>
+          </ul>
+          <div class="justify-content-end col-2" id="navbarNav">
+            <ul class="navbar-nav justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Login <i class= "bi bi-person-circle"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="dimension_main">
+    <section class="d-flex container">
+      <div class="row">
+        <article class="align-items-center col-6">
+          <h2 class="dimension_text">Prestadores de Serviços a sua Disposição
+          </h2>
+            <button class="dimension_btn">Entrar no Dique</button> 
+            <button class="dimension_btn">Sou um Prestador</button>
+        </article>
+        <article class="col-6">
+          <img class="dimension_img" src="_img/pagina_inicial.png" alt="">
+        </article>
+      </div>
+    </section>
+
+    <div class="d-flex align-items-center justify-content-center">
+        <hr>
+    </div>
+
+    <section class="como_funciona">
+        <div class="row">
+
+            <div class="col-6 dimension">
+                <h2>
+                    1°Passo
+                </h2>
     
+                <p>
+                    Faça o cadastro para ser
+                        um de nossos castores
+                        e ache alguém para te ajudar
+                </p>
+            </div>
+
+            <div class="col-6">
+
+                <img src="./_img/Macbook Pro.svg" alt="" srcset="">
+               
+            </div>
+
+        </div>
+
+        <div class="row">
+            
+            <div class="col-6">
+
+              <img src="./_img/Freelancing.png" alt="">
+
+            </div>
+            
+                        <div class="col-6  dimension">
+                            <h2>
+                                2°Passo
+                            </h2>
+                
+                            <p>
+                                Entre no Dique e veja os prestadores
+                                de serviços dispostos a te ajudar
+                                por um preço justo e camarada
+                            </p>
+                        </div>
+
+        </div>
+
+        <div class="row">
+            
+            <div class="col-6  dimension">
+
+                <h2>
+                    3°Passo
+                </h2>
+    
+                <p>
+                Ache prestadores de
+                serviços próximos a
+                você
+
+                </p>
+
+            </div>
+            
+                        <div class="col-6">
+
+                            <img src="./_img/Map location.png" alt="">
+        
+                        </div>
+
+        </div>
+    </section>
+    <div class="d-flex align-items-center justify-content-center">
+        <hr>
+    </div>
+    
+
+    <section class="conheca_servicos">
+      <div>
+          <h2>Conheça Nossos Serviços</h2>
+      </div>
+      <div class="servicos">
+          <div class="row_servicos">
+              <div class="servico">
+                  <img src="_img/assistencia.svg" alt="">
+                  <p>Assistencia técnica</p>
+              </div>
+              <div class="servico">
+                  <img src="_img/cozinheiro.svg" alt="">
+                  <p>Cozinheio</p>
+              </div>
+              <div class="servico">
+                  <img src="_img/Eletri.svg" alt="">
+                  <p>Eletricista</p>
+              </div>
+              <div class="servico">
+                  <img src="_img/encanador.svg" alt="">
+                  <p>Encanador</p>
+              </div>
+              <div class="servico">
+                  <img src="_img/jardinagem.svg" alt="">
+                  <p>Jardineiro</p>
+              </div>
+              <div class="servico">
+                  <img src="_img/limpeza.svg" alt="">
+                  <p>Limpeza</p>
+              </div>
+              <div class="servico">
+                  <img src="_img/moveis.svg" alt="">
+                  <p>Montador de móveis</p>
+              </div>
+              <div class="servico">
+                  <img src="_img/pedreiro.svg" alt="">
+                  <p>Pedreiro</p>
+              </div>
+              <div class="servico">
+                  <img src="_img/pintor.svg" alt="">
+                  <p>Pintor</p>
+              </div>
+              <div class="servico">
+                  <img src="_img/piscina.svg" alt="">
+                  <p>Piscineiro</p>
+              </div>
+          </div>
+          </div>
+  </section>
+
+  <div class="d-flex align-items-center justify-content-center m-5">
+    <hr>
+</div>
+
+  <section class="vantagens">
+    <div>
+      <h2 class="text-center m-5">Vantagens</h2>
+  </div>
+    <div class="cards">
+      <div class="card" style="width: 18rem;">
+        <img src="_img/pagina_inicial.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="_img/pagina_inicial.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="_img/pagina_inicial.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </div>
+  
+  </section>
+
+  <div class="container-fluid d-flex justify-content-center">
+    <h2 class="m-5">Apoiadores</h2>
+  </div>
+
+  <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./_img/acenture.png" class="" alt="...">
+        <img src="./_img/bancoPan.png" class="" alt="...">
+        <img src="./_img/btgLogo.png" class="" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./_img/P&G_logo.png" class="h-50" alt="...">
+        <img src="./_img/Oracle-logo.png" class="" alt="...">
+        <img src="./_img/proa.png" class="" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+  </div>
+</main>  
 </body>
 </html>

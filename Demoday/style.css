@@ -1,0 +1,143 @@
+*{
+    font-family: 'Josefin Sans', sans-serif;
+}
+/* HEADER--------------------------------------------------------- */
+
+hr{
+    width: 920px;
+}
+.dimension_img{
+    width: 489px;
+    height: 339px;
+    margin: 40px;
+}
+.dimension_text{
+    font-family: 'Roboto' sans-serif;
+    font-style: normal;
+    font-weight: 480;
+    font-size: 70px;
+    line-height: 78px;
+    margin: 40px;
+    color: #000000;
+}
+.dimension_btn{
+    color: #757575;
+    cursor: pointer;
+    background-color: #1d7fa8;
+    border: 1px solid #757575;
+    margin: 10px;
+    padding: 0.475rem 3rem;
+    font-size: 1.2rem;
+    border-radius: 1.5rem;
+    color: black !important;
+}
+.dimension_text_nav{
+    font-family: 'Roboto' sans-serif;
+    font-size: 20px;
+    line-height: 35px;
+    justify-content: space-between;
+    background: linear-gradient(217deg,#f37214, #1d7fa8 70.71%);
+}
+
+/* inicio SERVICOS--------------------------------------------------------- */
+.conheca_servicos{
+    width: 80%;
+    height: 100vh;
+    padding: 0, 8%;
+    margin: 0 auto;
+}
+.conheca_servicos h2{
+    text-align: center;
+    padding-top: 10%;
+    font-family: 'Roboto',sans-serif;
+}
+.row_servicos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    grid-gap: 30px
+}
+
+/* Como funciona */
+
+.como_funciona{
+   width: 1000px;
+   align-items: center;
+   margin-left: 200px;
+   margin-top: 50px;
+}
+
+.como_funciona > .row > .dimension{
+    margin-top: 62px;
+ }
+
+.como_funciona div > p{
+    width: 300px;
+    font-size: 20px;
+ }
+
+ .como_funciona div > h2{
+    margin-bottom: 20px;
+    font-family: 'Roboto',sans-serif;
+ }
+
+
+/*  */
+
+.servico img{
+    width: 86px;
+    height: 86px;
+}
+.servico{
+    text-align: center;
+    padding: 25px 10px;
+    border-radius: 14px;
+    font-size: 14px;
+    box-shadow: rgba(0, 0, 0, 0.14) 0px 0px 12px 0px;
+    cursor: pointer;
+    background: transparent;
+
+    transform: translate(12px, 50%)
+}
+.servico:hover{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 12px 0px;
+    background-color: #F58709;
+    color: #fff;
+}
+
+/* fim SERVICOS--------------------------------------------------------- */
+
+
+/* inic---VANTAGENS------------------------------------------------------ */
+
+
+.vantagens{
+    width: 80%;
+    padding: 0, 8%;
+    margin: 0px auto;
+}
+
+.vantagens .cards h5{
+    font-size: 50px;
+}
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+/* fim VANTAGENS--------------------------------------------------------- */
+
+/* Carrosel */
+.carousel-inner{
+    height: 10vh;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+
+}
+.carousel-inner img{
+    width: 70px;
+    height: 70px;
+    margin: 0px 170px;
+    border-radius: 10px;
+}
