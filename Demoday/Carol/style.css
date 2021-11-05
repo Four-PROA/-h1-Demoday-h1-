@@ -8,7 +8,7 @@ header{
     align-items: center;
 }
 .logo{
-
+     padding: auto;
 }
 nav {
     display: flex;
