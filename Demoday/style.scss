@@ -21,6 +21,9 @@ html {
 
 
   }
+  *{
+      font-family: 'Nunito', sans-serif;
+  }
 
 @mixin button-primary {
     background-color: var(--color-primary-dark);
@@ -30,14 +33,27 @@ html {
     margin: 20px;
 }
 
-*{
-    font-family: 'Josefin Sans', sans-serif;
-}
 /* HEADER--------------------------------------------------------- */
 
 hr{
     width: 920px;
+    color: #fff;
 }
+
+.herosection{
+    background-color: var(--color-primary-ligth);
+    color: #fff;
+}
+.steps {
+    background-color: var(--color-secondary-ligth);
+    color: #fff;
+}
+.services{
+    background-color: var(--color-tertiary-ligth);
+    color: #fff;
+    height: 680px;
+}
+
 .dimension_img{
     width: 489px;
     height: 339px;
@@ -50,7 +66,6 @@ hr{
     font-size: 70px;
     line-height: 78px;
     margin: 40px;
-    color: #000000;
 }
 .dimension_btn{
     color: #757575;
@@ -61,7 +76,7 @@ hr{
     padding: 0.475rem 3rem;
     font-size: 1.2rem;
     border-radius: 1.5rem;
-    color: black !important;
+    color: #fff;
     // @include  button-primary
 }
 .dimension_text_nav{
@@ -69,7 +84,10 @@ hr{
     font-size: 20px;
     line-height: 35px;
     justify-content: space-between;
-    background: linear-gradient(217deg,#f37214, #1d7fa8 70.71%);
+    background-color: var(--color-primary-regular);
+    a {
+        color: #fff !important;
+    }
 }
 
 /* inicio SERVICOS--------------------------------------------------------- */
@@ -116,24 +134,39 @@ hr{
 
 /*  */
 
-.servico img{
+.servico_blue img{
     width: 86px;
     height: 86px;
 }
-.servico{
+.servico_blue{
+    background-color: var(--color-secondary-ligth);
     text-align: center;
     padding: 25px 10px;
     border-radius: 14px;
     font-size: 14px;
     box-shadow: rgba(0, 0, 0, 0.14) 0px 0px 12px 0px;
     cursor: pointer;
-    background: transparent;
+    // background: transparent;
+    color: #fff;
+
+    transform: translate(12px, 50%)
+}
+
+.servico_orange{
+    background-color: var(--color-primary-ligth);
+    text-align: center;
+    padding: 25px 10px;
+    border-radius: 14px;
+    font-size: 14px;
+    box-shadow: rgba(0, 0, 0, 0.14) 0px 0px 12px 0px;
+    cursor: pointer;
+    color: #fff;
 
     transform: translate(12px, 50%)
 }
 .servico:hover{
     box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 12px 0px;
-    background-color: #F58709;
+    // background-color: #F58709;
     color: #fff;
 }
 
@@ -147,15 +180,56 @@ hr{
     width: 80%;
     padding: 0, 8%;
     margin: 0px auto;
+
+    h2 {
+        color: var(--color-primary-regular);
+    }
+    
+    .cards_container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .card {
+        width: 400px;
+        height: 300px;
+        border-radius: 20px;
+        background-color: gray;
+        margin-right: 70px;
+        left: 30px;
+
+    .img {
+        height: 55%;
+    }
+
+    .text {
+        height: 47%;
+        background-color: var(--color-secondary-ligth);
+        border-radius: 0px 0px 20px 20px;
+        margin: -1px;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        vertical-align: middle;
+
+        p{
+            margin: 0px 10px;
+            width: 210px;
+        }
+    }
+    }
 }
 
-.vantagens .cards h5{
-    font-size: 50px;
-}
-.cards{
-    display: flex;
-    justify-content: space-evenly;
-}
+// .vantagens .cards h5{
+//     font-size: 50px;
+// }
+// .cards{
+//     display: flex;
+//     justify-content: space-evenly;
+// }
 
 
 
@@ -191,9 +265,10 @@ hr{
 footer{
     width: 100%;
     min-height: 150px;
-    background: linear-gradient(140deg, #1D7FA8,#F37214);
+    background-color: var(--color-primary-ligth);
     display: flex;
     margin-top: 50px;
+    color: #fff;
 }
 footer .boxs{
     width: 320px;
@@ -202,7 +277,6 @@ footer .boxs{
 }
 
 .boxs h2{
-    color:rgb(0, 0, 0);
     margin-bottom: 20px;
     
 }
@@ -211,11 +285,10 @@ footer .boxs{
     list-style: none;
 }
 .boxs a{
-    color: rgb(0, 0, 0);
-    text-decoration: none;   
+    text-decoration: none;  
+    color: #fff;
 }
 .boxs p{
-    color:rgb(0, 0, 0);
     text-align: justify; 
     cursor: pointer;
 }
@@ -228,9 +301,9 @@ footer .boxs{
     background: rgb(255, 243, 243);
     padding: 0px 2px;
 }
-h4{
+.rodape{
     text-align: center;
-    background: rgb(0, 0, 0);
+    background-color: var(--color-secondary-regular);
     color: rgb(255, 255, 255);
     margin: 0;
 }
