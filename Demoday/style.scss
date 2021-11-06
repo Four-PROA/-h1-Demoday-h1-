@@ -2,6 +2,24 @@ html {
     --color-primary-dark: #E35602;
     --color-primary-regular: #F75C00;
     --color-primary-ligth: #F37214;
+    --color-secondary-dark: #001634;
+    --color-secondary-regular: #001A3E;
+    --color-secondary-ligth: #00265C;
+    --color-tertiary-dark: #13947B;
+    --color-tertiary-regular: #2ED9B8;
+    --color-tertiary-ligth: #67DBC5;
+
+    --color-white-dark: #F9F9F9;
+    --color-white-regular: #F7F6F5;
+    --color-white-ligth: #F4F0EB;
+    --color-black-dark: #151515;
+    --color-black-regular: #242424;
+
+    --color-error: #E77F70;
+    --color-sucess: #BFFE58;
+    --color-warning: #F9D75F;
+
+
   }
 
 @mixin button-primary {
