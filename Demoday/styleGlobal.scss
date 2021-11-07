@@ -1,0 +1,328 @@
+html {
+    --color-primary-dark: #E35602;
+    --color-primary-regular: #F75C00;
+    --color-primary-ligth: #F37214;
+    --color-secondary-dark: #001634;
+    --color-secondary-regular: #001A3E;
+    --color-secondary-ligth: #00265C;
+    --color-tertiary-dark: #13947B;
+    --color-tertiary-regular: #2ED9B8;
+    --color-tertiary-ligth: #67DBC5;
+
+    --color-white-dark: #F9F9F9;
+    --color-white-regular: #F7F6F5;
+    --color-white-ligth: #F4F0EB;
+    --color-black-dark: #151515;
+    --color-black-regular: #242424;
+
+    --color-error: #E77F70;
+    --color-sucess: #BFFE58;
+    --color-warning: #F9D75F;
+
+    color: var(--color-white-ligth);
+
+  }
+
+  //BOTÕES
+
+  @mixin button-primary {
+      @include h5-regular();
+    background-color: var(--color-secondary-ligth);
+    padding: 15px 24px;
+    margin: 20px;
+    border-radius: 20px;
+    width: 256px;
+    height: 56px;
+}
+
+@mixin button-secondary {
+    @include h5-regular();
+    background-color: transparent;
+    border: 2px solid var(--color-tertiary-regular);
+    padding: 19px 24px;
+    margin: 20px;
+    border-radius: 20px;
+    width: 256px;
+    height: 56px;
+}
+
+@mixin button-CTA {
+    @include h5-regular();
+    background-color: var(--color-primary-regular);
+    padding: 15px 24px;
+    margin: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    width: 305px;
+    height: 49px;
+}
+
+//FONTES DESK
+
+@mixin h1-bold {
+    font-weight: 700;
+    font-size: 76px;
+    color: var(--color-white-regular);
+}
+
+@mixin h2-bold {
+    font-weight: 700;
+    font-size: 57px;
+    color: var(--color-white-regular);
+
+}
+@mixin h3-bold {
+    font-weight: 700;
+    font-size: 43px;
+    color: var(--color-white-regular)
+}
+
+
+@mixin h4-bold {
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--color-white-regular);
+}
+
+@mixin h5-bold {
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--color-white-regular);
+}
+
+@mixin h6-bold {
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--color-white-regular);
+}
+
+@mixin h1-regular {
+    font-size: 76px;
+    color: var(--color-white-regular);
+}
+
+@mixin h2-regular {
+    font-size: 57px;
+    color: var(--color-white-regular);
+}
+
+@mixin h3-regular {
+    font-size: 43px;
+    color: var(--color-white-regular);
+}
+
+@mixin h4-regular {
+    font-size: 32px;
+    color: var(--color-white-regular);
+}
+
+@mixin h5-regular {
+    font-size: 24px;
+    color: var(--color-white-regular);
+}
+
+@mixin h6-regular {
+    font-size: 18px;
+    color: var(--color-white-regular);
+}
+
+@mixin p-regular-long-text {
+    font-size: 16px;
+    color: var(--color-white-regular);
+    line-height: 160%;
+    margin-bottom: 12px;
+}
+
+@mixin p-bold-long-text {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--color-white-regular);
+    line-height: 160%;
+    margin-bottom: 12px;
+}
+
+@mixin p-regular-short-text {
+    font-size: 16px;
+    color: var(--color-white-regular);
+    line-height: 170%;
+    margin-bottom: 12px;
+}
+
+@mixin p-bold-short-text {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--color-white-regular);
+    line-height: 170%;
+    margin-bottom: 12px;
+}
+
+@mixin x-p-regular-short-text {
+    font-size: 14px;
+    color: var(--color-white-regular);
+    line-height: 170%;
+    margin-bottom: 10px;
+}
+
+@mixin x-p-bold-short-text {
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--color-white-regular);
+    line-height: 170%;
+    margin-bottom: 10px;
+}
+
+@mixin small-regular {
+    font-size: 12px;
+    color: var(--color-white-regular);
+    line-height: 170%;
+}
+
+@mixin small-bold {
+    font-weight: 700;
+    font-size: 12px;
+    color: var(--color-white-regular);
+    line-height: 170%;
+}
+
+@mixin x-small-regular {
+    font-size: 10px;
+    color: var(--color-white-regular);
+    line-height: 180%;
+}
+
+@mixin x-small-bold {
+    font-weight: 700;
+    font-size: 10px;
+    color: var(--color-white-regular);
+    line-height: 180%;
+}
+
+//FONTES MOBILE
+
+@mixin m-h1-bold {
+    font-weight: 700;
+    font-size: 43px;
+    color: var(--color-white-regular);
+    line-height: 110%;
+}
+
+@mixin m-h1-bold {
+    font-weight: 700;
+    font-size: 43px;
+    color: var(--color-white-regular);
+    line-height: 110%;
+}
+
+@mixin m-h2-bold {
+    font-weight: 700;
+    font-size: 35px;
+    color: var(--color-white-regular);
+    line-height: 110%;
+}
+
+@mixin m-h3-bold {
+    font-weight: 700;
+    font-size: 28px;
+    color: var(--color-white-regular);
+    line-height: 110%;
+}
+
+@mixin m-h4-bold {
+    font-weight: 700;
+    font-size: 23px;
+    color: var(--color-white-regular);
+    line-height: 120%;
+}
+
+@mixin m-h5-bold {
+    font-weight: 700;
+    font-size: 19px;
+    color: var(--color-white-regular);
+    line-height: 130%;
+}
+
+@mixin m-h6-bold {
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--color-white-regular);
+    line-height: 135%;
+}
+
+@mixin m-p-regular-long-text {
+    font-size: 14px;
+    color: var(--color-white-regular);
+    line-height: 170%;
+    margin-bottom: 10px;
+}
+
+@mixin m-p-regular-long-text {
+    font-size: 14px;
+    color: var(--color-white-regular);
+    line-height: 170%;
+    margin-bottom: 10px;
+}
+
+@mixin m-p-bold-long-text {
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--color-white-regular);
+    line-height: 170%;
+    margin-bottom: 10px;
+}
+
+@mixin m-p-regular-short-text {
+    font-size: 14px;
+    color: var(--color-white-regular);
+    line-height: 180%;
+    margin-bottom: 10px;
+}
+
+@mixin m-p-bold-short-text {
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--color-white-regular);
+    line-height: 180%;
+    margin-bottom: 10px;
+}
+
+@mixin m-x-p-regular-short-text {
+    font-size: 12px;
+    color: var(--color-white-regular);
+    line-height: 170%;
+    margin-bottom: 8px;
+}
+
+@mixin m-x-p-bold-short-text {
+    font-size: 12px;
+    color: var(--color-white-regular);
+    line-height: 170%;
+    margin-bottom: 8px;
+}
+
+@mixin m-small-regular {
+    font-size: 10px;
+    color: var(--color-white-regular);
+    line-height: 170%;
+}
+
+@mixin m-small-bold {
+    font-weight: 700;
+    font-size: 10px;
+    color: var(--color-white-regular);
+    line-height: 170%;
+}
+
+@mixin m-x-small-regular {
+    font-size: 8px;
+    color: var(--color-white-regular);
+    line-height: 180%;
+}
+
+@mixin m-x-small-bold {
+    font-weight: 700;
+    font-size: 8px;
+    color: var(--color-white-regular);
+    line-height: 180%;
+}
