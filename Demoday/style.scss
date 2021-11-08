@@ -28,8 +28,12 @@ hr{
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
-                align-items: center;
-                
+                align-items: center;;
+                width: 600px;
+
+                button {
+                    width: 400px;
+                }
             }
         }
     }
@@ -82,6 +86,14 @@ hr{
     height: 100vh;
     padding: 0, 8%;
     margin: 0 auto;
+
+    div {
+        h2 {
+            @include h2-bold;
+            font-family: 'Nunito';
+            color: var(--color-secondary-regular);
+        }
+    }
 }
 .conheca_servicos h2{
     text-align: center;
@@ -222,49 +234,54 @@ hr{
 
 /* fim VANTAGENS--------------------------------------------------------- */
 
-/* Carrosel */
-.carousel-inner{
-    height: 10vh;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-
-}
-.carousel-inner img{
-    width: 70px;
-    height: 70px;
-    margin: 0px 170px;
-    border-radius: 10px;
-}
-
-/* Footer */
-/* .conteudo{
-    width: 100%;
-    height: 70vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;   
-}
-.conteudo h1{
-    font-size: 5vw;
-    text-transform: uppercase;
-    
-} */
 footer{
     width: 100%;
     min-height: 150px;
     background-color: var(--color-primary-ligth);
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     margin-top: 50px;
     color: #fff;
 }
 footer .boxs{
-    width: 320px;
+    max-width: 500px;
     min-height: 150px;
     padding: 80px; 
+
+    a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    i{
+        color: var(--color-primary-ligth);
+        margin-top: 14px;
+        font-size: 40px;
+    }
+
+    .icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: -85px;
+    }
+
+    .redes{
+        width:67px;
+        height:67px;
+        background-color: var(--color-white-regular);
+        margin: 20px;
+        border-radius: 20px;
+    }
 }
 
 .boxs h2{
-    margin-bottom: 20px;
+    @include h5-bold;
+    margin-bottom: 60px;
     
 }
 .boxs ul {
@@ -289,6 +306,7 @@ footer .boxs{
     padding: 0px 2px;
 }
 .rodape{
+    @include p-bold-short-text;
     text-align: center;
     background-color: var(--color-secondary-regular);
     color: rgb(255, 255, 255);

@@ -1,3 +1,7 @@
+* {
+  font-family: 'Nunito', sans-serif;
+}
+
 html {
   --color-primary-dark: #E35602;
   --color-primary-regular: #F75C00;
