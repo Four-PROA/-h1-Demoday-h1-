@@ -29,10 +29,14 @@ hr{
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;;
-                width: 600px;
+                width: 700px;
 
-                button {
+                a {
                     width: 400px;
+                    text-decoration: none;
+                    button{
+                        width: 300px;
+                    }
                 }
             }
         }

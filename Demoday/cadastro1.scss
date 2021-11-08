@@ -1,0 +1,43 @@
+@import 'styleGlobal';
+
+.registration {
+
+    &__dimension {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+        &-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 1153px;
+            height: 648px;
+            background-color: var(--color-primary-ligth);
+            margin: 75px;
+            border-radius: 10px;
+
+            .col-6{
+                width: 500px
+            }
+
+            h3{
+                @include h3-bold;
+                text-align: center
+            }
+            p {
+                @include p-regular-short-text;
+                margin-top: 30px;
+
+            }
+
+            img {
+                margin-left: 100px;
+                margin-top: 50px;
+            }
+        }
+        
+    }
+}
