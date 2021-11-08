@@ -20,12 +20,80 @@
             border-radius: 10px;
 
             .col-6{
-                width: 500px
+                width: 500px;
+
+                input{
+                    @include h5-bold;
+                    width: 350px;
+                    border: none;
+                    background-color: transparent;
+                    border-bottom: solid 1px var(--color-white-regular);
+                    margin-bottom: 15px;
+                    margin-left: 100px;
+                    &:focus, select:focus {
+                        box-shadow: 0 0 0 0;
+                        outline: 0;
+                    } 
+                    
+                    &::placeholder {
+                        color: var(--color-white-regular);
+                        opacity: 0.7;
+                    }
+                }
+
+                .span{
+                    margin-left: 50px;
+                }
+
+                button{
+                    @include button-primary;
+                    margin: auto 30%;
+                    margin-top: 20px;
+                }
+                hr{
+                    height: 2px;
+                    color: black;
+                }
+                span {
+                    @include h5-regular;
+                    margin: 0px 30px;
+                }
+                .redirecionar{
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    margin-left: 50px;
+                }
+
+                .face{
+                    background-color: #1A75FD;
+                    width: 400px;
+                    i{
+                        font-size: 40px;
+                        margin-right: 15px;
+                    }
+                }
+                .google{
+                    background-color:var(--color-white-dark);
+                    color: var(--color-black-dark);
+                    width: 366px;
+                    i{
+                        font-size: 33px;
+                        margin-right: 20px;
+                    }
+                }
+            }
+
+            .division{
+                border-left: solid 3px var(--color-tertiary-regular) ;
+                margin-left: 30px;
+                padding-right: 15px;
             }
 
             h3{
                 @include h3-bold;
-                text-align: center
+                text-align: center;
+                margin-top: 50px;
             }
             p {
                 @include p-regular-short-text;
@@ -36,6 +104,15 @@
             img {
                 margin-left: 100px;
                 margin-top: 50px;
+            }
+
+            h6{
+                @include h6-regular;
+                margin-top: 20px;
+                span{
+                    @include h6-bold;
+                    color: var(--color-secondary-ligth);
+                }
             }
         }
         
