@@ -28,7 +28,7 @@
                     border: none;
                     background-color: transparent;
                     border-bottom: solid 1px var(--color-white-regular);
-                    margin-bottom: 25px;
+                    margin-bottom: 15px;
                     margin-left: 100px;
                     &:focus, select:focus {
                         box-shadow: 0 0 0 0;
@@ -38,6 +38,19 @@
                     &::placeholder {
                         color: var(--color-white-regular);
                         opacity: 0.7;
+                    }
+                }
+
+                form{
+                    button{
+                        background-color: transparent;
+                        width: 0px;
+                        height: 0px;
+                        border: none;
+                        margin: 0;
+                        padding: 0;
+                        display: inline-block;
+                        color: var(--color-tertiary-regular);
                     }
                 }
 
@@ -102,12 +115,13 @@
             }
             p {
                 @include p-regular-short-text;
+                text-align: center;
                 margin-top: 30px;
 
             }
 
             img {
-                margin-left: 100px;
+                margin-left: 80px;
                 margin-top: 50px;
             }
 
