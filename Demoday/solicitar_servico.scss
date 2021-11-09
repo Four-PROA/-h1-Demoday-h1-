@@ -11,14 +11,37 @@
         margin: 70px auto;
 
         background-color: var(--color-secondary-ligth);
-        color: var( --color-white-regular);
         border-radius: 20px;
         padding: 20px;
-
+        
         div{
+            @include h6-bold;
             max-width: 400px;
             display: flex;
             flex-direction: column;
+
+            input {
+                border-radius: 10px;
+                border: none;
+                margin-right: 20px;
+                margin-bottom: 15px;
+            }
+
+            textarea{
+                border-radius: 10px;
+            }
+
+            label {
+                margin-right: 20px;
+                margin-bottom: 3px;
+            }
+
+            span{
+                @include x-small-regular;
+                font-weight: 400;
+                text-align: left;
+                width: 200px;
+            }
         }
 
         button{

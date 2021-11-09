@@ -36,12 +36,14 @@ html {
   max-width: 1050px;
   margin: 70px auto;
   background-color: var(--color-secondary-ligth);
-  color: var(--color-white-regular);
   border-radius: 20px;
   padding: 20px;
 }
 
 .solicitacao .cadastro_solicitacao div {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--color-white-regular);
   max-width: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -50,6 +52,31 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.solicitacao .cadastro_solicitacao div input {
+  border-radius: 10px;
+  border: none;
+  margin-right: 20px;
+  margin-bottom: 15px;
+}
+
+.solicitacao .cadastro_solicitacao div textarea {
+  border-radius: 10px;
+}
+
+.solicitacao .cadastro_solicitacao div label {
+  margin-right: 20px;
+  margin-bottom: 3px;
+}
+
+.solicitacao .cadastro_solicitacao div span {
+  font-size: 10px;
+  color: var(--color-white-regular);
+  line-height: 180%;
+  font-weight: 400;
+  text-align: left;
+  width: 200px;
 }
 
 .solicitacao .cadastro_solicitacao button {
