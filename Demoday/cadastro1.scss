@@ -118,6 +118,9 @@
                     @include h6-bold;
                     color: var(--color-secondary-ligth);
                 }
+                a{
+                    text-decoration: none;
+                }
             }
         }
         

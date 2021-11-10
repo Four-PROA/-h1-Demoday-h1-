@@ -215,4 +215,8 @@ html {
   color: var(--color-white-regular);
   color: var(--color-secondary-ligth);
 }
+
+.registration__dimension-container h6 a {
+  text-decoration: none;
+}
 /*# sourceMappingURL=cadastro1.css.map */
