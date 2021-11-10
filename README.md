@@ -1,5 +1,5 @@
 <h1 align="center">
-  CASTERIZZI &#x1F9AB; 
+  CASTERIZZI  :beaver:
 </h1>
 
 <p align="center">
@@ -22,9 +22,11 @@
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- HTML
-- SASS
-- JavaScript
+<div style="display: inline_block">
+  <img align="center" alt="Rafa-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+  <img align="center" alt="Rafa-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+  <img align="center" alt="Rafa-Js" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" />
+</div>
 <br><br>
 
 ## 💭 Projeto
@@ -38,6 +40,14 @@ Você pode visualizar o layout do projeto através [desse link](<https://www.fig
 <br><br>
 
 ## 👨‍👩‍👦‍👦 Equipe:
+- [Brenda](https://github.com/brendamamede)
+- [Camille](https://github.com/camioliveira24)
+- [Carolina](https://github.com/Carolina-Silva)
+- [Gustavo](https://github.com/Gustavo-oli)
+- [Railson](https://github.com/RailsonCosta)
+- [Ramon](https://github.com/RamonDiego00)
+- [ítalo](https://github.com/ItalodsOliveira)
+
 
 <br><br>
 
