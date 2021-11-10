@@ -1,5 +1,5 @@
 <h1 align="center">
-  CASTERIZZI  :beaver:
+  CASTERIZZI
 </h1>
 
 <p align="center">
@@ -31,7 +31,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💭 Projeto
 
- CASTORIZZI é empresa focada em conectar freelancer com clientes de seu bairro e região de uma forma rápida e fácil, permitiremos o compartilhamento de serviços concluídos como se fosse uma rede social, permitiremos também que o colaborador coloque o peço nos serviços que oferecem, tanto colaborador como cliente poderão classificar um ao outro para que possam ter a melhor experiencia possível dentro de nossa plataforma. <br><br>
+ CASTERIZZI é empresa focada em conectar freelancer com clientes de seu bairro e região de uma forma rápida e fácil, permitiremos o compartilhamento de serviços concluídos como se fosse uma rede social, permitiremos também que o colaborador coloque o peço nos serviços que oferecem, tanto colaborador como cliente poderão classificar um ao outro para que possam ter a melhor experiencia possível dentro de nossa plataforma. <br><br>
 
 ## 🎨 Layout
 
@@ -52,9 +52,10 @@ Você pode visualizar o layout do projeto através [desse link](<https://www.fig
 <br><br>
 
 ## :memo: Licença
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](.github/LICENSE.md) para mais detalhes.
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/Four-PROA/-h1-Demoday-h1-/blob/main/LICENSE) para mais detalhes.
 
 ---
+<br><br>
+<P align="center">Feito com 🧡 by Casterizzi</P>
 
-Feito com 🧡 by Casterizzi [Para saber mais clique aqui]()
 
