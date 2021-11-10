@@ -15,6 +15,10 @@ hr{
     color: #fff;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 
 
 .herosection{
@@ -51,21 +55,28 @@ hr{
         button {
             @include button-CTA();
             margin: 50px auto;
-    }
+        }
+        
+        a {
+            text-decoration: none;
+        }
 }
 .services{
     background-color: var(--color-tertiary-ligth);
     color: #fff;
     height: 680px;
 }
-
 .dimension_img{
-    width: 600px;
+    width: 530px;
     height: 339px;
     margin: 40px;
+    margin-left: 150px;
 }
 .dimension_text{
     @include h1-bold();
+    width: 700px;
+    margin-top: 10px;
+    margin-left: 30px;
 }
 .dimension_btn{
      @include  button-primary();
@@ -117,7 +128,10 @@ hr{
    align-items: center;
    margin-left: 200px;
    margin-top: 50px;
+
 }
+
+
 
 .como_funciona > .row > .dimension{
     margin-top: 62px;
@@ -130,7 +144,6 @@ hr{
 
  .como_funciona div > h2{
     margin-bottom: 20px;
-    font-family: 'Roboto',sans-serif;
  }
 
 
@@ -316,3 +329,29 @@ footer .boxs{
     color: rgb(255, 255, 255);
     margin: 0;
 }
+
+// Animação
+
+[data-step] {
+    opacity: 0;
+    transition: .4s;
+  }
+  
+  [data-step="left"] {
+    transform: translate3d(-50px, 0, 0);
+  }
+  
+  [data-step="right"] {
+    transform: translate3d(50px, 0, 0);
+  }
+  
+  [data-step="top"] {
+    transform: translate3d(0, -50px, 0);
+  }
+  
+  [data-step].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+  }
+
+  
