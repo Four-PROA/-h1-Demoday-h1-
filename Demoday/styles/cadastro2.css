@@ -119,7 +119,8 @@ html {
   background-color: var(--color-secondary-ligth);
   padding: 15px 24px;
   margin: 20px;
-  border-radius: 20px;
+  border: none;
+  border-radius: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -133,6 +134,10 @@ html {
   height: 56px;
   margin: auto 30%;
   margin-top: 20px;
+}
+
+.registration__dimension-container .col-6 buttonhover {
+  background-color: var(--color-secondary-dark);
 }
 
 .registration__dimension-container .col-6 hr {

@@ -33,6 +33,9 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   max-width: 1050px;
   margin: 70px auto;
   background-color: var(--color-secondary-ligth);
@@ -44,7 +47,7 @@ html {
   font-weight: 700;
   font-size: 18px;
   color: var(--color-white-regular);
-  max-width: 400px;
+  width: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,6 +58,7 @@ html {
 }
 
 .solicitacao .cadastro_solicitacao div input {
+  padding: 5px auto;
   border-radius: 10px;
   border: none;
   margin-right: 20px;
@@ -63,11 +67,6 @@ html {
 
 .solicitacao .cadastro_solicitacao div textarea {
   border-radius: 10px;
-}
-
-.solicitacao .cadastro_solicitacao div label {
-  margin-right: 20px;
-  margin-bottom: 3px;
 }
 
 .solicitacao .cadastro_solicitacao div span {
@@ -79,13 +78,13 @@ html {
   width: 200px;
 }
 
-.solicitacao .cadastro_solicitacao button {
+.solicitacao .button_solicitar button {
   font-size: 24px;
   color: var(--color-white-regular);
   background-color: var(--color-primary-regular);
   padding: 15px 24px;
   margin: 20px;
-  border-radius: 20px;
+  border-radius: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,5 +94,21 @@ html {
   vertical-align: middle;
   width: 305px;
   height: 49px;
+  text-align: center;
+  margin: 0 auto;
+  width: 250px;
+  padding: 16px 23px;
+}
+
+.como_funciona {
+  margin: 50px 0;
+  width: 100%;
+  background-color: var(--color-primary-ligth);
+}
+
+.como_funciona h2 {
+  font-weight: 700;
+  font-size: 57px;
+  color: var(--color-white-regular);
 }
 /*# sourceMappingURL=solicitar_servico.css.map */

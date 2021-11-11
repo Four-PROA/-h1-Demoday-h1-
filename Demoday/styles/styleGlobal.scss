@@ -33,12 +33,20 @@ html {
     background-color: var(--color-secondary-ligth);
     padding: 15px 24px;
     margin: 20px;
-    border-radius: 20px;
+    //tentei tirar a borda-------------------------------------------------------------------------------
+    border: none;
+    border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 256px;
     height: 56px;
+
+
+    //adicionando o hover
+    &hover{
+        background-color: var(--color-secondary-dark);
+    }
 }
 
 @mixin button-secondary {
@@ -47,12 +55,18 @@ html {
     border: 2px solid var(--color-tertiary-regular);
     padding: 19px 24px;
     margin: 20px;
-    border-radius: 20px;
+    border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 256px;
     height: 56px;
+
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+
+    &hover{
+        box-shadow: 0 0 40px 40px var(--color-tertiary-regular) inset;
+    }
 }
 
 @mixin button-CTA {
@@ -60,7 +74,7 @@ html {
     background-color: var(--color-primary-regular);
     padding: 15px 24px;
     margin: 20px;
-    border-radius: 20px;
+    border-radius: 15px;
     display: flex;
     align-items: center;
     vertical-align: middle;

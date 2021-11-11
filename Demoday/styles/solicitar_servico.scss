@@ -7,8 +7,10 @@
 
     .cadastro_solicitacao{
         display:flex;
+        justify-content: space-between;
         max-width: 1050px;
         margin: 70px auto;
+
 
         background-color: var(--color-secondary-ligth);
         border-radius: 20px;
@@ -16,11 +18,12 @@
         
         div{
             @include h6-bold;
-            max-width: 400px;
+            width: 300px;
             display: flex;
             flex-direction: column;
 
             input {
+                padding: 5px auto;
                 border-radius: 10px;
                 border: none;
                 margin-right: 20px;
@@ -31,10 +34,6 @@
                 border-radius: 10px;
             }
 
-            label {
-                margin-right: 20px;
-                margin-bottom: 3px;
-            }
 
             span{
                 @include x-small-regular;
@@ -43,13 +42,26 @@
                 width: 200px;
             }
         }
+    }
+
+    .button_solicitar{
 
         button{
             @include button-CTA();
+            text-align: center;
+            margin: 0 auto;
+            width: 250px;
+            padding: 16px 23px;
+            
         }
     }
-    
-
-
+}
+.como_funciona{
+    margin: 50px 0;
+    width: 100%;
+    background-color: var(--color-primary-ligth);
+    h2{
+        @include h2-bold();
+    }
 }
 
