@@ -85,19 +85,26 @@ html {
   padding: 15px 24px;
   margin: 20px;
   border-radius: 15px;
+  border: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  vertical-align: middle;
   width: 305px;
   height: 49px;
   text-align: center;
   margin: 0 auto;
   width: 250px;
   padding: 16px 23px;
+}
+
+.solicitacao .button_solicitar button:hover {
+  background-color: var(--color-primary-ligth);
 }
 
 .como_funciona {

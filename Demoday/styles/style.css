@@ -37,10 +37,6 @@ hr {
   color: #fff;
 }
 
-html {
-  overflow-x: hidden;
-}
-
 .herosection {
   background-color: var(--color-primary-ligth);
   color: #fff;
@@ -60,6 +56,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0 auto;
   width: 700px;
 }
 
@@ -84,16 +81,23 @@ html {
   padding: 15px 24px;
   margin: 20px;
   border-radius: 15px;
+  border: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  vertical-align: middle;
   width: 305px;
   height: 49px;
   margin: 50px auto;
+}
+
+.steps button:hover {
+  background-color: var(--color-primary-ligth);
 }
 
 .steps a {
@@ -143,7 +147,7 @@ html {
   height: 56px;
 }
 
-.dimension_btnhover {
+.dimension_btn:hover {
   background-color: var(--color-secondary-dark);
 }
 
@@ -170,11 +174,11 @@ html {
   transition: color 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
   transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
   transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
+  width: 400px;
 }
 
-.dimension_btn2hover {
-  -webkit-box-shadow: 0 0 40px 40px var(--color-tertiary-regular) inset;
-          box-shadow: 0 0 40px 40px var(--color-tertiary-regular) inset;
+.dimension_btn2:hover {
+  border: 2px solid var(--color-tertiary-dark);
 }
 
 .dimension_text_nav {

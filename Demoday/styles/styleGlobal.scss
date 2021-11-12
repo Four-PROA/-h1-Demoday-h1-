@@ -44,7 +44,7 @@ html {
 
 
     //adicionando o hover
-    &hover{
+    &:hover{
         background-color: var(--color-secondary-dark);
     }
 }
@@ -64,8 +64,9 @@ html {
 
     transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
 
-    &hover{
-        box-shadow: 0 0 40px 40px var(--color-tertiary-regular) inset;
+    &:hover{
+        // box-shadow: 0 0 40px 40px var(--color-tertiary-regular) inset;
+        border: 2px solid var(--color-tertiary-dark);
     }
 }
 
@@ -75,11 +76,16 @@ html {
     padding: 15px 24px;
     margin: 20px;
     border-radius: 15px;
+    border:none;
     display: flex;
+    justify-content: center;
     align-items: center;
-    vertical-align: middle;
     width: 305px;
     height: 49px;
+
+    &:hover {
+        background-color: var(--color-primary-ligth);
+    }
 }
 
 //FONTES DESK

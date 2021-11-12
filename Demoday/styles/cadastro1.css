@@ -125,7 +125,7 @@ html {
   margin-top: 20px;
 }
 
-.registration__dimension-container .col-6 buttonhover {
+.registration__dimension-container .col-6 button:hover {
   background-color: var(--color-secondary-dark);
 }
 
@@ -159,6 +159,10 @@ html {
   width: 400px;
 }
 
+.registration__dimension-container .col-6 .face:hover {
+  background-color: #1A75FD;
+}
+
 .registration__dimension-container .col-6 .face i {
   font-size: 40px;
   margin-right: 15px;
@@ -168,6 +172,10 @@ html {
   background-color: var(--color-white-dark);
   color: var(--color-black-dark);
   width: 366px;
+}
+
+.registration__dimension-container .col-6 .google:hover {
+  background-color: var(--color-white-dark);
 }
 
 .registration__dimension-container .col-6 .google i {
