@@ -1,0 +1,44 @@
+@import 'styleGlobal';
+
+.container{
+    .row{
+        display: flex;
+        justify-content: space-around;
+        color: var( --color-white-regular);
+    }
+    .col-5{
+        height: 100vh;
+        margin: 40px 0;
+        border-radius: 20px;
+        padding: 20px;
+
+        h2{
+            @include  h4-bold;
+        }
+        h3{
+            @include h5-bold;
+        }
+    }
+    .agendados{
+        background-color: var(--color-secondary-ligth);
+        .card_agendado{
+            background-color: var(--color-primary-regular);
+            border-radius: 20px;
+            padding: 20px;
+            button .mudar{
+                @include button-secondary;
+            }
+            button .acompanhar{
+                @include button-primary;
+            } 
+        }
+    }
+    .historico{
+        background-color: var(--color-primary-regular);
+        .card_hitorico{
+            background-color: var(--color-secondary-ligth);
+            border-radius: 20px;
+            padding: 20px;
+        }
+    }
+}
