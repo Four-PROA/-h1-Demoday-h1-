@@ -18,6 +18,13 @@
         h3{
             @include h5-bold;
         }
+        .prestador{
+            background: var(--color-white-regular);
+            color: var(--color-secondary-ligth);
+            padding: 5px;
+            border-radius: 50px;
+            text-align: center;
+        }
     }
     .agendados{
         background-color: var(--color-secondary-ligth);
@@ -31,6 +38,10 @@
             button .acompanhar{
                 @include button-primary;
             } 
+
+            i{
+                color: var(--color-tertiary-regular);
+            }
         }
     }
     .historico{

@@ -17,41 +17,27 @@ html {
   --color-white-ligth: #F4F0EB;
   --color-black-dark: #151515;
   --color-black-regular: #242424;
-  --color-error: #E77F70;
+  --color-error: #F13319;
   --color-sucess: #BFFE58;
   --color-warning: #F9D75F;
   color: var(--color-white-ligth);
 }
 
-.container .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  color: var(--color-white-regular);
+.row {
+  margin: 30px 0;
 }
 
-.container .col-5 {
-  height: 100vh;
-  margin: 40px 0;
+.row .card_servico {
+  background-color: var(--color-primary-regular);
+  color: var(--color-white-regular);
   border-radius: 20px;
   padding: 20px;
+  height: 230px;
+  font-size: 14px;
+  margin: 0 auto;
 }
 
-.container .col-5 h2 {
-  font-weight: 700;
-  font-size: 32px;
-  color: var(--color-white-regular);
-}
-
-.container .col-5 h3 {
-  font-weight: 700;
-  font-size: 24px;
-  color: var(--color-white-regular);
-}
-
-.container .col-5 .prestador {
+.row .card_servico .prestador {
   background: var(--color-white-regular);
   color: var(--color-secondary-ligth);
   padding: 5px;
@@ -59,17 +45,22 @@ html {
   text-align: center;
 }
 
-.container .agendados {
+.row .card_servico_datahora {
   background-color: var(--color-secondary-ligth);
-}
-
-.container .agendados .card_agendado {
-  background-color: var(--color-primary-regular);
+  color: var(--color-white-regular);
   border-radius: 20px;
   padding: 20px;
+  text-align: center;
+  height: 230px;
+  margin: 0 auto;
 }
 
-.container .agendados .card_agendado button .mudar {
+.row .card_servico_datahora i {
+  color: var(--color-tertiary-regular);
+  margin: 10px;
+}
+
+.row .card_servico_datahora button .mudar {
   font-size: 24px;
   color: var(--color-white-regular);
   background-color: transparent;
@@ -94,46 +85,55 @@ html {
   transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
 }
 
-.container .agendados .card_agendado button .mudar:hover {
+.row .card_servico_datahora button .mudar:hover {
   border: 2px solid var(--color-tertiary-dark);
 }
 
-.container .agendados .card_agendado button .acompanhar {
-  font-size: 24px;
+.row .card_seguranca {
+  background-color: var(--color-tertiary-regular);
   color: var(--color-white-regular);
-  background-color: var(--color-secondary-ligth);
-  padding: 15px 24px;
-  margin: 20px;
-  border: none;
-  border-radius: 15px;
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.row .card_seguranca h3 {
+  color: var(--color-black-dark);
+}
+
+.row .card_seguranca .botoes_seguranca {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 256px;
-  height: 56px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.container .agendados .card_agendado button .acompanhar:hover {
-  background-color: var(--color-secondary-dark);
-}
-
-.container .agendados .card_agendado i {
-  color: var(--color-tertiary-regular);
-}
-
-.container .historico {
-  background-color: var(--color-primary-regular);
-}
-
-.container .historico .card_hitorico {
+.row .card_seguranca .botoes_seguranca .botao_seguranca {
   background-color: var(--color-secondary-ligth);
-  border-radius: 20px;
+  color: var(--color-white-regular);
+  width: 250px;
+  border-radius: 10px;
   padding: 20px;
+  margin: 0 15px;
+  text-align: center;
 }
-/*# sourceMappingURL=agendamentos.css.map */
+
+.row .card_seguranca .botoes_seguranca .botao_seguranca i {
+  font-size: 50px;
+}
+
+.row .card_seguranca .botoes_seguranca .botao_seguranca #cancel {
+  color: var(--color-primary-regular);
+}
+
+.row .card_seguranca .botoes_seguranca .botao_seguranca #atention {
+  color: var(--color-warning);
+}
+
+.row .card_seguranca .botoes_seguranca .botao_seguranca #cops {
+  color: var(--color-error);
+}
+/*# sourceMappingURL=acompanhamento.css.map */

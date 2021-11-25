@@ -11,27 +11,24 @@
     <!-- Bootstrap Icon-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
 
+    <!-- React CDN -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <!-- Componente header -->
+    <script type="text/babel" src="../scripts/Header.jsx"></script>
+
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/agendamentos.css">
+    <link rel="stylesheet" href="../styles/acompanhamento.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
-
-      <!-- React CDN -->
-  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-
-  <!-- Componente header -->
-  <script type="text/babel" src="../scripts/Header.jsx"></script>
-
-  <!-- Componente footer -->
-  <script type="text/babel" src="../scripts/Footer.jsx"></script>
 </head>
 
 <body>
@@ -40,9 +37,11 @@
     <main>
         <div class="container">
             <div class="row">
-                <div class="col-5 agendados">
-                    <h2>Serviços agendados</h2>
-                    <div class="card_agendado">
+
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="card_servico">
                         <h3>Aulas de escrita</h3><span>Aulas/Treinamentos</span>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore nobis vitae, vel laborum
                             doloremque magni soluta. Reiciendis eos ipsam numquam ea consectetur nesciunt vel nobis quia
@@ -56,51 +55,57 @@
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star"></i>
                         </div>
-                        <span>
-                            <i class="bi bi-calendar-check"></i>22/11/2021
-                            <i class="bi bi-alarm"></i>09:00-18:00
-                        </span>
-                        <br>
-                        <button class="mudar">Mudar data/hora</button>
-                        <button class="acompanhar">Acompanhar serviço</button>
                     </div>
                 </div>
-                <div class="col-5 historico">
-                    <h2>Histórico</h2>
-                    <div class="card_hitorico">
-                        <h3>Aulas de escrita</h3><span>Aulas/Treinamento</span>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat facere ipsam
-                            architecto placeat rerum expedita itaque nostrum ratione excepturi molestias, ducimus,
-                            quae cumque modi labore quas illo asperiores recusandae. Debitis!</p>
-                        <div class="prestador">
-                            <i class="bi bi-heart"></i>
-                            Railson Costa Leite
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star"></i>
-                        </div>
-                        <a href="">
-                            <i class="bi bi-check2"></i>
-                            Finalizado
-                        </a>
-                        <a href="">
-                            <i class="bi bi-paperclip"></i>
-                            Comprovante
-                        </a>
+
+                <div class="col-4">
+                    <div class="card_servico_datahora">
+                        <p><i class="bi bi-geo-alt"></i>Rua Avelino Antonio de Vilela, 66 - Osasco/SP - 06381-475</p>
+                        <p>
+                            <i class="bi bi-calendar-check"></i>22/11/2021
+                            <i class="bi bi-alarm"></i>09:00-18:00
+                        </p>
+                        <button class="mudar">Mudar data/hora</button>
+
                     </div>
                 </div>
             </div>
 
+            <div class="row">
+                <div class="card_seguranca">
+                    <h3>Segurança</h3>
+                    <div class="botoes_seguranca">
+                        <div class="botao_seguranca">
+                            <i id="cancel" class="bi bi-x-circle"></i>
+                            <p>Cancelar pedido</p>
+                        </div>
+    
+                        <div class="botao_seguranca">
+                            <i id="atention" class="bi bi-exclamation-triangle"></i>
+                            <p>Realizar denúncia</p>
+                            
+                        </div>
+                        <div class="botao_seguranca">
+                            <i id="cops" class="bi bi-shield-shaded"></i>
+                            <p>Acionar a Polícia</p>
+                            
+                        </div>
+                    </div>
+                   
 
+                </div>
 
+            </div>
+            <div class="row">
+                <div class="card_alterar_dados">
 
+                </div>
+
+            </div>
         </div>
 
     </main>
 
-    <div id="component-footer"></div>
-
+    <h4 class="rodape">@2021 Casterizzi</h4>
 
 </body>

@@ -21,34 +21,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- React CDN -->
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+  <!-- Componente header -->
+  <script type="text/babel" src="../scripts/Header.jsx"></script>
+
+  <!-- Componente footer -->
+  <script type="text/babel" src="../scripts/Footer.jsx"></script>
 </head>
 
 <body>
 
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light dimension_text_nav">
-            <div class="container-fluid ">
-                <a class="navbar-brand" href="#">Logo</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse row " id="navbarNav">
-                    <ul class="navbar-nav justify-content-end">
-                        <li class="nav-item">
-                            <a class="nav-link m-2" href="#">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link m-2" href="#">Como funciona</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link m-2" href="#">Serviços</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <div id="component-header"></div>
+
     <section class="solicitacao">
         <form>
             <div class="cadastro_solicitacao">
@@ -79,7 +68,7 @@
 
                 <div>
                     <label for="">Nos dê mais detalhes</label>
-                    <textarea name="" id="" cols="30" rows="10"  placeholder="Descreva a sua necessidade"></textarea>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Descreva a sua necessidade"></textarea>
                 </div>
             </div>
             <div class="button_solicitar">
@@ -92,63 +81,12 @@
     <section class="como_funciona">
         <h2>Como funciona?</h2>
         <div>
-            
+
         </div>
-        
+
     </section>
 
-    <footer>
-        <div class="boxs">
-            <h2>Nossas redes sociais</h2>
-
-            <div class="icons">
-                <div class="redes">
-                    <p><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></p>
-                </div>
-                <br>
-                <div class="redes">
-                    <p><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a></p>
-                </div>
-                <br>
-                <div class="redes">
-                    <p><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></p>
-                </div>
-                <br>
-                <div class="redes">
-                    <p><a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a></p>
-                </div>
-                <div class="redes">
-                    <p><a href="#"> <i class="fa fa-youtube" aria-hidden="true"></i></a></p>
-                </div>
-                <div class="redes">
-                    <p><a href="#"> <i class="fa fa-pinterest" aria-hidden="true"></i></a></p>
-                </div>
-            </div>
-
-        </div>
-        <div class="boxs">
-            <h2>Suporte</h2>
-            <p><a href="#">FAQ</a></p>
-            <br><br>
-            <p><a href="#">Telefone</a></p>
-            <br><br>
-            <p><a href="#">Chat</a></p>
-            <ul></ul>
-        </div>
-        <div class="boxs">
-            <h2>Sobre</h2>
-            <p>Quem somos?</p>
-            <br><br>
-            <p>Nossos valores</p>
-            <br><br>
-            <p>Política da empresa</p>
-
-
-        </div>
-    </footer>
-
-    <h4 class="rodape">@2021 Casterizzi</h4>
-
+      <div id="component-footer"></div>
     </main>
 </body>
 
