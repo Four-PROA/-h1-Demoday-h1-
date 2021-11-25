@@ -30,6 +30,6 @@ function Header() {
 
 
   ReactDOM.render(
-      <Header/>,
+      <Header />,
       document.getElementById('component-header')
   )
