@@ -17,7 +17,7 @@ html {
   --color-white-ligth: #F4F0EB;
   --color-black-dark: #151515;
   --color-black-regular: #242424;
-  --color-error: #E77F70;
+  --color-error: #F13319;
   --color-sucess: #BFFE58;
   --color-warning: #F9D75F;
   color: var(--color-white-ligth);

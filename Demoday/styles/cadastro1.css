@@ -17,7 +17,7 @@ html {
   --color-white-ligth: #F4F0EB;
   --color-black-dark: #151515;
   --color-black-regular: #242424;
-  --color-error: #E77F70;
+  --color-error: #F13319;
   --color-sucess: #BFFE58;
   --color-warning: #F9D75F;
   color: var(--color-white-ligth);
@@ -96,10 +96,6 @@ html {
 .registration__dimension-container .col-6 input::placeholder {
   color: var(--color-white-regular);
   opacity: 0.7;
-}
-
-.registration__dimension-container .col-6 .span {
-  margin-left: 50px;
 }
 
 .registration__dimension-container .col-6 button {

@@ -17,7 +17,7 @@ html {
   --color-white-ligth: #F4F0EB;
   --color-black-dark: #151515;
   --color-black-regular: #242424;
-  --color-error: #E77F70;
+  --color-error: #F13319;
   --color-sucess: #BFFE58;
   --color-warning: #F9D75F;
   color: var(--color-white-ligth);
@@ -28,15 +28,6 @@ html {
 }
 
 /* HEADER--------------------------------------------------------- */
-.nav-item {
-  margin-left: 20px;
-}
-
-hr {
-  width: 920px;
-  color: #fff;
-}
-
 .herosection {
   background-color: var(--color-primary-ligth);
   color: #fff;
@@ -67,47 +58,6 @@ hr {
 
 .herosection section article div a button {
   width: 300px;
-}
-
-.steps {
-  background-color: var(--color-secondary-ligth);
-  color: #fff;
-}
-
-.steps button {
-  font-size: 24px;
-  color: var(--color-white-regular);
-  background-color: var(--color-primary-regular);
-  padding: 15px 24px;
-  margin: 20px;
-  border-radius: 15px;
-  border: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 305px;
-  height: 49px;
-  margin: 50px auto;
-}
-
-.steps button:hover {
-  background-color: var(--color-primary-ligth);
-}
-
-.steps a {
-  text-decoration: none;
-}
-
-.services {
-  background-color: var(--color-tertiary-ligth);
-  color: #fff;
-  height: 680px;
 }
 
 .dimension_img {
@@ -226,29 +176,75 @@ hr {
 }
 
 /* Como funciona */
-.como_funciona {
-  width: 1000px;
+.steps {
+  background-color: var(--color-secondary-ligth);
+  color: #fff;
+  font-size: 14px;
+}
+
+.steps .row {
+  padding: 50px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.steps .row .col-3 {
+  width: 400px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.steps .row .col-3 img {
+  max-width: 145px;
+}
+
+.steps button {
+  font-size: 24px;
+  color: var(--color-white-regular);
+  background-color: var(--color-primary-regular);
+  padding: 15px 24px;
+  margin: 20px;
+  border-radius: 15px;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 200px;
-  margin-top: 50px;
+  width: 305px;
+  height: 49px;
+  margin: 30px auto;
 }
 
-.como_funciona > .row > .dimension {
-  margin-top: 62px;
+.steps button:hover {
+  background-color: var(--color-primary-ligth);
 }
 
-.como_funciona div > p {
-  width: 300px;
-  font-size: 20px;
-}
-
-.como_funciona div > h2 {
-  margin-bottom: 20px;
+.steps a {
+  text-decoration: none;
 }
 
 /*  */
+.services {
+  background-color: var(--color-tertiary-ligth);
+  color: #fff;
+  height: 680px;
+}
+
 .servico_blue img {
   width: 86px;
   height: 86px;
@@ -311,18 +307,16 @@ hr {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .vantagens .card {
   width: 400px;
   height: 300px;
   border-radius: 20px;
-  background-color: gray;
+  background-color: var(--color-tertiary-ligth);
   margin-right: 70px;
   left: 30px;
+  font-size: 14px;
 }
 
 .vantagens .card .img {

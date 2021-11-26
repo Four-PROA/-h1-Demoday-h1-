@@ -6,16 +6,9 @@
 
 /* HEADER--------------------------------------------------------- */
 
-.nav-item{
-    margin-left: 20px;
-}
-
-hr{
-    width: 920px;
-    color: #fff;
-}
-
-
+// .nav-item{
+//     margin-left: 20px;
+// }
 
 .herosection{
     background-color: var(--color-primary-ligth);
@@ -44,25 +37,9 @@ hr{
     }
 
 }
-.steps {
-    background-color: var(--color-secondary-ligth);
-    color: #fff;
 
-    
-        button {
-            @include button-CTA();
-            margin: 50px auto;
-        }
-        
-        a {
-            text-decoration: none;
-        }
-}
-.services{
-    background-color: var(--color-tertiary-ligth);
-    color: #fff;
-    height: 680px;
-}
+
+
 .dimension_img{
     width: 530px;
     height: 339px;
@@ -120,33 +97,44 @@ hr{
 }
 
 /* Como funciona */
+.steps {
+    background-color: var(--color-secondary-ligth);
+    color: #fff;
+    font-size: 14px;
 
-.como_funciona{
-   width: 1000px;
-   align-items: center;
-   margin-left: 200px;
-   margin-top: 50px;
+        .row{
+            padding: 50px 10px;
+            display: flex;
+            justify-content: space-around;
 
+            .col-3{
+                width: 400px !important;
+                display: flex;
+                justify-content: space-between;
+                align-items:flex-start;
+
+                img{
+                    max-width: 145px;
+                }
+            }
+        }
+    
+        button {
+            @include button-CTA();
+            margin: 30px auto;
+        }
+        
+        a {
+            text-decoration: none;
+        }
 }
 
-
-
-.como_funciona > .row > .dimension{
-    margin-top: 62px;
- }
-
-.como_funciona div > p{
-    width: 300px;
-    font-size: 20px;
- }
-
- .como_funciona div > h2{
-    margin-bottom: 20px;
- }
-
-
 /*  */
-
+.services{
+    background-color: var(--color-tertiary-ligth);
+    color: #fff;
+    height: 680px;
+}
 .servico_blue img{
     width: 86px;
     height: 86px;
@@ -202,16 +190,18 @@ hr{
     .cards_container{
         display: flex;
         flex-direction: row;
-        justify-content: center;
+
     }
 
     .card {
         width: 400px;
         height: 300px;
         border-radius: 20px;
-        background-color: gray;
+        background-color: var(--color-tertiary-ligth);
         margin-right: 70px;
         left: 30px;
+
+        font-size: 14px;
 
     .img {
         height: 55%;

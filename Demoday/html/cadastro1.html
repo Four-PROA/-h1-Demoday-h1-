@@ -35,30 +35,7 @@
 </head>
 
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light dimension_text_nav">
-      <div class="container-fluid ">
-        <a class="navbar-brand" href="#">Logo</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse row " id="navbarNav">
-          <ul class="navbar-nav justify-content-end">
-            <li class="nav-item">
-              <a class="nav-link m-2" href="#">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link m-2" href="#">Como funciona</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link m-2" href="#">Serviços</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
+  <div id="component-header"></div>
 
   <main>
     <div class="registration">
@@ -73,23 +50,20 @@
               <h3>Olá, seja bem-vindo ao Casterizzi! </h3>
               <p>Para fazer o seu cadastro vou precisar de algumas informações </p>
               <img src="../_img/undraw_Designer_re_5v95 1.png" alt="">
-
             </div>
 
-            <div class="col-6 division ">
+            <div class="col-6 division">
               <input type="text" placeholder="Nome">
-              <input type="text" placeholder="E-mail">
-              <input type="text" placeholder="Senha">
+              <input type="email" placeholder="E-mail">
+              <input type="password" placeholder="Senha">
               <input type="text" placeholder="Celular">
+              <input type="checkbox" id="serprestador" name="serprestador" value="yes">
+              <label for="serprestador">Quero ser um prestador</label>
 
               <button>Continuar</button>
 
               <div class="d-flex align-items-center mt-4 span">
-
-                <hr> <span>ou</span>
-                <hr>
-
-
+               <span>ou</span>
               </div>
               <div class="redirecionar">
 
@@ -109,56 +83,6 @@
     </div>
   </main>
 
-  <footer>
-    <div class="boxs">
-      <h2>Nossas redes sociais</h2>
-
-      <div class="icons">
-        <div class="redes">
-          <p><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></p>
-        </div>
-        <br>
-        <div class="redes">
-          <p><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a></p>
-        </div>
-        <br>
-        <div class="redes">
-          <p><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></p>
-        </div>
-        <br>
-        <div class="redes">
-          <p><a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a></p>
-        </div>
-        <div class="redes">
-          <p><a href="#"> <i class="fa fa-youtube" aria-hidden="true"></i></a></p>
-        </div>
-        <div class="redes">
-          <p><a href="#"> <i class="fa fa-pinterest" aria-hidden="true"></i></a></p>
-        </div>
-      </div>
-
-    </div>
-    <div class="boxs">
-      <h2>Suporte</h2>
-      <p><a href="#">FAQ</a></p>
-      <br><br>
-      <p><a href="#">Telefone</a></p>
-      <br><br>
-      <p><a href="#">Chat</a></p>
-      <ul></ul>
-    </div>
-    <div class="boxs">
-      <h2>Sobre</h2>
-      <p>Quem somos?</p>
-      <br><br>
-      <p>Nossos valores</p>
-      <br><br>
-      <p>Política da empresa</p>
-
-
-    </div>
-  </footer>
-
-  <h4 class="rodape">@2021 Casterizzi</h4>
+  <div id="component-footer"></div>
 
 </body>

@@ -17,7 +17,7 @@ html {
   --color-white-ligth: #F4F0EB;
   --color-black-dark: #151515;
   --color-black-regular: #242424;
-  --color-error: #E77F70;
+  --color-error: #F13319;
   --color-sucess: #BFFE58;
   --color-warning: #F9D75F;
   color: var(--color-white-ligth);
@@ -34,7 +34,7 @@ html {
 
 .container .col-5 {
   height: 100vh;
-  margin: 40px 0;
+  margin: 40px 0 0;
   border-radius: 20px;
   padding: 20px;
 }
@@ -51,12 +51,26 @@ html {
   color: var(--color-white-regular);
 }
 
+.container .col-5 i {
+  color: var(--color-tertiary-regular);
+}
+
 .container .col-5 .prestador {
   background: var(--color-white-regular);
   color: var(--color-secondary-ligth);
+  max-width: 340px;
+  margin: 0 auto 15px;
   padding: 5px;
   border-radius: 50px;
   text-align: center;
+}
+
+.container .col-5 .prestador #heart {
+  color: var(--color-error);
+}
+
+.container .col-5 .prestador .star {
+  color: var(--color-primary-regular);
 }
 
 .container .agendados {
@@ -67,6 +81,7 @@ html {
   background-color: var(--color-primary-regular);
   border-radius: 20px;
   padding: 20px;
+  margin: 10px 0;
 }
 
 .container .agendados .card_agendado button .mudar {
@@ -123,8 +138,8 @@ html {
   background-color: var(--color-secondary-dark);
 }
 
-.container .agendados .card_agendado i {
-  color: var(--color-tertiary-regular);
+.container .agendados .card_agendado #ico_date, .container .agendados .card_agendado #ico_alarm {
+  margin: 10px;
 }
 
 .container .historico {
@@ -135,5 +150,28 @@ html {
   background-color: var(--color-secondary-ligth);
   border-radius: 20px;
   padding: 20px;
+}
+
+.container .historico .card_hitorico a {
+  color: var(--color-white-regular);
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.container .historico .card_hitorico a:hover {
+  text-decoration: underline;
+}
+
+.container .historico .card_hitorico .avaliar {
+  background: var(--color-primary-regular);
+  color: var(--color-white-regular);
+  padding: 8px 20px;
+  margin-left: 30px;
+  border: none;
+  border-radius: 50px;
+}
+
+.container .historico .card_hitorico .avaliar:hover {
+  background-color: var(--color-primary-dark);
 }
 /*# sourceMappingURL=agendamentos.css.map */

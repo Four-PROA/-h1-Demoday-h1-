@@ -8,7 +8,7 @@
     }
     .col-5{
         height: 100vh;
-        margin: 40px 0;
+        margin: 40px 0 0;
         border-radius: 20px;
         padding: 20px;
 
@@ -18,20 +18,37 @@
         h3{
             @include h5-bold;
         }
+
+        i{
+            color: var(--color-tertiary-regular);
+        }
         .prestador{
             background: var(--color-white-regular);
             color: var(--color-secondary-ligth);
+            max-width: 340px;
+            margin: 0 auto 15px;
             padding: 5px;
             border-radius: 50px;
             text-align: center;
+
+            #heart{
+                color: var(--color-error);
+            }
+
+            .star{
+                color: var(--color-primary-regular);
+            }
         }
     }
     .agendados{
         background-color: var(--color-secondary-ligth);
+
+
         .card_agendado{
             background-color: var(--color-primary-regular);
             border-radius: 20px;
             padding: 20px;
+            margin: 10px 0;
             button .mudar{
                 @include button-secondary;
             }
@@ -39,17 +56,44 @@
                 @include button-primary;
             } 
 
-            i{
-                color: var(--color-tertiary-regular);
+            #ico_date, #ico_alarm{
+                margin: 10px;
             }
+
         }
     }
     .historico{
         background-color: var(--color-primary-regular);
+
         .card_hitorico{
             background-color: var(--color-secondary-ligth);
             border-radius: 20px;
             padding: 20px;
+
+
+            a{
+                color: var(--color-white-regular);
+                text-decoration: none;
+                margin-right: 20px;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            .avaliar{
+                background: var(--color-primary-regular);
+                color: var(--color-white-regular);
+                padding: 8px 20px;
+                margin-left: 30px;
+                
+                border: none;
+                border-radius: 50px;
+
+                &:hover{
+                    background-color: var(--color-primary-dark);
+                }
+            }
+
         }
     }
 }
