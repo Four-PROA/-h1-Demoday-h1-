@@ -23,14 +23,6 @@ html {
   color: var(--color-white-ligth);
 }
 
-hr {
-  color: var(--color-tertiary-regular);
-  height: 10px !important;
-  width: 1000px !important;
-  opacity: 1 !important;
-  border-radius: 50px;
-}
-
 .row {
   margin: 30px auto;
   -ms-flex-pack: distribute;
@@ -38,6 +30,50 @@ hr {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.row .linha_acompanhamento hr {
+  color: var(--color-tertiary-regular);
+  height: 10px !important;
+  width: 1000px !important;
+  opacity: 1 !important;
+  border-radius: 50px;
+  margin: 30px auto;
+}
+
+.row .linha_acompanhamento .bolinhas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.row .linha_acompanhamento .bolinhas div {
+  background-color: var(--color-secondary-ligth);
+  color: var(--color-secondary-ligth);
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+}
+
+.row .linha_acompanhamento .bolinhas .ativa {
+  background-color: var(--color-primary-regular);
+  color: var(--color-primary-regular);
+}
+
+.row .linha_acompanhamento .etapas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.row .linha_acompanhamento .etapas p {
+  max-width: 130px;
+  font-weight: bold;
+  text-align: center;
 }
 
 .row .card_servico {

@@ -1,16 +1,46 @@
 @import 'styleGlobal';
 
-hr{
-    color: var(--color-tertiary-regular);
-    height: 10px !important;
-    width: 1000px !important;
-    opacity: 1 !important;
-    border-radius: 50px;
-}
+
 .row{
     margin: 30px auto;
     justify-content: space-around;
     align-items: center;
+
+    .linha_acompanhamento{
+        hr{
+            color: var(--color-tertiary-regular);
+            height: 10px !important;
+            width: 1000px !important;
+            opacity: 1 !important;
+            border-radius: 50px;
+            margin: 30px auto;
+        }
+        .bolinhas{
+            display: flex;
+            justify-content: space-around;
+
+            div{
+                background-color: var(--color-secondary-ligth);
+                color: var(--color-secondary-ligth);
+                height: 40px;
+                width: 40px;
+                border-radius: 50px;
+            }
+            .ativa{
+                background-color: var(--color-primary-regular);
+                color: var(--color-primary-regular);
+            }
+        }
+        .etapas{
+            display: flex;
+            justify-content: space-around;
+            p{
+                max-width: 130px;
+                font-weight: bold;
+                text-align: center;
+            }
+        }
+    }
 
     .card_servico{
         background-color: var(--color-primary-regular);
@@ -81,12 +111,6 @@ hr{
             @include button-CTA;
             font-size: 16px;
             margin: 0 auto;
-            // border: none;
-            // border-radius: 12px;
-            // padding: 10px;
-
-            // background: var(--color-primary-regular);
-            // color: var(--color-white-regular);
         }
     }
     .card_seguranca{
