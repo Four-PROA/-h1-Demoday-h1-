@@ -1,7 +1,17 @@
 @import 'styleGlobal';
 
+hr{
+    color: var(--color-tertiary-regular);
+    height: 10px !important;
+    width: 1000px !important;
+    opacity: 1 !important;
+    border-radius: 50px;
+}
 .row{
-    margin: 30px 0;
+    margin: 30px auto;
+    justify-content: space-around;
+    align-items: center;
+
     .card_servico{
         background-color: var(--color-primary-regular);
         color: var( --color-white-regular);
@@ -17,9 +27,19 @@
         .prestador{
             background: var(--color-white-regular);
             color: var(--color-secondary-ligth);
+            max-width: 340px;
+            margin: 0 auto 15px;
             padding: 5px;
             border-radius: 50px;
             text-align: center;
+
+            #heart{
+                color: var(--color-error);
+            }
+
+            .star{
+                color: var(--color-primary-regular);
+            }
         }
     }
 
@@ -40,11 +60,32 @@
             
         }
 
-        button .mudar{
-            @include button-secondary();
+        button{
+            @include button-secondary;
+            margin: 0 auto;
         }
     }
 
+    .card_chat{
+        background-color: var(--color-secondary-ligth);
+        color: var( --color-white-regular);
+        border-radius: 20px;
+        width: 350px;
+        padding: 20px;
+        margin: 0 auto;
+        text-align: center;
+
+        .button_chat{
+            @include button-CTA;
+            margin: 0 auto;
+            // border: none;
+            // border-radius: 12px;
+            // padding: 10px;
+
+            // background: var(--color-primary-regular);
+            // color: var(--color-white-regular);
+        }
+    }
     .card_seguranca{
         background-color: var(--color-tertiary-regular);
         color: var( --color-white-regular);
@@ -65,7 +106,6 @@
             .botao_seguranca{
                 background-color: var(--color-secondary-ligth);
                 color: var( --color-white-regular);
-                width: 250px;
                 border-radius: 10px;
                 padding: 20px;
                 margin: 0 15px;
@@ -87,6 +127,69 @@
                 }
 
             
+            }
+        }
+    }
+
+    .card_alteracao{
+        background-color: var(--color-secondary-ligth);
+        color: var( --color-white-regular);
+        border-radius: 20px;
+        padding: 20px;
+        max-width: 1000px;
+
+        display: flex;
+        justify-content: space-around;
+
+        text-align: center;
+
+        p{
+            margin-top: 10px;
+        }
+
+        .escolher_data{
+            width: 40%;
+        }
+        .hrv{
+            background: var(--color-tertiary-regular);
+            height: 285px;
+            width: 3px;
+        }
+        .escolher_hora_endereco{
+            width: 50%;
+            
+            .horario{
+                display: inline;
+                background-color: var(--color-primary-regular);
+                padding: 10px 15px;
+                border-radius: 10px;
+            }
+            form{
+                background-color: var(--color-primary-regular);
+                padding: 10px;
+                border-radius: 20px;
+                input{
+                    color: white;
+                    border: none;
+                    background-color: transparent;
+                    border-bottom: solid 1px var(--color-white-regular);
+                    margin-bottom: 25px;
+                    &:focus, select:focus {
+                        box-shadow: 0 0 0 0;
+                        outline: 0;
+                    } 
+                    
+                    &::placeholder {
+                        color: var(--color-white-regular);
+                        opacity: 0.7;
+                    }
+
+                    
+                }
+            }
+            button{
+                @include button-CTA;
+                margin: 10px auto;
             }
         }
     }

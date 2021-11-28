@@ -23,8 +23,21 @@ html {
   color: var(--color-white-ligth);
 }
 
+hr {
+  color: var(--color-tertiary-regular);
+  height: 10px !important;
+  width: 1000px !important;
+  opacity: 1 !important;
+  border-radius: 50px;
+}
+
 .row {
-  margin: 30px 0;
+  margin: 30px auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .row .card_servico {
@@ -40,9 +53,19 @@ html {
 .row .card_servico .prestador {
   background: var(--color-white-regular);
   color: var(--color-secondary-ligth);
+  max-width: 340px;
+  margin: 0 auto 15px;
   padding: 5px;
   border-radius: 50px;
   text-align: center;
+}
+
+.row .card_servico .prestador #heart {
+  color: var(--color-error);
+}
+
+.row .card_servico .prestador .star {
+  color: var(--color-primary-regular);
 }
 
 .row .card_servico_datahora {
@@ -60,7 +83,7 @@ html {
   margin: 10px;
 }
 
-.row .card_servico_datahora button .mudar {
+.row .card_servico_datahora button {
   font-size: 24px;
   color: var(--color-white-regular);
   background-color: transparent;
@@ -83,10 +106,47 @@ html {
   transition: color 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
   transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
   transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
+  margin: 0 auto;
 }
 
-.row .card_servico_datahora button .mudar:hover {
+.row .card_servico_datahora button:hover {
   border: 2px solid var(--color-tertiary-dark);
+}
+
+.row .card_chat {
+  background-color: var(--color-secondary-ligth);
+  color: var(--color-white-regular);
+  border-radius: 20px;
+  width: 350px;
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.row .card_chat .button_chat {
+  font-size: 24px;
+  color: var(--color-white-regular);
+  background-color: var(--color-primary-regular);
+  padding: 15px 24px;
+  margin: 20px;
+  border-radius: 15px;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 305px;
+  height: 49px;
+  margin: 0 auto;
+}
+
+.row .card_chat .button_chat:hover {
+  background-color: var(--color-primary-ligth);
 }
 
 .row .card_seguranca {
@@ -114,7 +174,6 @@ html {
 .row .card_seguranca .botoes_seguranca .botao_seguranca {
   background-color: var(--color-secondary-ligth);
   color: var(--color-white-regular);
-  width: 250px;
   border-radius: 10px;
   padding: 20px;
   margin: 0 15px;
@@ -135,5 +194,110 @@ html {
 
 .row .card_seguranca .botoes_seguranca .botao_seguranca #cops {
   color: var(--color-error);
+}
+
+.row .card_alteracao {
+  background-color: var(--color-secondary-ligth);
+  color: var(--color-white-regular);
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+}
+
+.row .card_alteracao p {
+  margin-top: 10px;
+}
+
+.row .card_alteracao .escolher_data {
+  width: 40%;
+}
+
+.row .card_alteracao .hrv {
+  background: var(--color-tertiary-regular);
+  height: 285px;
+  width: 3px;
+}
+
+.row .card_alteracao .escolher_hora_endereco {
+  width: 50%;
+}
+
+.row .card_alteracao .escolher_hora_endereco .horario {
+  display: inline;
+  background-color: var(--color-primary-regular);
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.row .card_alteracao .escolher_hora_endereco form {
+  background-color: var(--color-primary-regular);
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.row .card_alteracao .escolher_hora_endereco form input {
+  color: white;
+  border: none;
+  background-color: transparent;
+  border-bottom: solid 1px var(--color-white-regular);
+  margin-bottom: 25px;
+}
+
+.row .card_alteracao .escolher_hora_endereco form input:focus, .row .card_alteracao .escolher_hora_endereco form input select:focus {
+  -webkit-box-shadow: 0 0 0 0;
+          box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+.row .card_alteracao .escolher_hora_endereco form input::-webkit-input-placeholder {
+  color: var(--color-white-regular);
+  opacity: 0.7;
+}
+
+.row .card_alteracao .escolher_hora_endereco form input:-ms-input-placeholder {
+  color: var(--color-white-regular);
+  opacity: 0.7;
+}
+
+.row .card_alteracao .escolher_hora_endereco form input::-ms-input-placeholder {
+  color: var(--color-white-regular);
+  opacity: 0.7;
+}
+
+.row .card_alteracao .escolher_hora_endereco form input::placeholder {
+  color: var(--color-white-regular);
+  opacity: 0.7;
+}
+
+.row .card_alteracao .escolher_hora_endereco button {
+  font-size: 24px;
+  color: var(--color-white-regular);
+  background-color: var(--color-primary-regular);
+  padding: 15px 24px;
+  margin: 20px;
+  border-radius: 15px;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 305px;
+  height: 49px;
+  margin: 10px auto;
+}
+
+.row .card_alteracao .escolher_hora_endereco button:hover {
+  background-color: var(--color-primary-ligth);
 }
 /*# sourceMappingURL=acompanhamento.css.map */
