@@ -62,6 +62,7 @@ hr{
 
         button{
             @include button-secondary;
+            font-size: 14px;
             margin: 0 auto;
         }
     }
@@ -77,6 +78,7 @@ hr{
 
         .button_chat{
             @include button-CTA;
+            font-size: 16px;
             margin: 0 auto;
             // border: none;
             // border-radius: 12px;
@@ -109,11 +111,11 @@ hr{
                 border-radius: 10px;
                 padding: 20px;
                 margin: 0 15px;
-
+                font-size: 14px;
                 text-align: center;
 
                 i{
-                    font-size: 50px;
+                    font-size: 30px;
                 }
                 #cancel{
                     color: var(--color-primary-regular);
@@ -130,7 +132,6 @@ hr{
             }
         }
     }
-
     .card_alteracao{
         background-color: var(--color-secondary-ligth);
         color: var( --color-white-regular);
@@ -189,6 +190,7 @@ hr{
             }
             button{
                 @include button-CTA;
+                font-size: 16px;
                 margin: 10px auto;
             }
         }

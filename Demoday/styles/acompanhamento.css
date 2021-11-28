@@ -106,6 +106,7 @@ hr {
   transition: color 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
   transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
   transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
+  font-size: 14px;
   margin: 0 auto;
 }
 
@@ -142,6 +143,7 @@ hr {
           align-items: center;
   width: 305px;
   height: 49px;
+  font-size: 16px;
   margin: 0 auto;
 }
 
@@ -177,11 +179,12 @@ hr {
   border-radius: 10px;
   padding: 20px;
   margin: 0 15px;
+  font-size: 14px;
   text-align: center;
 }
 
 .row .card_seguranca .botoes_seguranca .botao_seguranca i {
-  font-size: 50px;
+  font-size: 30px;
 }
 
 .row .card_seguranca .botoes_seguranca .botao_seguranca #cancel {
@@ -294,6 +297,7 @@ hr {
           align-items: center;
   width: 305px;
   height: 49px;
+  font-size: 16px;
   margin: 10px auto;
 }
 
