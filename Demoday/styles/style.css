@@ -323,6 +323,10 @@ html {
   height: 55%;
 }
 
+.vantagens .card .img img {
+  margin: 20px 50px;
+}
+
 .vantagens .card .text {
   height: 47%;
   background-color: var(--color-secondary-ligth);
