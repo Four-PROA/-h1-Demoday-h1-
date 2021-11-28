@@ -63,6 +63,7 @@ html {
   padding: 5px;
   border-radius: 50px;
   text-align: center;
+  font-weight: bold;
 }
 
 .container .col-5 .prestador #heart {

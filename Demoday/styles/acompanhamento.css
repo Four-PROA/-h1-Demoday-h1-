@@ -94,6 +94,7 @@ html {
   padding: 5px;
   border-radius: 50px;
   text-align: center;
+  font-weight: bold;
 }
 
 .row .card_servico .prestador #heart {
@@ -349,6 +350,11 @@ html {
   background-color: var(--color-primary-regular);
   padding: 10px;
   border-radius: 20px;
+  text-align: left;
+}
+
+.row .card_alteracao .escolher_hora_endereco form label {
+  display: block;
 }
 
 .row .card_alteracao .escolher_hora_endereco form input {

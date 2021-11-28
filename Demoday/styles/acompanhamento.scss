@@ -62,6 +62,7 @@
             padding: 5px;
             border-radius: 50px;
             text-align: center;
+            font-weight: bold;
 
             #heart{
                 color: var(--color-error);
@@ -249,6 +250,10 @@
                 background-color: var(--color-primary-regular);
                 padding: 10px;
                 border-radius: 20px;
+                text-align: left;
+                label{
+                    display: block;
+                }
                 input{
                     color: white;
                     border: none;
@@ -258,8 +263,7 @@
                     &:focus, select:focus {
                         box-shadow: 0 0 0 0;
                         outline: 0;
-                    } 
-                    
+                    }   
                     &::placeholder {
                         color: var(--color-white-regular);
                         opacity: 0.7;

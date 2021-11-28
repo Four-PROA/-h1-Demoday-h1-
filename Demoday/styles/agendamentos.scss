@@ -30,6 +30,7 @@
             padding: 5px;
             border-radius: 50px;
             text-align: center;
+            font-weight: bold;
 
             #heart{
                 color: var(--color-error);
@@ -57,9 +58,12 @@
             }
                 .mudar{
                     @include button-secondary;
+                    width: 200px;
+                
                 } 
                 .acompanhar{
                     @include button-primary;
+                    width: 200px;
                 }
             
                 
