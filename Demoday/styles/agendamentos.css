@@ -75,6 +75,7 @@ html {
 
 .container .agendados {
   background-color: var(--color-secondary-ligth);
+  height: 100%;
 }
 
 .container .agendados .card_agendado {
@@ -84,7 +85,13 @@ html {
   margin: 10px 0;
 }
 
-.container .agendados .card_agendado button .mudar {
+.container .agendados .card_agendado button {
+  font-size: 14px !important;
+  width: 170px !important;
+  display: inline;
+}
+
+.container .agendados .card_agendado .mudar {
   font-size: 24px;
   color: var(--color-white-regular);
   background-color: transparent;
@@ -109,11 +116,11 @@ html {
   transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
 }
 
-.container .agendados .card_agendado button .mudar:hover {
+.container .agendados .card_agendado .mudar:hover {
   border: 2px solid var(--color-tertiary-dark);
 }
 
-.container .agendados .card_agendado button .acompanhar {
+.container .agendados .card_agendado .acompanhar {
   font-size: 24px;
   color: var(--color-white-regular);
   background-color: var(--color-secondary-ligth);
@@ -134,7 +141,7 @@ html {
   height: 56px;
 }
 
-.container .agendados .card_agendado button .acompanhar:hover {
+.container .agendados .card_agendado .acompanhar:hover {
   background-color: var(--color-secondary-dark);
 }
 
@@ -144,12 +151,14 @@ html {
 
 .container .historico {
   background-color: var(--color-primary-regular);
+  height: 100%;
 }
 
 .container .historico .card_hitorico {
   background-color: var(--color-secondary-ligth);
   border-radius: 20px;
   padding: 20px;
+  margin: 10px 0;
 }
 
 .container .historico .card_hitorico a {

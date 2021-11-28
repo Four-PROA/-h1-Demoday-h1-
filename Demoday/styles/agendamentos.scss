@@ -42,6 +42,7 @@
     }
     .agendados{
         background-color: var(--color-secondary-ligth);
+        height: 100%;
 
 
         .card_agendado{
@@ -49,13 +50,19 @@
             border-radius: 20px;
             padding: 20px;
             margin: 10px 0;
-            button .mudar{
-                @include button-secondary;
+            button{
+                font-size: 14px !important;
+                width: 170px !important;
+                display: inline;
             }
-            button .acompanhar{
-                @include button-primary;
-            } 
-
+                .mudar{
+                    @include button-secondary;
+                } 
+                .acompanhar{
+                    @include button-primary;
+                }
+            
+                
             #ico_date, #ico_alarm{
                 margin: 10px;
             }
@@ -64,11 +71,13 @@
     }
     .historico{
         background-color: var(--color-primary-regular);
+        height: 100%;
 
         .card_hitorico{
             background-color: var(--color-secondary-ligth);
             border-radius: 20px;
             padding: 20px;
+            margin: 10px 0;
 
 
             a{
