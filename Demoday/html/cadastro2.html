@@ -32,6 +32,8 @@
   
     <!-- Componente footer -->
     <script type="text/babel" src="../scripts/Footer.jsx"></script>
+    <!--Animação-->
+  <script src="../scripts/script.js"></script>
 </head>
 
 
@@ -50,17 +52,15 @@
 
               <h3>Que bom ver você de novo! </h3>
               <p>Faça login para poder aproveitar todo que a Casterizzi tem pra te oferecer </p>
-              <img src="../_img/Group 169.png" alt="">
+              <img src="../_img/Group 169.png" alt="" data-step="lefth">
 
             </div>
 
             <div class="col-6 division ">
-              <input type="text" placeholder="E-mail">
               <form>
-                <input type="text" placeholder="Senha">
-                <button type="submit">
-                  <i class="bi bi-eye-fill"></i>
-                </button>
+              <input type="text" placeholder="E-mail">
+              
+                <input type="text" placeholder="Senha"><i class="bi bi-eye-fill"></i>
               </form>
 
 
@@ -75,8 +75,8 @@
               </div>
               <div class="redirecionar">
 
-                <button class="face"> <i class="bi bi-facebook"></i>Continue com o Facebook</button>
-                <button class="google"><img src="../_img/google.png" alt=""> Continue com o Google</button>
+                <button class="face" data-step="right"> <i class="bi bi-facebook"></i>Continue com o Facebook</button>
+                <button class="google" data-step="right"><img src="../_img/google.png" alt=""> Continue com o Google</button>
 
               </div>
 
