@@ -1,0 +1,193 @@
+* {
+  font-family: 'Nunito', sans-serif;
+}
+
+html {
+  --color-primary-dark: #E35602;
+  --color-primary-regular: #F75C00;
+  --color-primary-ligth: #F37214;
+  --color-secondary-dark: #001634;
+  --color-secondary-regular: #001A3E;
+  --color-secondary-ligth: #00265C;
+  --color-tertiary-dark: #13947B;
+  --color-tertiary-regular: #2ED9B8;
+  --color-tertiary-ligth: #67DBC5;
+  --color-white-dark: #F9F9F9;
+  --color-white-regular: #F7F6F5;
+  --color-white-ligth: #F4F0EB;
+  --color-black-dark: #151515;
+  --color-black-regular: #242424;
+  --color-error: #F13319;
+  --color-sucess: #BFFE58;
+  --color-warning: #F9D75F;
+  color: var(--color-white-ligth);
+}
+
+.container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: var(--color-white-regular);
+}
+
+.container .col-5 {
+  height: 100vh;
+  margin: 40px 0 0;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.container .col-5 h2 {
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--color-white-regular);
+}
+
+.container .col-5 h3 {
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--color-white-regular);
+}
+
+.container .col-5 i {
+  color: var(--color-tertiary-regular);
+}
+
+.container .col-5 .cliente {
+  background: var(--color-white-regular);
+  color: var(--color-secondary-ligth);
+  max-width: 340px;
+  margin: 0 auto 15px;
+  padding: 5px;
+  border-radius: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.container .col-5 .cliente #heart {
+  color: var(--color-error);
+}
+
+.container .col-5 .cliente .star {
+  color: var(--color-primary-regular);
+}
+
+.container .agendados {
+  background-color: var(--color-secondary-ligth);
+  height: 100%;
+}
+
+.container .agendados .card_agendado {
+  background-color: var(--color-primary-regular);
+  border-radius: 20px;
+  padding: 20px;
+  margin: 10px 0;
+}
+
+.container .agendados .card_agendado button {
+  font-size: 14px !important;
+  width: 170px !important;
+  display: inline;
+}
+
+.container .agendados .card_agendado .mudar {
+  font-size: 24px;
+  color: var(--color-white-regular);
+  background-color: transparent;
+  border: 2px solid var(--color-tertiary-regular);
+  padding: 19px 24px;
+  margin: 20px;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 256px;
+  height: 56px;
+  -webkit-transition: color 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
+  transition: color 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
+  width: 200px;
+}
+
+.container .agendados .card_agendado .mudar:hover {
+  border: 2px solid var(--color-tertiary-dark);
+}
+
+.container .agendados .card_agendado .chat {
+  font-size: 24px;
+  color: var(--color-white-regular);
+  background-color: transparent;
+  border: 2px solid var(--color-tertiary-regular);
+  padding: 19px 24px;
+  margin: 20px;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 256px;
+  height: 56px;
+  -webkit-transition: color 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
+  transition: color 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
+  width: 200px;
+}
+
+.container .agendados .card_agendado .chat:hover {
+  border: 2px solid var(--color-tertiary-dark);
+}
+
+.container .agendados .card_agendado #ico_date, .container .agendados .card_agendado #ico_alarm {
+  margin: 10px;
+}
+
+.container .historico {
+  background-color: var(--color-primary-regular);
+  height: 100%;
+}
+
+.container .historico .card_hitorico {
+  background-color: var(--color-secondary-ligth);
+  border-radius: 20px;
+  padding: 20px;
+  margin: 10px 0;
+}
+
+.container .historico .card_hitorico a {
+  color: var(--color-white-regular);
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.container .historico .card_hitorico a:hover {
+  text-decoration: underline;
+}
+
+.container .historico .card_hitorico .avaliar {
+  background: var(--color-primary-regular);
+  color: var(--color-white-regular);
+  padding: 8px 20px;
+  margin-left: 30px;
+  border: none;
+  border-radius: 50px;
+}
+
+.container .historico .card_hitorico .avaliar:hover {
+  background-color: var(--color-primary-dark);
+}
+/*# sourceMappingURL=agendamentos_prestador.css.map */

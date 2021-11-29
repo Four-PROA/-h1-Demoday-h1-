@@ -1,0 +1,112 @@
+@import 'styleGlobal';
+
+.container{
+    .row{
+        display: flex;
+        justify-content: space-around;
+        color: var( --color-white-regular);
+    }
+    .col-5{
+        height: 100vh;
+        margin: 40px 0 0;
+        border-radius: 20px;
+        padding: 20px;
+
+        h2{
+            @include  h4-bold;
+        }
+        h3{
+            @include h5-bold;
+        }
+
+        i{
+            color: var(--color-tertiary-regular);
+        }
+        .cliente{
+            background: var(--color-white-regular);
+            color: var(--color-secondary-ligth);
+            max-width: 340px;
+            margin: 0 auto 15px;
+            padding: 5px;
+            border-radius: 50px;
+            text-align: center;
+            font-weight: bold;
+
+            #heart{
+                color: var(--color-error);
+            }
+
+            .star{
+                color: var(--color-primary-regular);
+            }
+        }
+    }
+    .agendados{
+        background-color: var(--color-secondary-ligth);
+        height: 100%;
+
+
+        .card_agendado{
+            background-color: var(--color-primary-regular);
+            border-radius: 20px;
+            padding: 20px;
+            margin: 10px 0;
+            button{
+                font-size: 14px !important;
+                width: 170px !important;
+                display: inline;
+            }
+                .mudar{
+                    @include button-secondary;
+                    width: 200px;
+                
+                } 
+                .chat{
+                    @include button-secondary;
+                    width: 200px;
+                }
+            
+                
+            #ico_date, #ico_alarm{
+                margin: 10px;
+            }
+
+        }
+    }
+    .historico{
+        background-color: var(--color-primary-regular);
+        height: 100%;
+
+        .card_hitorico{
+            background-color: var(--color-secondary-ligth);
+            border-radius: 20px;
+            padding: 20px;
+            margin: 10px 0;
+
+
+            a{
+                color: var(--color-white-regular);
+                text-decoration: none;
+                margin-right: 20px;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            .avaliar{
+                background: var(--color-primary-regular);
+                color: var(--color-white-regular);
+                padding: 8px 20px;
+                margin-left: 30px;
+                
+                border: none;
+                border-radius: 50px;
+
+                &:hover{
+                    background-color: var(--color-primary-dark);
+                }
+            }
+
+        }
+    }
+}
