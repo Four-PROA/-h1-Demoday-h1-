@@ -180,6 +180,7 @@ html {
   background-color: var(--color-secondary-ligth);
   color: #fff;
   font-size: 14px;
+  height: 320px;
 }
 
 .steps .row {
@@ -227,7 +228,7 @@ html {
           align-items: center;
   width: 305px;
   height: 49px;
-  margin: 30px auto;
+  margin: 0px auto;
 }
 
 .steps button:hover {
