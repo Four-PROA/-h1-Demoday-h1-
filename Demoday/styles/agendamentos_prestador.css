@@ -55,7 +55,7 @@ html {
   color: var(--color-tertiary-regular);
 }
 
-.container .col-5 .prestador {
+.container .col-5 .cliente {
   background: var(--color-white-regular);
   color: var(--color-secondary-ligth);
   max-width: 340px;
@@ -66,11 +66,11 @@ html {
   font-weight: bold;
 }
 
-.container .col-5 .prestador #heart {
+.container .col-5 .cliente #heart {
   color: var(--color-error);
 }
 
-.container .col-5 .prestador .star {
+.container .col-5 .cliente .star {
   color: var(--color-primary-regular);
 }
 
@@ -122,13 +122,13 @@ html {
   border: 2px solid var(--color-tertiary-dark);
 }
 
-.container .agendados .card_agendado .acompanhar {
+.container .agendados .card_agendado .chat {
   font-size: 24px;
   color: var(--color-white-regular);
-  background-color: var(--color-secondary-ligth);
-  padding: 15px 24px;
+  background-color: transparent;
+  border: 2px solid var(--color-tertiary-regular);
+  padding: 19px 24px;
   margin: 20px;
-  border: none;
   border-radius: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -141,11 +141,15 @@ html {
           align-items: center;
   width: 256px;
   height: 56px;
+  -webkit-transition: color 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
+  transition: color 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
   width: 200px;
 }
 
-.container .agendados .card_agendado .acompanhar:hover {
-  background-color: var(--color-secondary-dark);
+.container .agendados .card_agendado .chat:hover {
+  border: 2px solid var(--color-tertiary-dark);
 }
 
 .container .agendados .card_agendado #ico_date, .container .agendados .card_agendado #ico_alarm {
@@ -186,4 +190,4 @@ html {
 .container .historico .card_hitorico .avaliar:hover {
   background-color: var(--color-primary-dark);
 }
-/*# sourceMappingURL=agendamentos.css.map */
+/*# sourceMappingURL=agendamentos_prestador.css.map */

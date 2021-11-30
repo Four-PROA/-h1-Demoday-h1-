@@ -158,126 +158,21 @@
             }
         }
     }
-    .card_alteracao{
+
+    .card_status{
         background-color: var(--color-secondary-ligth);
-        color: var( --color-white-regular);
-        border-radius: 20px;
+        color: var(--color-white-regular);
         padding: 20px;
-        max-width: 1000px;
+        border-radius: 20px;
+        max-width: 525px;
+        margin: 0 auto;
 
-        display: flex;
-        justify-content: space-around;
-
-        text-align: center;
-
-        p{
-            margin-top: 10px;
-        }
-
-        .escolher_data{
-            width: 40%;
-
-            .calendar{
-                width: 315px;
-                margin: 0 auto;
-                background-color: var(--color-primary-regular);
-                padding: 20px;
-                border-radius: 20px;
-
-                .month{
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    text-align: center;
-
-                    i{
-                        color: var(--color-tertiary-regular);
-                    }
-                }
-                .weekdays{
-                    background-color: var(--color-secondary-ligth);
-                    display: flex;
-                    justify-content: space-between;
-                    border-radius: 50px;
-                    padding: 0 20px;
-                }
-                .days{
-                    display: flex;
-                    flex-wrap: wrap;
-
-                    div{
-                        font-size: 14px;
-                        margin: 7px auto;
-                        width: 35px;
-                        
-
-                        &:hover:not(.today){
-                            border: 1px solid var(--color-tertiary-regular);
-                            cursor: pointer;
-                            margin: 6px auto;
-                        }
-                    }
-                    .prev_date{
-                        opacity: 0.5;
-                    }
-                    .next_date{
-                        opacity: 0.5;
-                    }
-                    .today{
-                        background-color: var(--color-secondary-ligth);
-                        border-radius: 50px;
-                    }
-                }
-                
-            }
-            
-        }
-        .hrv{
-            background: var(--color-tertiary-regular);
-            height: 285px;
-            width: 3px;
-        }
-        .escolher_hora_endereco{
-            width: 50%;
-            
-            .horario{
-                display: inline;
-                background-color: var(--color-primary-regular);
-                padding: 10px 15px;
-                border-radius: 10px;
-            }
-            form{
-                background-color: var(--color-primary-regular);
-                padding: 10px;
-                border-radius: 20px;
-                text-align: left;
-                label{
-                    display: block;
-                }
-                input{
-                    color: white;
-                    border: none;
-                    background-color: transparent;
-                    border-bottom: solid 1px var(--color-white-regular);
-                    margin-bottom: 25px;
-                    &:focus, select:focus {
-                        box-shadow: 0 0 0 0;
-                        outline: 0;
-                    }   
-                    &::placeholder {
-                        color: var(--color-white-regular);
-                        opacity: 0.7;
-                    }
-
-                    
-                }
-            }
-            button{
-                @include button-CTA;
-                font-size: 16px;
-                margin: 10px auto;
-            }
+        button{
+            @include button-CTA;
+            font-size: 20px;
+            margin: 20px auto 0;
         }
     }
+    
 }
 

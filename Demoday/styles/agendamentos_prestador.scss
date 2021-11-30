@@ -22,7 +22,7 @@
         i{
             color: var(--color-tertiary-regular);
         }
-        .prestador{
+        .cliente{
             background: var(--color-white-regular);
             color: var(--color-secondary-ligth);
             max-width: 340px;
@@ -61,8 +61,8 @@
                     width: 200px;
                 
                 } 
-                .acompanhar{
-                    @include button-primary;
+                .chat{
+                    @include button-secondary;
                     width: 200px;
                 }
             

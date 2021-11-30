@@ -237,161 +237,16 @@ html {
   color: var(--color-error);
 }
 
-.row .card_alteracao {
+.row .card_status {
   background-color: var(--color-secondary-ligth);
   color: var(--color-white-regular);
-  border-radius: 20px;
   padding: 20px;
-  max-width: 1000px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  text-align: center;
-}
-
-.row .card_alteracao p {
-  margin-top: 10px;
-}
-
-.row .card_alteracao .escolher_data {
-  width: 40%;
-}
-
-.row .card_alteracao .escolher_data .calendar {
-  width: 315px;
+  border-radius: 20px;
+  max-width: 525px;
   margin: 0 auto;
-  background-color: var(--color-primary-regular);
-  padding: 20px;
-  border-radius: 20px;
 }
 
-.row .card_alteracao .escolher_data .calendar .month {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-}
-
-.row .card_alteracao .escolher_data .calendar .month i {
-  color: var(--color-tertiary-regular);
-}
-
-.row .card_alteracao .escolher_data .calendar .weekdays {
-  background-color: var(--color-secondary-ligth);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  border-radius: 50px;
-  padding: 0 20px;
-}
-
-.row .card_alteracao .escolher_data .calendar .days {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.row .card_alteracao .escolher_data .calendar .days div {
-  font-size: 14px;
-  margin: 7px auto;
-  width: 35px;
-}
-
-.row .card_alteracao .escolher_data .calendar .days div:hover:not(.today) {
-  border: 1px solid var(--color-tertiary-regular);
-  cursor: pointer;
-  margin: 6px auto;
-}
-
-.row .card_alteracao .escolher_data .calendar .days .prev_date {
-  opacity: 0.5;
-}
-
-.row .card_alteracao .escolher_data .calendar .days .next_date {
-  opacity: 0.5;
-}
-
-.row .card_alteracao .escolher_data .calendar .days .today {
-  background-color: var(--color-secondary-ligth);
-  border-radius: 50px;
-}
-
-.row .card_alteracao .hrv {
-  background: var(--color-tertiary-regular);
-  height: 285px;
-  width: 3px;
-}
-
-.row .card_alteracao .escolher_hora_endereco {
-  width: 50%;
-}
-
-.row .card_alteracao .escolher_hora_endereco .horario {
-  display: inline;
-  background-color: var(--color-primary-regular);
-  padding: 10px 15px;
-  border-radius: 10px;
-}
-
-.row .card_alteracao .escolher_hora_endereco form {
-  background-color: var(--color-primary-regular);
-  padding: 10px;
-  border-radius: 20px;
-  text-align: left;
-}
-
-.row .card_alteracao .escolher_hora_endereco form label {
-  display: block;
-}
-
-.row .card_alteracao .escolher_hora_endereco form input {
-  color: white;
-  border: none;
-  background-color: transparent;
-  border-bottom: solid 1px var(--color-white-regular);
-  margin-bottom: 25px;
-}
-
-.row .card_alteracao .escolher_hora_endereco form input:focus, .row .card_alteracao .escolher_hora_endereco form input select:focus {
-  -webkit-box-shadow: 0 0 0 0;
-          box-shadow: 0 0 0 0;
-  outline: 0;
-}
-
-.row .card_alteracao .escolher_hora_endereco form input::-webkit-input-placeholder {
-  color: var(--color-white-regular);
-  opacity: 0.7;
-}
-
-.row .card_alteracao .escolher_hora_endereco form input:-ms-input-placeholder {
-  color: var(--color-white-regular);
-  opacity: 0.7;
-}
-
-.row .card_alteracao .escolher_hora_endereco form input::-ms-input-placeholder {
-  color: var(--color-white-regular);
-  opacity: 0.7;
-}
-
-.row .card_alteracao .escolher_hora_endereco form input::placeholder {
-  color: var(--color-white-regular);
-  opacity: 0.7;
-}
-
-.row .card_alteracao .escolher_hora_endereco button {
+.row .card_status button {
   font-size: 24px;
   color: var(--color-white-regular);
   background-color: var(--color-primary-regular);
@@ -410,11 +265,11 @@ html {
           align-items: center;
   width: 305px;
   height: 49px;
-  font-size: 16px;
-  margin: 10px auto;
+  font-size: 20px;
+  margin: 20px auto 0;
 }
 
-.row .card_alteracao .escolher_hora_endereco button:hover {
+.row .card_status button:hover {
   background-color: var(--color-primary-ligth);
 }
-/*# sourceMappingURL=acompanhamento.css.map */
+/*# sourceMappingURL=acompanhamento_prestador.css.map */
