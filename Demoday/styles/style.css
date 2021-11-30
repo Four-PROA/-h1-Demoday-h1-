@@ -27,6 +27,10 @@ html {
   font-family: 'Nunito', sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /* HEADER--------------------------------------------------------- */
 .herosection {
   background-color: var(--color-primary-ligth);
@@ -322,10 +326,6 @@ html {
 
 .vantagens .card .img {
   height: 55%;
-}
-
-.vantagens .card .img img {
-  margin: 20px 50px;
 }
 
 .vantagens .card .text {
