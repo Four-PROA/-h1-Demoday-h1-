@@ -356,7 +356,7 @@ html {
 }
 
 .row .card_alteracao .escolher_hora_endereco form label {
-  display: block;
+  width: 200px;
 }
 
 .row .card_alteracao .escolher_hora_endereco form input {
