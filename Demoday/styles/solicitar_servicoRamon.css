@@ -1,0 +1,404 @@
+* {
+  font-family: 'Nunito', sans-serif;
+}
+
+html {
+  --color-primary-dark: #E35602;
+  --color-primary-regular: #F75C00;
+  --color-primary-ligth: #F37214;
+  --color-secondary-dark: #001634;
+  --color-secondary-regular: #001A3E;
+  --color-secondary-ligth: #00265C;
+  --color-tertiary-dark: #13947B;
+  --color-tertiary-regular: #2ED9B8;
+  --color-tertiary-ligth: #67DBC5;
+  --color-white-dark: #F9F9F9;
+  --color-white-regular: #F7F6F5;
+  --color-white-ligth: #F4F0EB;
+  --color-black-dark: #151515;
+  --color-black-regular: #242424;
+  --color-error: #F13319;
+  --color-sucess: #BFFE58;
+  --color-warning: #F9D75F;
+  color: var(--color-white-ligth);
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 43px;
+  color: var(--color-white-regular);
+  margin-left: 200px;
+  color: #000;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--color-white-regular);
+  margin-left: 20px;
+  color: #000;
+}
+
+.solicitar {
+  background-color: var(--color-tertiary-regular);
+  margin: auto 197px;
+  border-radius: 20px;
+}
+
+.categoria {
+  background-color: var(--color-primary-regular);
+  border-radius: 20px;
+  padding: 20px;
+  margin: 15px 90px;
+}
+
+.categoria h6 {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--color-white-regular);
+}
+
+.categoria p {
+  font-size: 12px;
+  color: var(--color-white-regular);
+  line-height: 170%;
+  margin-bottom: 0px;
+  margin-top: 20px;
+}
+
+.categoria select {
+  width: 200px;
+  background-color: var(--color-secondary-ligth);
+  color: var(--color-white-regular);
+}
+
+.categoria .necessidade {
+  background-color: var(--color-secondary-ligth);
+  color: var(--color-white-regular);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.duvidas {
+  background-color: var(--color-tertiary-regular);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.duvidas .azul {
+  background-color: var(--color-secondary-ligth);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 15px;
+  height: 220px;
+  width: 280px;
+}
+
+.duvidas .azul h6 {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--color-white-regular);
+  margin-bottom: 10px;
+}
+
+.duvidas .azul p {
+  font-size: 16px;
+  color: var(--color-white-regular);
+  line-height: 170%;
+  margin-bottom: 12px;
+  font-size: 12px;
+}
+
+.duvidas .laranja {
+  background-color: var(--color-primary-regular);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 15px;
+  height: 220px;
+  width: 280px;
+}
+
+.duvidas .laranja h6 {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--color-white-regular);
+  margin-bottom: 10px;
+}
+
+.duvidas .laranja p {
+  font-size: 16px;
+  color: var(--color-white-regular);
+  line-height: 170%;
+  margin-bottom: 12px;
+  font-size: 12px;
+}
+
+button {
+  font-size: 24px;
+  color: var(--color-white-regular);
+  background-color: var(--color-secondary-ligth);
+  padding: 15px 24px;
+  margin: 20px;
+  border: none;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 256px;
+  height: 56px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background-color: var(--color-secondary-dark);
+}
+
+::-moz-selection {
+  color: #fff;
+  background: #00cc00;
+}
+
+::selection {
+  color: #fff;
+  background: #00cc00;
+}
+
+.container1 {
+  margin: auto;
+  width: 330px;
+  background: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 50px 35px 10px 35px;
+}
+
+.container1 header {
+  font-size: 35px;
+  font-weight: 600;
+  margin: 0 0 30px 0;
+}
+
+.container1 .form-outer {
+  width: 100%;
+  overflow: hidden;
+}
+
+.container1 .form-outer form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 400%;
+}
+
+.form-outer form .page {
+  width: 25%;
+  -webkit-transition: margin-left 0.3s ease-in-out;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+.form-outer form .page .title {
+  text-align: left;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.form-outer form .page .field {
+  width: 330px;
+  height: 45px;
+  margin: 45px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+form .page .field .label {
+  position: absolute;
+  top: -30px;
+  font-weight: 500;
+}
+
+form .page .field input {
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding-left: 15px;
+  font-size: 18px;
+}
+
+form .page .field select {
+  width: 100%;
+  padding-left: 10px;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+form .page .field button {
+  width: 100%;
+  height: calc(100% + 5px);
+  border: none;
+  background: #00cc00;
+  margin-top: -20px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+form .page .field button:hover {
+  background: #000;
+}
+
+form .page .btns button {
+  margin-top: -20px !important;
+}
+
+form .page .btns button.prev {
+  margin-right: 3px;
+  font-size: 17px;
+}
+
+form .page .btns button.next {
+  margin-left: 3px;
+}
+
+.container1 .progress-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 40px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.container1 .progress-bar .step {
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+
+.container1 .progress-bar .step p {
+  font-weight: 500;
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 8px;
+}
+
+.progress-bar .step .bullet {
+  height: 25px;
+  width: 25px;
+  border: 2px solid #000;
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 25px;
+}
+
+.progress-bar .step .bullet.active {
+  border-color: #00cc00;
+  background: #00cc00;
+}
+
+.progress-bar .step .bullet span {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.progress-bar .step .bullet.active span {
+  display: none;
+}
+
+.progress-bar .step .bullet:before,
+.progress-bar .step .bullet:after {
+  position: absolute;
+  content: '';
+  bottom: 11px;
+  right: -51px;
+  height: 3px;
+  width: 44px;
+  background: #262626;
+}
+
+.progress-bar .step .bullet.active:after {
+  background: #00cc00;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-animation: animate 0.3s linear forwards;
+          animation: animate 0.3s linear forwards;
+}
+
+@-webkit-keyframes animate {
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
+@keyframes animate {
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
+.progress-bar .step:last-child .bullet:before,
+.progress-bar .step:last-child .bullet:after {
+  display: none;
+}
+
+.progress-bar .step p.active {
+  color: #00cc00;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+.progress-bar .step .check {
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  font-size: 15px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: none;
+}
+
+.progress-bar .step .check.active {
+  display: block;
+  color: #fff;
+}
+/*# sourceMappingURL=solicitar_servicoRamon.css.map */
