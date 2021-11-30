@@ -1,0 +1,178 @@
+@import 'styleGlobal';
+
+
+.row{
+    margin: 30px auto;
+    justify-content: space-around;
+    align-items: center;
+
+    .linha_acompanhamento{
+        hr{
+            color: var(--color-tertiary-regular);
+            height: 10px !important;
+            width: 1000px !important;
+            opacity: 1 !important;
+            border-radius: 50px;
+            margin: 30px auto;
+        }
+        .bolinhas{
+            display: flex;
+            justify-content: space-around;
+
+            div{
+                background-color: var(--color-secondary-ligth);
+                color: var(--color-secondary-ligth);
+                height: 40px;
+                width: 40px;
+                border-radius: 50px;
+            }
+            .ativa{
+                background-color: var(--color-primary-regular);
+                color: var(--color-primary-regular);
+            }
+        }
+        .etapas{
+            display: flex;
+            justify-content: space-around;
+            p{
+                max-width: 130px;
+                font-weight: bold;
+                text-align: center;
+            }
+        }
+    }
+
+    .card_servico{
+        background-color: var(--color-primary-regular);
+        color: var( --color-white-regular);
+        border-radius: 20px;
+        padding: 20px;
+
+        height: 230px;
+
+        font-size: 14px;
+
+        margin: 0 auto;
+
+        .prestador{
+            background: var(--color-white-regular);
+            color: var(--color-secondary-ligth);
+            max-width: 340px;
+            margin: 0 auto 15px;
+            padding: 5px;
+            border-radius: 50px;
+            text-align: center;
+            font-weight: bold;
+
+            #heart{
+                color: var(--color-error);
+            }
+
+            .star{
+                color: var(--color-primary-regular);
+            }
+        }
+    }
+
+    .card_servico_datahora{
+        background-color: var(--color-secondary-ligth);
+        color: var( --color-white-regular);
+        border-radius: 20px;
+        padding: 20px;
+        text-align: center;
+        font-size: 20px;
+
+        height: 230px;
+
+        margin: 0 auto;
+
+        i{
+            color: var(--color-tertiary-regular);
+            margin: 10px;
+            
+        }
+
+        button{
+            @include button-secondary;
+            font-size: 14px;
+            margin: 0 auto;
+        }
+    }
+
+    .card_chat{
+        background-color: var(--color-secondary-ligth);
+        color: var( --color-white-regular);
+        border-radius: 20px;
+        width: 350px;
+        padding: 20px;
+        margin: 0 auto;
+        text-align: center;
+
+        .button_chat{
+            @include button-CTA;
+            font-size: 16px;
+            margin: 0 auto;
+        }
+    }
+    .card_seguranca{
+        background-color: var(--color-tertiary-regular);
+        color: var( --color-white-regular);
+        border-radius: 20px;
+        padding: 20px;
+
+        max-width: 700px;
+        margin: 0 auto;
+
+        h3{
+            color: var(--color-black-dark);
+        }
+
+        .botoes_seguranca{
+            display: flex;
+            justify-content: space-between;
+    
+            .botao_seguranca{
+                background-color: var(--color-secondary-ligth);
+                color: var( --color-white-regular);
+                border-radius: 10px;
+                padding: 20px;
+                margin: 0 15px;
+                font-size: 14px;
+                text-align: center;
+
+                i{
+                    font-size: 30px;
+                }
+                #cancel{
+                    color: var(--color-primary-regular);
+                }
+                #atention{
+                    color: var(--color-warning);
+
+                }
+                #cops{
+                    color: var(--color-error);
+                }
+
+            
+            }
+        }
+    }
+
+    .card_status{
+        background-color: var(--color-secondary-ligth);
+        color: var(--color-white-regular);
+        padding: 20px;
+        border-radius: 20px;
+        max-width: 525px;
+        margin: 0 auto;
+
+        button{
+            @include button-CTA;
+            font-size: 20px;
+            margin: 20px auto 0;
+        }
+    }
+    
+}
+

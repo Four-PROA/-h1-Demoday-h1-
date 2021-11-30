@@ -115,6 +115,7 @@ html {
   transition: color 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
   transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
   transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
+  width: 200px;
 }
 
 .container .agendados .card_agendado .mudar:hover {
@@ -140,6 +141,7 @@ html {
           align-items: center;
   width: 256px;
   height: 56px;
+  width: 200px;
 }
 
 .container .agendados .card_agendado .acompanhar:hover {
