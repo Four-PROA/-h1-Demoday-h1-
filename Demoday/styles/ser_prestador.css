@@ -1,0 +1,34 @@
+* {
+  font-family: 'Nunito', sans-serif;
+}
+
+html {
+  --color-primary-dark: #E35602;
+  --color-primary-regular: #F75C00;
+  --color-primary-ligth: #F37214;
+  --color-secondary-dark: #001634;
+  --color-secondary-regular: #001A3E;
+  --color-secondary-ligth: #00265C;
+  --color-tertiary-dark: #13947B;
+  --color-tertiary-regular: #2ED9B8;
+  --color-tertiary-ligth: #67DBC5;
+  --color-white-dark: #F9F9F9;
+  --color-white-regular: #F7F6F5;
+  --color-white-ligth: #F4F0EB;
+  --color-black-dark: #151515;
+  --color-black-regular: #242424;
+  --color-error: #F13319;
+  --color-sucess: #BFFE58;
+  --color-warning: #F9D75F;
+  color: var(--color-white-ligth);
+}
+
+.row {
+  margin: 30px auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=ser_prestador.css.map */
