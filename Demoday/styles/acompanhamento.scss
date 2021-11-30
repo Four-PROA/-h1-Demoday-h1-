@@ -18,6 +18,8 @@
         .bolinhas{
             display: flex;
             justify-content: space-around;
+            position: relative;
+            top: -50px;
 
             div{
                 background-color: var(--color-secondary-ligth);
@@ -252,7 +254,7 @@
                 border-radius: 20px;
                 text-align: left;
                 label{
-                    display: block;
+                    width: 200px;
                 }
                 input{
                     color: white;
