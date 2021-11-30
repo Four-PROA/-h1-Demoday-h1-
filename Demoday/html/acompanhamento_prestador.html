@@ -128,21 +128,21 @@
                 <div class="card_status">
                     <form action="">
                         <label for="">Qual o Status atual do serviço?
-                            <input type="text" placeholder="status" list="faixa">
+                            <input id="status" type="text" placeholder="status" list="faixa">
                             <datalist id="faixa">
-                                <option value="">faixa etária:</option>
-                                <option value="-18">menor de idade</option>
-                                <option value="+18">maior de idade</option>
-                                <option value="+60">idoso</option>
+                                <option value="">status:</option>
+                                <option value="Serviço Iniciado"></option>
+                                <option value="Serviço em progresso"></option>
+                                <option value="Serviço concluído"></option>
                             </datalist>
                         </label>
                         <label for="">Insira a senha para confirmar sua identidade
-                            <input type="password" name="" id="">
+                            <input type="password" name="" id="senha">
                         </label>
                         
-                        <button>Confirmar novo status</button>
+                        
                     </form>
-                    
+                    <button>Confirmar novo status</button>
 
                 </div>
 
