@@ -95,6 +95,7 @@ h4 {
   color: var(--color-white-regular);
   text-align: center;
   margin: auto;
+  color: var(--color-white-regular);
 }
 
 .informacoes span {
@@ -116,6 +117,7 @@ h4 {
       -ms-flex-align: center;
           align-items: center;
   vertical-align: middle;
+  color: var(--color-white-regular);
 }
 
 .final .input_final .endereco {
@@ -146,6 +148,7 @@ h4 {
   border-bottom: solid;
   border-color: var(--color-tertiary-regular);
   font-size: 16px;
+  color: var(--color-white-regular);
 }
 
 .final .input_final input:focus {
@@ -426,5 +429,13 @@ button:hover {
 
 .buscar_melhor:hover {
   background-color: var(--color-primary-ligth);
+}
+
+.bug2 {
+  display: none;
+}
+
+.bug3 {
+  display: none;
 }
 /*# sourceMappingURL=solicitar_servicoRamon.css.map */

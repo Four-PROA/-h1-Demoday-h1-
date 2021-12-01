@@ -68,6 +68,7 @@ h4{
             color: var(--color-white-regular);
             text-align: center;
             margin: auto ;
+            color: var(--color-white-regular);
         }
     }
     span{
@@ -86,6 +87,7 @@ h4{
         justify-content: space-between;
         align-items: center;
         vertical-align: middle;
+        color: var(--color-white-regular);
 
         .endereco{
             width: 270px;
@@ -115,6 +117,7 @@ h4{
             border-bottom: solid;
             border-color: var(--color-tertiary-regular);
             font-size: 16px;
+            color: var(--color-white-regular);
         }
     }
 }
@@ -299,8 +302,8 @@ button{
     // display: none;
 }
 .bug2{
-    // display: none;
+    display: none;
 }
 .bug3{
-    // display: none;
+    display: none;
 }
