@@ -47,7 +47,7 @@ h4{
 }
 
 .informacoes {
-    display: none;
+    // display: none;
 
     .necessidade{
         border: solid 4px var(--color-secondary-ligth);
@@ -75,7 +75,7 @@ h4{
     }
 }
 .final{
-    display: none;
+    // display: none;
 
     .col-4{
         margin-top: 70px;
@@ -176,7 +176,7 @@ button{
 .container1{
     margin: auto;
     width: 330px;
-    background: #fff;
+    background: transparent;
     text-align: center;
     border-radius: 5px;
     padding: 50px 35px 10px 35px;
@@ -186,82 +186,17 @@ button{
     font-weight: 600;
     margin: 0 0 30px 0;
 }
-.container1 .form-outer{
-    width: 100%;
-    overflow: hidden;
-}
-.container1 .form-outer form{
-    display: flex;
-    width: 400%;
-}
-.form-outer form .page{
-    width: 25%;
-    transition: margin-left 0.3s ease-in-out;
-}
-.form-outer form .page .title{
-    text-align: left;
-    font-size: 25px;
-    font-weight: 500;
-  }
-  .form-outer form .page .field{
-      width: 330px;
-      height: 45px;
-      margin: 45px 0;
-      display: flex;
-      position: relative;
-    }
-    form .page .field .label{
-        position: absolute;
-        top: -30px;
-        font-weight: 500;
-    }
-    form .page .field input{
-        height: 100%;
-        width: 100%;
-        border: 1px solid lightgrey;
-        border-radius: 5px;
-        padding-left: 15px;
-        font-size: 18px;
-    }
-    form .page .field select{
-        width: 100%;
-        padding-left: 10px;
-        font-size: 17px;
-        font-weight: 500;
-    }
-    form .page .field button{
-        width: 100%;
-        height: calc(100% + 5px);
-        border: none;
-        background: #00cc00;
-        margin-top: -20px;
-        border-radius: 5px;
-        color: #fff;
-        cursor: pointer;
-        font-size: 18px;
-        font-weight: 500;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        transition: 0.5s ease;
-    }
-    form .page .field button:hover{
-        background: #000;
-    }
-    form .page .btns button{
-        margin-top: -20px!important;
-    }
-    form .page .btns button.prev{
-        margin-right: 3px;
-        font-size: 17px;
-    }
-    form .page .btns button.next{
-        margin-left: 3px;
-    }
+
+   
+    
+    
     .container1 .progress-bar{
         display: flex;
         flex-direction: row;
         margin: 40px 0;
         user-select: none;
+        background-color: transparent;
+        margin-bottom: 0px;
     }
     .container1 .progress-bar .step{
         text-align: center;
@@ -277,7 +212,9 @@ button{
     .progress-bar .step .bullet{
         height: 25px;
         width: 25px;
-        border: 2px solid #000;
+        border: none;
+        background-color: var(--color-secondary-ligth);
+        color: var(--color-primary-regular);
         display: inline-block;
         border-radius: 50%;
         position: relative;
@@ -287,8 +224,8 @@ button{
         line-height: 25px;
     }
     .progress-bar .step .bullet.active{
-        border-color: #00cc00;
-        background: #00cc00;
+        border-color:var(--color-primary-regular);
+        background:var(--color-primary-regular);
     }
     .progress-bar .step .bullet span{
         position: absolute;
@@ -309,7 +246,7 @@ button{
         background: #262626;
     }
     .progress-bar .step .bullet.active:after{
-        background: #00cc00;
+        background: #fff;
         transform: scaleX(0);
         transform-origin: left;
         animation: animate 0.3s linear forwards;
@@ -324,7 +261,7 @@ button{
         display: none;
     }
     .progress-bar .step p.active{
-        color: #00cc00;
+        color: var(--color-secondary-ligth);
         transition: 0.2s linear;
     }
     .progress-bar .step .check{
@@ -359,5 +296,11 @@ button{
 }
 
 .bug{
+    // display: none;
+}
+.bug2{
+    // display: none;
+}
+.bug3{
     // display: none;
 }

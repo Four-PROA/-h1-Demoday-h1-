@@ -80,10 +80,6 @@ h4 {
   border-radius: 10px;
 }
 
-.informacoes {
-  display: none;
-}
-
 .informacoes .necessidade {
   border: solid 4px var(--color-secondary-ligth);
   background-color: var(--color-primary-regular);
@@ -103,10 +99,6 @@ h4 {
 
 .informacoes span {
   color: var(--color-tertiary-regular);
-}
-
-.final {
-  display: none;
 }
 
 .final .col-4 {
@@ -264,7 +256,7 @@ button:hover {
 .container1 {
   margin: auto;
   width: 330px;
-  background: #fff;
+  background: transparent;
   text-align: center;
   border-radius: 5px;
   padding: 50px 35px 10px 35px;
@@ -274,96 +266,6 @@ button:hover {
   font-size: 35px;
   font-weight: 600;
   margin: 0 0 30px 0;
-}
-
-.container1 .form-outer {
-  width: 100%;
-  overflow: hidden;
-}
-
-.container1 .form-outer form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 400%;
-}
-
-.form-outer form .page {
-  width: 25%;
-  -webkit-transition: margin-left 0.3s ease-in-out;
-  transition: margin-left 0.3s ease-in-out;
-}
-
-.form-outer form .page .title {
-  text-align: left;
-  font-size: 25px;
-  font-weight: 500;
-}
-
-.form-outer form .page .field {
-  width: 330px;
-  height: 45px;
-  margin: 45px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-}
-
-form .page .field .label {
-  position: absolute;
-  top: -30px;
-  font-weight: 500;
-}
-
-form .page .field input {
-  height: 100%;
-  width: 100%;
-  border: 1px solid lightgrey;
-  border-radius: 5px;
-  padding-left: 15px;
-  font-size: 18px;
-}
-
-form .page .field select {
-  width: 100%;
-  padding-left: 10px;
-  font-size: 17px;
-  font-weight: 500;
-}
-
-form .page .field button {
-  width: 100%;
-  height: calc(100% + 5px);
-  border: none;
-  background: #00cc00;
-  margin-top: -20px;
-  border-radius: 5px;
-  color: #fff;
-  cursor: pointer;
-  font-size: 18px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-}
-
-form .page .field button:hover {
-  background: #000;
-}
-
-form .page .btns button {
-  margin-top: -20px !important;
-}
-
-form .page .btns button.prev {
-  margin-right: 3px;
-  font-size: 17px;
-}
-
-form .page .btns button.next {
-  margin-left: 3px;
 }
 
 .container1 .progress-bar {
@@ -379,6 +281,8 @@ form .page .btns button.next {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  background-color: transparent;
+  margin-bottom: 0px;
 }
 
 .container1 .progress-bar .step {
@@ -397,7 +301,9 @@ form .page .btns button.next {
 .progress-bar .step .bullet {
   height: 25px;
   width: 25px;
-  border: 2px solid #000;
+  border: none;
+  background-color: var(--color-secondary-ligth);
+  color: var(--color-primary-regular);
   display: inline-block;
   border-radius: 50%;
   position: relative;
@@ -409,8 +315,8 @@ form .page .btns button.next {
 }
 
 .progress-bar .step .bullet.active {
-  border-color: #00cc00;
-  background: #00cc00;
+  border-color: var(--color-primary-regular);
+  background: var(--color-primary-regular);
 }
 
 .progress-bar .step .bullet span {
@@ -436,7 +342,7 @@ form .page .btns button.next {
 }
 
 .progress-bar .step .bullet.active:after {
-  background: #00cc00;
+  background: #fff;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
   -webkit-transform-origin: left;
@@ -465,7 +371,7 @@ form .page .btns button.next {
 }
 
 .progress-bar .step p.active {
-  color: #00cc00;
+  color: var(--color-secondary-ligth);
   -webkit-transition: 0.2s linear;
   transition: 0.2s linear;
 }

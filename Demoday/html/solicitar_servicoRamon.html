@@ -34,8 +34,8 @@
 
   <!-- Componente footer -->
   <script type="text/babel" src="../scripts/Footer.jsx"></script>
-  <!--Animação-->
-  <script src="../scripts/script.js"></script>
+  <!--icones-->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 
 <body>
@@ -49,36 +49,33 @@
         <div class="container1">
             <div class="progress-bar">
               <div class="step">
-                <p>Nome</p>
+                <p>Necessário</p>
                 <div class="bullet">
                   <span>1</span>
                 </div>
                 <div class="check fas fa-check"></div>
               </div>
               <div class="step">
-                <p>Contato</p>
+                <p>Dados</p>
                 <div class="bullet">
                   <span>2</span>
                 </div>
                 <div class="check fas fa-check"></div>
               </div>
               <div class="step">
-                <p>Data</p>
+                <p>Local</p>
                 <div class="bullet">
                   <span>3</span>
-                </div>
-                <div class="check fas fa-check"></div>
-              </div>
-              <div class="step">
-                <p>Enviar</p>
-                <div class="bullet">
-                  <span>4</span>
                 </div>
                 <div class="check fas fa-check"></div>
               </div>
             </div>
         </div>
 </div>
+
+<div class="form-outer">
+    <form action="#">
+        <div class="page slide-page">
 
 <div class="bug">
 <div class="row categoria">
@@ -120,12 +117,12 @@
 
 </div>
 </div>
-<button>Próxima etapa</button>
+<button class="firstNext next">Próxima etapa</button>
 </div>
 
 
+<div class="bug3 page">
     <div class="row categoria final">
-        <div>
 
         <div class="col-4">
           <h6>Por fim, preencha onde o serviço será realizado</h6>  
@@ -178,13 +175,13 @@
     </div>
 </div>
 
-<button class="buscar_melhor">Buscar melhor prestador</button>
+<button class="buscar_melhor submit firstNext next">Buscar melhor prestador</button>
 </div>
 
 
+<div class="bug2 page">
       <div class="row categoria informacoes">
 
-        <div>
 
         <div class="col-4">
           <h6>Só mais algumas informações</h6>
@@ -220,9 +217,9 @@
         </div>
     </div>
     <div class="d-flex mt-3">
-
-        <button class="button_diferente">Voltar para a etapa anterior</button>
-        <button>Próxima etapa</button>
+        
+        <button class="button_diferente prev-1 prev">Voltar para a etapa anterior</button>
+        <button class="next-1 next">Próxima etapa</button>
     </div>
 </div>
   </div>
@@ -248,7 +245,12 @@
     </div>
 
   </div>
+</div>
+</div>
+</form>
+</div>
 
   <div id="component-footer"></div>
-   
+
+  <script src="../scripts/solicitar_servico.js"></script>
 </body>
