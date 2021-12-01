@@ -80,6 +80,10 @@ h4 {
   border-radius: 10px;
 }
 
+.informacoes {
+  display: none;
+}
+
 .informacoes .necessidade {
   border: solid 4px var(--color-secondary-ligth);
   background-color: var(--color-primary-regular);
@@ -99,6 +103,10 @@ h4 {
 
 .informacoes span {
   color: var(--color-tertiary-regular);
+}
+
+.final {
+  display: none;
 }
 
 .final .col-4 {

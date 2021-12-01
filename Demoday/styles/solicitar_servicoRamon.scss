@@ -47,6 +47,7 @@ h4{
 }
 
 .informacoes {
+    display: none;
 
     .necessidade{
         border: solid 4px var(--color-secondary-ligth);
@@ -74,6 +75,7 @@ h4{
     }
 }
 .final{
+    display: none;
 
     .col-4{
         margin-top: 70px;
@@ -354,4 +356,8 @@ button{
     @include button-CTA;
     width: 400px;
     margin: auto;
+}
+
+.bug{
+    // display: none;
 }
