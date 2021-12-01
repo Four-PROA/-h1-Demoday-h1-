@@ -70,6 +70,7 @@ h4 {
   width: 200px;
   background-color: var(--color-secondary-ligth);
   color: var(--color-white-regular);
+  border-radius: 7px;
 }
 
 .categoria .necessidade {
@@ -77,6 +78,80 @@ h4 {
   color: var(--color-white-regular);
   padding: 10px;
   border-radius: 10px;
+}
+
+.informacoes .necessidade {
+  border: solid 4px var(--color-secondary-ligth);
+  background-color: var(--color-primary-regular);
+  height: 200px;
+}
+
+.informacoes .valor input {
+  width: 65px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: var(--color-secondary-ligth);
+  border: none;
+  color: var(--color-white-regular);
+  text-align: center;
+  margin: auto;
+}
+
+.informacoes span {
+  color: var(--color-tertiary-regular);
+}
+
+.final .col-4 {
+  margin-top: 70px;
+}
+
+.final .input_final {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  vertical-align: middle;
+}
+
+.final .input_final .endereco {
+  width: 270px;
+}
+
+.final .input_final .cep {
+  width: 120px;
+}
+
+.final .input_final .numero {
+  width: 100px;
+}
+
+.final .input_final .bairro {
+  width: 120px;
+}
+
+.final .input_final .cidade {
+  width: 120px;
+}
+
+.final .input_final input {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  border-bottom: solid;
+  border-color: var(--color-tertiary-regular);
+  font-size: 16px;
+}
+
+.final .input_final input:focus {
+  -webkit-box-shadow: 0 0 0 0;
+          box-shadow: 0 0 0 0;
+  outline: 0;
 }
 
 .duvidas {
@@ -170,12 +245,12 @@ button:hover {
 
 ::-moz-selection {
   color: #fff;
-  background: #00cc00;
+  background: var(--color-tertiary-regular);
 }
 
 ::selection {
   color: #fff;
-  background: #00cc00;
+  background: var(--color-tertiary-regular);
 }
 
 .container1 {
@@ -400,5 +475,42 @@ form .page .btns button.next {
 .progress-bar .step .check.active {
   display: block;
   color: #fff;
+}
+
+.button_diferente {
+  width: 350px;
+  background-color: transparent;
+  border: solid 3px var(--color-secondary-ligth);
+}
+
+.button_diferente:hover {
+  background-color: transparent;
+}
+
+.buscar_melhor {
+  font-size: 24px;
+  color: var(--color-white-regular);
+  background-color: var(--color-primary-regular);
+  padding: 15px 24px;
+  margin: 20px;
+  border-radius: 15px;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 305px;
+  height: 49px;
+  width: 400px;
+  margin: auto;
+}
+
+.buscar_melhor:hover {
+  background-color: var(--color-primary-ligth);
 }
 /*# sourceMappingURL=solicitar_servicoRamon.css.map */
