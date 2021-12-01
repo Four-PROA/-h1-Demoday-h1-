@@ -35,6 +35,7 @@ h4{
           width: 200px;
           background-color: var(--color-secondary-ligth);
           color: var(--color-white-regular);
+          border-radius: 7px;
       }
 
     .necessidade{
@@ -44,12 +45,88 @@ h4{
         border-radius: 10px;
     }
 }
+
+.informacoes {
+    // display: none;
+
+    .necessidade{
+        border: solid 4px var(--color-secondary-ligth);
+        background-color: var(--color-primary-regular);
+        height: 200px;
+
+
+    
+    }
+    
+    .valor{
+        input{
+            width: 65px;
+            height: 30px ;
+            border-radius: 5px;
+            background-color: var(--color-secondary-ligth);
+            border: none;
+            color: var(--color-white-regular);
+            text-align: center;
+            margin: auto ;
+            color: var(--color-white-regular);
+        }
+    }
+    span{
+        color: var(--color-tertiary-regular);
+    }
+}
+.final{
+    // display: none;
+
+    .col-4{
+        margin-top: 70px;
+    }
+
+    .input_final{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        vertical-align: middle;
+        color: var(--color-white-regular);
+
+        .endereco{
+            width: 270px;
+        }
+        .cep{
+            width: 120px;
+        }
+        .numero{
+            width: 100px;
+        }
+        .bairro{
+            width: 120px;
+        }
+        .cidade{
+            width: 120px;
+        }
+        input{
+
+            &:focus{
+                box-shadow: 0 0 0 0;
+                outline: 0;
+            }
+            width: 30px;
+            height: 30px;
+            background-color: transparent;
+            border: none;
+            border-bottom: solid;
+            border-color: var(--color-tertiary-regular);
+            font-size: 16px;
+            color: var(--color-white-regular);
+        }
+    }
+}
 .duvidas{
     background-color: var(--color-tertiary-regular);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
+    
     .azul{
         background-color: var(--color-secondary-ligth);
         border-radius: 10px;
@@ -57,7 +134,7 @@ h4{
         margin: 15px;
         height: 220px;
         width:  280px;
-
+        
         h6{
             @include h6-bold;
             margin-bottom: 10px;
@@ -87,181 +164,146 @@ h4{
 
 
 
-    button{
-        @include button-primary;
-        margin: auto;
-        margin-bottom: 20px;
-    }
+button{
+    @include button-primary;
+    margin: auto;
+    margin-bottom: 20px;
+}
 
 //Parte do video
 
 ::selection{
     color: #fff;
-    background: #00cc00;
-  }
-  .container1{
+    background:var(--color-tertiary-regular);
+}
+.container1{
     margin: auto;
     width: 330px;
-    background: #fff;
+    background: transparent;
     text-align: center;
     border-radius: 5px;
     padding: 50px 35px 10px 35px;
-  }
-  .container1 header{
+}
+.container1 header{
     font-size: 35px;
     font-weight: 600;
     margin: 0 0 30px 0;
-  }
-  .container1 .form-outer{
-    width: 100%;
-    overflow: hidden;
-  }
-  .container1 .form-outer form{
-    display: flex;
-    width: 400%;
-  }
-  .form-outer form .page{
-    width: 25%;
-    transition: margin-left 0.3s ease-in-out;
-  }
-  .form-outer form .page .title{
-    text-align: left;
-    font-size: 25px;
-    font-weight: 500;
-  }
-  .form-outer form .page .field{
-    width: 330px;
-    height: 45px;
-    margin: 45px 0;
-    display: flex;
-    position: relative;
-  }
-  form .page .field .label{
-    position: absolute;
-    top: -30px;
-    font-weight: 500;
-  }
-  form .page .field input{
-    height: 100%;
-    width: 100%;
-    border: 1px solid lightgrey;
-    border-radius: 5px;
-    padding-left: 15px;
-    font-size: 18px;
-  }
-  form .page .field select{
-    width: 100%;
-    padding-left: 10px;
-    font-size: 17px;
-    font-weight: 500;
-  }
-  form .page .field button{
-    width: 100%;
-    height: calc(100% + 5px);
-    border: none;
-    background: #00cc00;
-    margin-top: -20px;
-    border-radius: 5px;
-    color: #fff;
-    cursor: pointer;
-    font-size: 18px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    transition: 0.5s ease;
-  }
-  form .page .field button:hover{
-    background: #000;
-  }
-  form .page .btns button{
-    margin-top: -20px!important;
-  }
-  form .page .btns button.prev{
-    margin-right: 3px;
-    font-size: 17px;
-  }
-  form .page .btns button.next{
-    margin-left: 3px;
-  }
-  .container1 .progress-bar{
-    display: flex;
-    flex-direction: row;
-    margin: 40px 0;
-    user-select: none;
-  }
-  .container1 .progress-bar .step{
-    text-align: center;
-    width: 100%;
-    position: relative;
-  }
-  .container1 .progress-bar .step p{
-    font-weight: 500;
-    font-size: 18px;
-    color: #000;
-    margin-bottom: 8px;
-  }
-  .progress-bar .step .bullet{
-    height: 25px;
-    width: 25px;
-    border: 2px solid #000;
-    display: inline-block;
-    border-radius: 50%;
-    position: relative;
-    transition: 0.2s;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 25px;
-  }
-  .progress-bar .step .bullet.active{
-    border-color: #00cc00;
-    background: #00cc00;
-  }
-  .progress-bar .step .bullet span{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .progress-bar .step .bullet.active span{
-    display: none;
-  }
-  .progress-bar .step .bullet:before,
-  .progress-bar .step .bullet:after{
-    position: absolute;
-    content: '';
-    bottom: 11px;
-    right: -51px;
-    height: 3px;
-    width: 44px;
-    background: #262626;
-  }
-  .progress-bar .step .bullet.active:after{
-    background: #00cc00;
-    transform: scaleX(0);
-    transform-origin: left;
-    animation: animate 0.3s linear forwards;
-  }
-  @keyframes animate {
-    100%{
-      transform: scaleX(1);
+}
+
+   
+    
+    
+    .container1 .progress-bar{
+        display: flex;
+        flex-direction: row;
+        margin: 40px 0;
+        user-select: none;
+        background-color: transparent;
+        margin-bottom: 0px;
     }
-  }
-  .progress-bar .step:last-child .bullet:before,
-  .progress-bar .step:last-child .bullet:after{
+    .container1 .progress-bar .step{
+        text-align: center;
+        width: 100%;
+        position: relative;
+    }
+    .container1 .progress-bar .step p{
+        font-weight: 500;
+        font-size: 18px;
+        color: #000;
+        margin-bottom: 8px;
+    }
+    .progress-bar .step .bullet{
+        height: 25px;
+        width: 25px;
+        border: none;
+        background-color: var(--color-secondary-ligth);
+        color: var(--color-primary-regular);
+        display: inline-block;
+        border-radius: 50%;
+        position: relative;
+        transition: 0.2s;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 25px;
+    }
+    .progress-bar .step .bullet.active{
+        border-color:var(--color-primary-regular);
+        background:var(--color-primary-regular);
+    }
+    .progress-bar .step .bullet span{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .progress-bar .step .bullet.active span{
+        display: none;
+    }
+    .progress-bar .step .bullet:before,
+    .progress-bar .step .bullet:after{
+        position: absolute;
+        content: '';
+        bottom: 11px;
+        right: -51px;
+        height: 3px;
+        width: 44px;
+        background: #262626;
+    }
+    .progress-bar .step .bullet.active:after{
+        background: #fff;
+        transform: scaleX(0);
+        transform-origin: left;
+        animation: animate 0.3s linear forwards;
+    }
+    @keyframes animate {
+        100%{
+            transform: scaleX(1);
+        }
+    }
+    .progress-bar .step:last-child .bullet:before,
+    .progress-bar .step:last-child .bullet:after{
+        display: none;
+    }
+    .progress-bar .step p.active{
+        color: var(--color-secondary-ligth);
+        transition: 0.2s linear;
+    }
+    .progress-bar .step .check{
+        position: absolute;
+        left: 50%;
+        top: 70%;
+        font-size: 15px;
+        transform: translate(-50%, -50%);
     display: none;
-  }
-  .progress-bar .step p.active{
-    color: #00cc00;
-    transition: 0.2s linear;
-  }
-  .progress-bar .step .check{
-    position: absolute;
-    left: 50%;
-    top: 70%;
-    font-size: 15px;
-    transform: translate(-50%, -50%);
-    display: none;
-  }
-  .progress-bar .step .check.active{
+}
+.progress-bar .step .check.active{
     display: block;
     color: #fff;
-  }
+}
+
+//Elementos adicionais
+
+
+.button_diferente{
+    width: 350px;
+    background-color: transparent;
+    border: solid 3px var(--color-secondary-ligth) ;
+    &:hover{
+        background-color: transparent;
+    }
+}
+
+.buscar_melhor{
+    @include button-CTA;
+    width: 400px;
+    margin: auto;
+}
+
+.bug{
+    // display: none;
+}
+.bug2{
+    display: none;
+}
+.bug3{
+    display: none;
+}

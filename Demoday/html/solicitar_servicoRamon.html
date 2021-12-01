@@ -34,8 +34,8 @@
 
   <!-- Componente footer -->
   <script type="text/babel" src="../scripts/Footer.jsx"></script>
-  <!--Animação-->
-  <script src="../scripts/script.js"></script>
+  <!--icones-->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 
 <body>
@@ -49,30 +49,23 @@
         <div class="container1">
             <div class="progress-bar">
               <div class="step">
-                <p>Nome</p>
+                <p>Necessário</p>
                 <div class="bullet">
                   <span>1</span>
                 </div>
                 <div class="check fas fa-check"></div>
               </div>
               <div class="step">
-                <p>Contato</p>
+                <p>Dados</p>
                 <div class="bullet">
                   <span>2</span>
                 </div>
                 <div class="check fas fa-check"></div>
               </div>
               <div class="step">
-                <p>Data</p>
+                <p>Local</p>
                 <div class="bullet">
                   <span>3</span>
-                </div>
-                <div class="check fas fa-check"></div>
-              </div>
-              <div class="step">
-                <p>Enviar</p>
-                <div class="bullet">
-                  <span>4</span>
                 </div>
                 <div class="check fas fa-check"></div>
               </div>
@@ -80,73 +73,187 @@
         </div>
 </div>
 
+<div class="form-outer">
+    <form action="#">
+        <div class="page slide-page">
 
-    <div class="row categoria">
+<div class="bug">
+<div class="row categoria">
 
-      <div class="col-4">
-        <h6>Primeiro nos conte o que você precisa:</h6>
+  <div class="col-4">
+    <h6>Primeiro nos conte o que você precisa:</h6>
 
-        <p>Categoria do Serviço</p>
-        <form action="/action_page.php">
-          <select id="cars" name="cars">
-               <option value="" disabled selected hidden>Ex: Encanamento</option>
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="fiat">Fiat</option>
-            <option value="audi">Audi</option>
-          </select>
-        </form>
+    <p>Categoria do Serviço</p>
+    <form action="/action_page.php">
+      <select id="cars" name="cars">
+           <option value="" disabled selected hidden>Ex: Encanamento</option>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+      </select>
+    </form>
 
-        <p>Tipo do Serviço</p>
-        <form action="/action_page.php" placeholder="Ex: Encanamento">
-          <select id="cars" name="cars" >
-            <option value="" disabled selected hidden>Ex: Pia entupida</option>
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="fiat">Fiat</option>
-            <option value="audi">Audi</option>
-          </select>
-        </form>
+    <p>Tipo do Serviço</p>
+    <form action="/action_page.php" placeholder="Ex: Encanamento">
+      <select id="cars" name="cars" >
+        <option value="" disabled selected hidden>Ex: Pia entupida</option>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+      </select>
+    </form>
 
-      </div>
+  </div>
 
-      <div class="col-8 necessidade" >
-        <p>Descreva sua necessidade</p>
-        <div>
-          <p>Mussum Ipsum, cacilds vidis litro abertis. Mé faiz elementum girarzis, nisi eros vermeio. 
-            Manduma pindureta quium dia nois paga. Copo furadis é disculpa de bebadis,
-             arcu quam euismod magna. In elementis mé pra quem é amistosis quis leo. In elementis mé pra quem é amistosis quis leo.  In elementis mé.</p>
+  <div class="col-8 necessidade" >
+    <p>Descreva sua necessidade</p>
+    <div>
+      <p>Mussum Ipsum, cacilds vidis litro abertis. Mé faiz elementum girarzis, nisi eros vermeio. 
+        Manduma pindureta quium dia nois paga. Copo furadis é disculpa de bebadis,
+         arcu quam euismod magna. In elementis mé pra quem é amistosis quis leo. In elementis mé pra quem é amistosis quis leo.  In elementis mé.</p>
+    </div>
+
+</div>
+</div>
+<button class="firstNext next">Próxima etapa</button>
+</div>
+
+
+<div class="bug3 page">
+    <div class="row categoria final">
+
+        <div class="col-4">
+          <h6>Por fim, preencha onde o serviço será realizado</h6>  
         </div>
-
-      </div>
-    </div>
-
-    <button>Próxima etapa</button>
-
-  </div>
-
-  <h4>Principais dúvidas</h4>
-  <div class=" duvidas">
   
-    <div class="col-3 azul">
-      <h6>Como solicitar um serviço?</h6>
-      <p>Preencha as três etapas do nosso formulário para que possamos entender as suas necessidades, pelo melhor preço e num tempo que te atenda.</p>
-    </div>
-    <div class="col-3 laranja">
-      <h6>Como o prestador é achado?</h6>
-      <p>Com base na sua localização, estrelas, tipo de pedido e prazo de início, nosso sistema escolhe quem melhor atenda essas necessidades e encaminha seu pedido para essa pessoa, que aceita o pedido, confirmando valor e tempo de entrega do serviço.</p>
-    </div>
-    <div class="col-3 azul">
-      <h6>Por que preciso pagar antecipado?</h6>
-      <p>A Casterizzi garante que seu serviço será entregue, por isso em caso de qualquer problema o valor poderá ser resgatado ou direcionado a outro prestador que conclua o serviço sem acrécimos, além de te garantir que o prestador só vai receber quando o serviço for finalizado.</p>
-    </div>
-    <div class="col-3 laranja">
-      <h6>Consigo saber o status do serviço?</h6>
-      <p>Claro! Após o pagamento você terá acesso a uma guia de acompanhamento, que será sempre atualizada pelo nosso prestador ou por nós da Caster, conforme o serviço for sendo realizado.</p>
-    </div>
+        <div class="col-8 necessidade" >
+          <h6>Endereço onde será realizado o serviço</h6>
+          <div>
 
+              <div class="input_final">
+                <div d-flex collunm>
+
+                    <p>Endereço</p>
+                    <input class="endereco" type="text" placeholder="Ex: Rua Felipina Almeira">
+                </div>
+
+                <div d-flex collunm>
+                  <p >CEP</p>
+                  <input class="cep" type="text" placeholder="Ex: 00000-000">
+                </div>
+
+              </div>
+            <div class="input_final">  
+
+                <div d-flex collunm>
+                <p>N°</p>
+                <input class="numero" type="text" placeholder="Ex: 502 ">
+                </div>
+
+
+                <div d-flex collunm>
+                <p>Bairro</p>
+                <input class="bairro" type="text" placeholder="Ex: Mooca">
+                </div>
+
+                <div d-flex collunm>
+                <p>UF</p>
+                <input type="text" placeholder="SP">
+                </div>
+
+                <div d-flex collunm>
+                <p>Cidade</p>
+                <input class="cidade" type="text"placeholder="Ex: São Paulo">
+                </div>
+
+            </div>
+
+        </div>
+        
+    </div>
+</div>
+
+<div class="field btns">
+
+  <button class="buscar_melhor submit ">Buscar melhor prestador</button>
+</div>
+</div>
+
+
+<div class="bug2 page">
+      <div class="row categoria informacoes">
+
+
+        <div class="col-4">
+          <h6>Só mais algumas informações</h6>
+  
+          <p>Em quanto tempo o serviço precisa ser iniciado?</p>
+          <form action="/action_page.php">
+            <select id="cars" name="cars">
+                 <option value="" disabled selected hidden>Ex: Urgente- 1 à 2 dias</option>
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+              <option value="fiat">Fiat</option>
+              <option value="audi">Audi</option>
+            </select>
+          </form>
+          <p>Quanto você pode pagar?</p>
+          <div class="d-flex valor">
+              <input type="number"placeholder="Min">
+              -
+              <input type="number"placeholder="Máx">
+          </div>
+          <p>Serviços do tipo <span>encanamento</span> tem um Min de R$140,00.</p>
+          
+          
+  
+        </div>
+  
+        <div class="col-8 necessidade" >
+          <h6>Garantia Casterizzi</h6>
+          <div>
+            <p>A Casterizzi garante que seu serviço será entregue, por isso em caso de qualquer problema o valor poderá ser resgatado ou direcionado a outro prestador que conclua o serviço sem acrécimos, além de te garantir que o prestador só vai receber quando o serviço for finalizado.</p>
+          </div>
+  
+        </div>
+    </div>
+    <div class="d-flex mt-3 field btns">
+        
+        <button class="button_diferente prev-1 prev">Voltar para a etapa anterior</button>
+        <button class="next-1 next">Próxima etapa</button>
+    </div>
+</div>
   </div>
+
+  
+</div>
+</div>
+</div>
+</form>
+<h4>Principais dúvidas</h4>
+<div class=" duvidas">
+
+  <div class="col-3 azul">
+    <h6>Como solicitar um serviço?</h6>
+    <p>Preencha as três etapas do nosso formulário para que possamos entender as suas necessidades, pelo melhor preço e num tempo que te atenda.</p>
+  </div>
+  <div class="col-3 laranja">
+    <h6>Como o prestador é achado?</h6>
+    <p>Com base na sua localização, estrelas, tipo de pedido e prazo de início, nosso sistema escolhe quem melhor atenda essas necessidades e encaminha seu pedido para essa pessoa, que aceita o pedido, confirmando valor e tempo de entrega do serviço.</p>
+  </div>
+  <div class="col-3 azul">
+    <h6>Por que preciso pagar antecipado?</h6>
+    <p>A Casterizzi garante que seu serviço será entregue, por isso em caso de qualquer problema o valor poderá ser resgatado ou direcionado a outro prestador que conclua o serviço sem acrécimos, além de te garantir que o prestador só vai receber quando o serviço for finalizado.</p>
+  </div>
+  <div class="col-3 laranja">
+    <h6>Consigo saber o status do serviço?</h6>
+    <p>Claro! Após o pagamento você terá acesso a uma guia de acompanhamento, que será sempre atualizada pelo nosso prestador ou por nós da Caster, conforme o serviço for sendo realizado.</p>
+  </div>
+</div>
 
   <div id="component-footer"></div>
-   
+
+  <script src="../scripts/solicitar_servico.js"></script>
 </body>
