@@ -42,7 +42,8 @@ html {
   background-color: var(--color-secondary-ligth);
   border-radius: 20px;
   padding: 20px;
-  font-size: 12px;
+  font-size: 14px;
+  width: 500px;
   margin: 0 auto;
 }
 
@@ -88,12 +89,8 @@ html {
   background-color: var(--color-secondary-ligth);
   border-radius: 20px;
   padding: 20px;
-  font-size: 12px;
+  font-size: 14px;
   margin: 0 auto;
-}
-
-.row .card_endereco label {
-  width: 200px;
 }
 
 .row .card_endereco input {
@@ -150,9 +147,9 @@ html {
 .row .card_dados_conta input {
   color: var(--color-secondary-ligth);
   background-color: var(--color-white-regular);
-  border-radius: 8px;
+  border-radius: 6px;
   border: none;
-  padding: 8px;
+  padding: 6px;
 }
 
 .row .card_dados_conta input:focus, .row .card_dados_conta input select:focus {
