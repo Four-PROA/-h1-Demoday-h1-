@@ -4,5 +4,108 @@
     margin: 30px auto;
     justify-content: space-around;
     align-items: center;
+    color: var(--color-white-regular);
+
+    h2{
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .card_dados_pessoais{
+        background-color: var(--color-secondary-ligth);
+        border-radius: 20px;
+        padding: 20px;
+        font-size: 12px;
+
+        margin: 0 auto;
+        label{
+            width: 200px;
+        }
+        input{
+            color: white;
+            border: none;
+            background-color: transparent;
+            border-bottom: solid 1px var(--color-white-regular);
+            margin-bottom: 25px;
+            &:focus, select:focus {
+                box-shadow: 0 0 0 0;
+                outline: 0;
+            }   
+            &::placeholder {
+                color: var(--color-white-regular);
+                opacity: 0.7;
+            }
+
+            
+        }
+
+    }
+    .card_endereco{
+        background-color: var(--color-secondary-ligth);
+        border-radius: 20px;
+        padding: 20px;
+        font-size: 12px;
+
+        margin: 0 auto;
+        label{
+            width: 200px;
+        }
+        input{
+            color: white;
+            border: none;
+            background-color: transparent;
+            border-bottom: solid 1px var(--color-white-regular);
+            margin-bottom: 25px;
+            &:focus, select:focus {
+                box-shadow: 0 0 0 0;
+                outline: 0;
+            }   
+            &::placeholder {
+                color: var(--color-white-regular);
+                opacity: 0.7;
+            }
+
+            
+        }
+
+    }
+    .card_dados_conta{
+        background-color: var(--color-primary-regular);
+        border-radius: 20px;
+        max-width: 750px;
+        padding: 20px;
+
+        margin: 0 auto;
+        label{
+            width: 200px;
+            font-size: 12px;
+
+            span{
+                font-weight: bold;
+            }
+        }
+        input{
+            color: var(--color-secondary-ligth);
+            background-color: var(--color-white-regular);
+            border-radius: 8px;
+            border: none;
+            padding: 8px;
+            &:focus, select:focus {
+                box-shadow: 0 0 0 0;
+                outline: 0;
+            }   
+            &::placeholder {
+                color: var(--color-white-regular);
+                opacity: 0.7;
+            }
+
+            
+        }
+
+    }
+    button{
+        @include button-CTA;
+        max-width: 400px;
+        font-size: 20px;
+    }
     
 }
