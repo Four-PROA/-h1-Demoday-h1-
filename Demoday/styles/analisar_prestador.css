@@ -1,0 +1,217 @@
+* {
+  font-family: 'Nunito', sans-serif;
+}
+
+html {
+  --color-primary-dark: #E35602;
+  --color-primary-regular: #F75C00;
+  --color-primary-ligth: #F37214;
+  --color-secondary-dark: #001634;
+  --color-secondary-regular: #001A3E;
+  --color-secondary-ligth: #00265C;
+  --color-tertiary-dark: #13947B;
+  --color-tertiary-regular: #2ED9B8;
+  --color-tertiary-ligth: #67DBC5;
+  --color-white-dark: #F9F9F9;
+  --color-white-regular: #F7F6F5;
+  --color-white-ligth: #F4F0EB;
+  --color-black-dark: #151515;
+  --color-black-regular: #242424;
+  --color-error: #F13319;
+  --color-sucess: #BFFE58;
+  --color-warning: #F9D75F;
+  color: var(--color-white-ligth);
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--color-white-regular);
+}
+
+h5 {
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--color-white-regular);
+  padding: 8px;
+}
+
+.Encontramos {
+  color: var(--color-white-regular);
+  background-color: var(--color-secondary-ligth);
+  border-radius: 10px;
+  margin: 40px 200px;
+  padding: 20px;
+  width: 600px;
+}
+
+.prestador {
+  background: var(--color-white-regular);
+  color: var(--color-secondary-ligth);
+  max-width: 340px;
+  margin: 0 auto 15px;
+  padding: 5px;
+  border-radius: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.prestador #heart {
+  color: var(--color-error);
+}
+
+.prestador .star {
+  color: var(--color-primary-regular);
+}
+
+.Rua {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Rua p {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--color-white-regular);
+  line-height: 170%;
+  margin-bottom: 12px;
+}
+
+.Rua i {
+  color: var(--color-tertiary-regular);
+}
+
+.distance {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: solid 2px var(--color-white-regular);
+  border-radius: 13px;
+  width: 299px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.distance p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  color: var(--color-white-regular);
+  line-height: 170%;
+  margin-bottom: 12px;
+  margin-top: 14px;
+  margin-left: 5px;
+}
+
+.distance span {
+  font-size: 24px;
+  color: var(--color-white-regular);
+  color: var(--color-tertiary-regular);
+  margin: 0px 4px;
+}
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: var(--color-primary-regular);
+  color: var(--color-white-regular);
+  padding: 10px;
+  border-radius: 10px;
+  width: 500px;
+  margin: auto;
+}
+
+.info p {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--color-white-regular);
+  line-height: 170%;
+  margin-bottom: 12px;
+}
+
+.info span {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--color-white-regular);
+  line-height: 170%;
+  margin-bottom: 12px;
+  color: var(--color-secondary-ligth);
+  margin: 0px 4px;
+}
+
+.info .time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: var(--color-white-regular);
+  border-radius: 10px;
+  height: 70px;
+}
+
+.info .time p {
+  color: var(--color-black-dark);
+  padding: 10px;
+  width: 380px;
+}
+
+.info .time i {
+  font-size: 40px;
+  color: var(--color-secondary-ligth);
+  margin-left: 30px;
+  margin-top: 8px;
+}
+
+.info .time span {
+  color: var(--color-secondary-ligth);
+}
+
+.info .alerta {
+  font-weight: 700;
+  font-size: 10px;
+  color: var(--color-white-regular);
+  line-height: 180%;
+  padding: 10px;
+}
+
+button {
+  font-size: 24px;
+  color: var(--color-white-regular);
+  background-color: var(--color-primary-regular);
+  padding: 15px 24px;
+  margin: 20px;
+  border-radius: 15px;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 305px;
+  height: 49px;
+  font-size: 16px;
+  margin: auto;
+  margin-top: 20px;
+  width: 350px;
+}
+
+button:hover {
+  background-color: var(--color-primary-ligth);
+}
+/*# sourceMappingURL=analisar_prestador.css.map */

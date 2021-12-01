@@ -17,7 +17,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <link rel="stylesheet" href="../styles/style.css">
-  <link rel="stylesheet" href="../styles/analizar_prestador.css">
+  <link rel="stylesheet" href="../styles/analisar_prestador.css">
   <link rel="stylesheet" href="../scripts/Header2.css">
   <link rel="stylesheet" href="../scripts/Footer2.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
@@ -43,45 +43,52 @@
 <body>
     <div id="component-header2"></div>
 
-    <div>
+    <div class="Encontramos">
         <h4>Encontramos a pessoa perfeita para realizar seu serviço:</h4>
 
-        <!-- <div><i></i> <p></p></div> Pegar da carol -->
-        <div>
-            <i></i><p>Rua Tito, 54 - Vila Romana, São Paulo - SP, 05051-000</p>
-        </div>
-        <div class="d-flex row">
-
-            <div class="col-3">
-
-            </div>
-
-            <div class="col-9">
-                <p>Railson está à 2km de você</p>
-            </div>
-
+        <div class="prestador">
+            <i id="heart" class="bi bi-heart"></i>
+            Railson Costa Leite
+            <i class="bi bi-star-fill star"></i>
+            <i class="bi bi-star-fill star"></i>
+            <i class="bi bi-star-fill star"></i>
+            <i class="bi bi-star-fill star"></i>
+            <i class="bi bi-star-fill star"></i>
+            <i>4,19</i>
         </div>
 
-        <div>
-            <h5></h5>
+        <div class="Rua">
+            <i class="bi bi-geo-alt"></i><p>Rua Tito, 54 - Vila Romana, São Paulo - SP, 05051-000</p>
+        </div>
+        <div class="d-flex distance">
+
+            
+                <img src="../_img/maps.png" alt="">
+           
+                <p>Railson está à <span> 2km </span> de você</p>
+
+        </div>
+
+        <div class="info">
+            <h5>Informações sobre o seu serviço</h5>
             <div class="d-flex">
-                <p></p>
-                <p></p>
-                <p></p>
+                <p>Preço: R$ <span>315,50</span></p> <p class="icon"> + </p>
+                <p>Taxa: R$ <span> 9,45 </span></p>  <p class="icon">  = </p>
+                <span>324,95</span>
             </div>
 
-            <div>
-              <i></i>   <p>Tempo estimado: até 5 dias para a conclusão do serviço, após o inicio.</p>
+            <div class="time">
+                <i class="bi bi-stopwatch"></i> <p>Tempo estimado: <span> até 5 </span> dias para a conclusão do serviço, após o inicio.</p>
             </div>
 
+            <p class="alerta">Você poderá escolher a data de inicio na tela de pagamento.
+                Sobre os materiais necessários para o serviço, você poderá combinar diretamente com o prestador pelo nosso chat.</p>
         </div>
 
-        <p>Você poderá escolher a data de inicio na tela de pagamento.
-            Sobre os materiais necessários para o serviço, você poderá combinar diretamente com o prestador pelo nosso chat.</p>
         
+        <button>Confirmar valor e ir para o pagamento</button>
     </div>
 
-    <button>Confirmar valor e ir para o pagamento</button>
 
     <div id="component-footer2"></div>
 
