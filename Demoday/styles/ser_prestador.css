@@ -30,5 +30,178 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: var(--color-white-regular);
+}
+
+.row h2 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.row .card_dados_pessoais {
+  background-color: var(--color-secondary-ligth);
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 14px;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.row .card_dados_pessoais label {
+  width: 200px;
+}
+
+.row .card_dados_pessoais input {
+  color: white;
+  border: none;
+  background-color: transparent;
+  border-bottom: solid 1px var(--color-white-regular);
+  margin-bottom: 25px;
+}
+
+.row .card_dados_pessoais input:focus, .row .card_dados_pessoais input select:focus {
+  -webkit-box-shadow: 0 0 0 0;
+          box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+.row .card_dados_pessoais input::-webkit-input-placeholder {
+  color: var(--color-white-regular);
+  opacity: 0.7;
+}
+
+.row .card_dados_pessoais input:-ms-input-placeholder {
+  color: var(--color-white-regular);
+  opacity: 0.7;
+}
+
+.row .card_dados_pessoais input::-ms-input-placeholder {
+  color: var(--color-white-regular);
+  opacity: 0.7;
+}
+
+.row .card_dados_pessoais input::placeholder {
+  color: var(--color-white-regular);
+  opacity: 0.7;
+}
+
+.row .card_endereco {
+  background-color: var(--color-secondary-ligth);
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 14px;
+  margin: 0 auto;
+}
+
+.row .card_endereco input {
+  color: white;
+  border: none;
+  background-color: transparent;
+  border-bottom: solid 1px var(--color-white-regular);
+  margin-bottom: 25px;
+}
+
+.row .card_endereco input:focus, .row .card_endereco input select:focus {
+  -webkit-box-shadow: 0 0 0 0;
+          box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+.row .card_endereco input::-webkit-input-placeholder {
+  color: var(--color-white-regular);
+  opacity: 0.7;
+}
+
+.row .card_endereco input:-ms-input-placeholder {
+  color: var(--color-white-regular);
+  opacity: 0.7;
+}
+
+.row .card_endereco input::-ms-input-placeholder {
+  color: var(--color-white-regular);
+  opacity: 0.7;
+}
+
+.row .card_endereco input::placeholder {
+  color: var(--color-white-regular);
+  opacity: 0.7;
+}
+
+.row .card_dados_conta {
+  background-color: var(--color-primary-regular);
+  border-radius: 20px;
+  max-width: 750px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.row .card_dados_conta label {
+  width: 200px;
+  font-size: 12px;
+}
+
+.row .card_dados_conta label span {
+  font-weight: bold;
+}
+
+.row .card_dados_conta input {
+  color: var(--color-secondary-ligth);
+  background-color: var(--color-white-regular);
+  border-radius: 6px;
+  border: none;
+  padding: 6px;
+}
+
+.row .card_dados_conta input:focus, .row .card_dados_conta input select:focus {
+  -webkit-box-shadow: 0 0 0 0;
+          box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+.row .card_dados_conta input::-webkit-input-placeholder {
+  color: var(--color-white-regular);
+  opacity: 0.7;
+}
+
+.row .card_dados_conta input:-ms-input-placeholder {
+  color: var(--color-white-regular);
+  opacity: 0.7;
+}
+
+.row .card_dados_conta input::-ms-input-placeholder {
+  color: var(--color-white-regular);
+  opacity: 0.7;
+}
+
+.row .card_dados_conta input::placeholder {
+  color: var(--color-white-regular);
+  opacity: 0.7;
+}
+
+.row button {
+  font-size: 24px;
+  color: var(--color-white-regular);
+  background-color: var(--color-primary-regular);
+  padding: 15px 24px;
+  margin: 20px;
+  border-radius: 15px;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 305px;
+  height: 49px;
+  max-width: 400px;
+  font-size: 20px;
+}
+
+.row button:hover {
+  background-color: var(--color-primary-ligth);
 }
 /*# sourceMappingURL=ser_prestador.css.map */
