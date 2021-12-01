@@ -1,0 +1,17 @@
+.rodape {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--color-white-regular);
+  line-height: 170%;
+  margin-bottom: 12px;
+  text-align: center;
+  background-color: var(--color-secondary-regular);
+  color: white;
+  margin: 0;
+}
+
+.alinha_foot p {
+  margin-right: 0px;
+  width: 300px;
+}
+/*# sourceMappingURL=Footer2.css.map */

@@ -1,0 +1,117 @@
+.herosection {
+  background-color: var(--color-primary-ligth);
+  color: #fff;
+}
+
+.herosection section article div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 auto;
+  width: 700px;
+}
+
+.herosection section article div a {
+  width: 400px;
+  text-decoration: none;
+}
+
+.herosection section article div a button {
+  width: 300px;
+}
+
+.dimension_img {
+  width: 530px;
+  height: 339px;
+  margin: 40px;
+  margin-left: 150px;
+}
+
+.dimension_text {
+  font-weight: 700;
+  font-size: 76px;
+  color: var(--color-white-regular);
+  width: 700px;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.dimension_btn {
+  font-size: 24px;
+  color: var(--color-white-regular);
+  background-color: var(--color-secondary-ligth);
+  padding: 15px 24px;
+  margin: 20px;
+  border: none;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 256px;
+  height: 56px;
+}
+
+.dimension_btn:hover {
+  background-color: var(--color-secondary-dark);
+}
+
+.dimension_btn2 {
+  font-size: 24px;
+  color: var(--color-white-regular);
+  background-color: transparent;
+  border: 2px solid var(--color-tertiary-regular);
+  padding: 19px 24px;
+  margin: 20px;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 256px;
+  height: 56px;
+  -webkit-transition: color 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
+  transition: color 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
+  width: 400px;
+}
+
+.dimension_btn2:hover {
+  border: 2px solid var(--color-tertiary-dark);
+}
+
+.dimension_text_nav {
+  font-family: 'Roboto' sans-serif;
+  font-size: 20px;
+  line-height: 35px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-color: var(--color-primary-regular);
+}
+
+.dimension_text_nav a {
+  color: #fff !important;
+}
+/*# sourceMappingURL=Header2.css.map */
