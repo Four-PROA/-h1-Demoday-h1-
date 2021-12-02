@@ -1,0 +1,212 @@
+@import 'styleGlobal';
+
+h4{
+    @include h4-bold;
+}
+
+h5{
+    @include h5-bold;
+    padding: 8px;
+}
+.detalhamento{
+    background-color: var(--color-primary-regular);
+    padding: 20px;
+    border-radius: 10px;
+}
+.valor{
+    @include x-p-bold-short-text;
+    background-color: var(--color-white-regular);
+    border-radius:10px ;
+    color: var(--color-black-dark);
+    padding: 10px;
+    button{
+        width: 300px;
+        height: 30px;
+        border-radius: 5px;
+        background-color: var(--color-secondary-ligth);
+        &:hover{
+            background-color: var(--color-secondary-regular);
+        }
+    }
+    input{
+        
+        color: var(--color-white-regular);
+        background-color: var(--color-secondary-ligth);
+        border: none;
+        border-radius: 10px;
+        width: 80px;
+        height: 50px;
+        margin-left: 20px;
+        text-align: center;
+    }
+}
+
+.digite{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-secondary-ligth);
+    border-radius: 10px;
+    padding: 10px;
+    width: 340px;
+    height: 230px;
+    // margin: 20px 570px;
+
+    .tempo{
+        color: var(--color-white-regular);
+        width: 257px;
+        height: 26px;
+        border-radius: 5px;
+        &::placeholder{
+            color: var(--color-white-regular);
+        }
+    }
+
+    p{
+        @include x-small-bold;
+    }
+
+    input{
+        color: var(--color-white-regular);
+        background-color: var(--color-primary-regular);
+        border: none;
+        border-radius: 10px;
+        width: 126px;
+        height: 38px;
+        margin-left: 20px;
+        text-align: center;
+        &::placeholder{
+            opacity: 0.7;
+            color: var(--color-white-regular);
+        }
+    }
+
+
+    h6{
+        @include h6-regular;
+    }
+}
+.Encontramos{
+    color: var( --color-white-regular);
+    background-color: var(--color-secondary-ligth);
+    border-radius: 10px;
+    margin: 40px 100px;
+    padding: 20px;
+    width: 800px;
+}
+.prestador{
+    background: var(--color-white-regular);
+    color: var(--color-secondary-ligth);
+    max-width: 340px;
+    margin: 0 auto 15px;
+    padding: 5px;
+    border-radius: 50px;
+    text-align: center;
+    font-weight: bold;
+
+
+    #heart{
+        color: var(--color-error);
+    }
+
+    .star{
+        color: var(--color-primary-regular);
+    }
+}
+
+.Rua{
+    display: flex;
+    justify-content: center;
+
+    p{
+        @include p-bold-short-text;
+    }
+
+    i{
+        color: var(--color-tertiary-regular);
+    }
+}
+
+.distance{
+    justify-content: center;
+    border: solid 2px var(--color-white-regular);
+    border-radius: 13px;
+    width: 299px;
+    margin: auto;
+    margin-bottom: 20px;
+    
+    p{
+        display: flex;
+        @include p-regular-short-text;
+        margin-top: 14px;
+        margin-left: 5px;
+    }
+    span{
+        @include h5-regular;
+        color: var(--color-tertiary-regular);
+        margin: 0px 4px;
+    }
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--color-primary-regular);
+    color: var(--color-white-regular);
+    padding: 10px;
+    border-radius: 10px;
+    width: 500px;
+    margin: auto;
+
+    p{
+        @include p-bold-short-text;
+    }
+
+    span{
+        @include p-bold-short-text;
+        color: var(--color-secondary-ligth);
+        margin: 0px 4px;
+    }
+
+
+    .alerta{
+        @include x-small-bold;
+        padding: 10px;
+    }
+
+}
+
+button{
+    @include button-CTA;
+    font-size: 16px;
+    margin: auto;
+    margin-top: 20px;
+    width: 350px;
+}
+
+.confirm{
+    width: 341px;
+    height: 39px;
+    background-color: var(--color-secondary-ligth);
+    &:hover{
+    background-color: var(--color-secondary-regular);
+    }
+     margin-left: 280px;
+}
+.cancel{
+    width: 341px;
+    height: 39px;
+    background-color:var( --color-error);
+    &:hover{
+    background-color: var( --color-error);
+    }
+     margin-right: 260px;
+
+}
+
+.alinhar{
+    display: flex;
+    justify-content: center;
+}
