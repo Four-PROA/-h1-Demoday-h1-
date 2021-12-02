@@ -3,5 +3,151 @@
 .row{
     margin: 30px auto;
     justify-content: space-around;
-    align-items: center;
+
+    color: var(--color-white-regular);
+
+    h2{
+        margin: 20px 10px;
+        font-weight: bold;
+        font-size: 30px;
+    }
+    h3{
+        font-weight: bold;
+        font-size: 16px;
+    }
+    
+    
+    .col-cliente{
+        background-color: var(--color-secondary-ligth);
+        padding: 10px;
+        border-radius: 20px;
+        .nome_qualificacao{
+                padding: 20px;
+                display: flex;
+                
+                img{
+                    max-width: 100px;
+                }
+                i{
+                    color: var(--color-primary-regular);
+                }
+            }
+        .card_dados_pessoais{
+            border: 1px solid var(--color-tertiary-regular);
+            border-radius: 20px;
+            padding: 20px;
+            font-size: 14px;
+    
+            margin: 0 auto;
+            label{
+                width: 200px;
+            }
+            input{
+                color: white;
+                border: none;
+                background-color: transparent;
+                border-bottom: solid 1px var(--color-white-regular);
+                border-color: var(--color-tertiary-regular);
+                margin-bottom: 25px;
+                &:focus, select:focus {
+                    box-shadow: 0 0 0 0;
+                    outline: 0;
+                }   
+                &::placeholder {
+                    color: var(--color-white-regular);
+                    opacity: 0.7;
+                }
+    
+                
+            }
+    
+        }
+
+        .card_endereco{
+            border: 1px solid var(--color-tertiary-regular);
+            border-radius: 20px;
+            padding: 20px;
+            font-size: 14px;
+    
+            margin: 20px auto;
+            label{
+                
+            }
+            input{
+                color: white;
+                border: none;
+                background-color: transparent;
+                border-bottom: solid 1px var(--color-white-regular);
+                border-color: var(--color-tertiary-regular);
+                margin-bottom: 25px;
+                &:focus, select:focus {
+                    box-shadow: 0 0 0 0;
+                    outline: 0;
+                }   
+                &::placeholder {
+                    color: var(--color-white-regular);
+                    opacity: 0.7;
+                }
+    
+                
+            }
+    
+        }
+    }
+
+    .col-dados{
+        background-color: var(--color-primary-regular);
+        padding: 10px;
+        border-radius: 20px;
+
+        .prestador{
+            background: var(--color-white-regular);
+            color: var(--color-secondary-ligth);
+            max-width: 340px;
+            margin: 0 auto 15px;
+            padding: 5px;
+            border-radius: 50px;
+            text-align: center;
+            font-weight: bold;
+
+            #heart{
+                color: var(--color-error);
+            }
+
+            .star{
+                color: var(--color-primary-regular);
+            }
+        }
+        .card_agendado{
+            border: 1px solid var(--color-white-regular);
+            border-radius: 20px;
+            padding: 20px;
+            margin: 10px 0;
+            button{
+                font-size: 14px !important;
+                width: 170px !important;
+                display: inline;
+            }
+                .mudar{
+                    @include button-secondary;
+                    width: 200px;
+                
+                } 
+                .chat{
+                    @include button-secondary;
+                    width: 200px;
+                }
+            
+                
+            #ico_date, #ico_alarm{
+                margin: 10px;
+            }
+
+        }
+        button{
+            @include button-primary;
+            font-size: 16px;
+            margin: 10px auto;
+        }
+    }
 }

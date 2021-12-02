@@ -27,8 +27,257 @@ html {
   margin: 30px auto;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  color: var(--color-white-regular);
+}
+
+.row h2 {
+  margin: 20px 10px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.row h3 {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.row .col-cliente {
+  background-color: var(--color-secondary-ligth);
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.row .col-cliente .nome_qualificacao {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.row .col-cliente .nome_qualificacao img {
+  max-width: 100px;
+}
+
+.row .col-cliente .nome_qualificacao i {
+  color: var(--color-primary-regular);
+}
+
+.row .col-cliente .card_dados_pessoais {
+  border: 1px solid var(--color-tertiary-regular);
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 14px;
+  margin: 0 auto;
+}
+
+.row .col-cliente .card_dados_pessoais label {
+  width: 200px;
+}
+
+.row .col-cliente .card_dados_pessoais input {
+  color: white;
+  border: none;
+  background-color: transparent;
+  border-bottom: solid 1px var(--color-white-regular);
+  border-color: var(--color-tertiary-regular);
+  margin-bottom: 25px;
+}
+
+.row .col-cliente .card_dados_pessoais input:focus, .row .col-cliente .card_dados_pessoais input select:focus {
+  -webkit-box-shadow: 0 0 0 0;
+          box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+.row .col-cliente .card_dados_pessoais input::-webkit-input-placeholder {
+  color: var(--color-white-regular);
+  opacity: 0.7;
+}
+
+.row .col-cliente .card_dados_pessoais input:-ms-input-placeholder {
+  color: var(--color-white-regular);
+  opacity: 0.7;
+}
+
+.row .col-cliente .card_dados_pessoais input::-ms-input-placeholder {
+  color: var(--color-white-regular);
+  opacity: 0.7;
+}
+
+.row .col-cliente .card_dados_pessoais input::placeholder {
+  color: var(--color-white-regular);
+  opacity: 0.7;
+}
+
+.row .col-cliente .card_endereco {
+  border: 1px solid var(--color-tertiary-regular);
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 14px;
+  margin: 20px auto;
+}
+
+.row .col-cliente .card_endereco input {
+  color: white;
+  border: none;
+  background-color: transparent;
+  border-bottom: solid 1px var(--color-white-regular);
+  border-color: var(--color-tertiary-regular);
+  margin-bottom: 25px;
+}
+
+.row .col-cliente .card_endereco input:focus, .row .col-cliente .card_endereco input select:focus {
+  -webkit-box-shadow: 0 0 0 0;
+          box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+.row .col-cliente .card_endereco input::-webkit-input-placeholder {
+  color: var(--color-white-regular);
+  opacity: 0.7;
+}
+
+.row .col-cliente .card_endereco input:-ms-input-placeholder {
+  color: var(--color-white-regular);
+  opacity: 0.7;
+}
+
+.row .col-cliente .card_endereco input::-ms-input-placeholder {
+  color: var(--color-white-regular);
+  opacity: 0.7;
+}
+
+.row .col-cliente .card_endereco input::placeholder {
+  color: var(--color-white-regular);
+  opacity: 0.7;
+}
+
+.row .col-dados {
+  background-color: var(--color-primary-regular);
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.row .col-dados .prestador {
+  background: var(--color-white-regular);
+  color: var(--color-secondary-ligth);
+  max-width: 340px;
+  margin: 0 auto 15px;
+  padding: 5px;
+  border-radius: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.row .col-dados .prestador #heart {
+  color: var(--color-error);
+}
+
+.row .col-dados .prestador .star {
+  color: var(--color-primary-regular);
+}
+
+.row .col-dados .card_agendado {
+  border: 1px solid var(--color-white-regular);
+  border-radius: 20px;
+  padding: 20px;
+  margin: 10px 0;
+}
+
+.row .col-dados .card_agendado button {
+  font-size: 14px !important;
+  width: 170px !important;
+  display: inline;
+}
+
+.row .col-dados .card_agendado .mudar {
+  font-size: 24px;
+  color: var(--color-white-regular);
+  background-color: transparent;
+  border: 2px solid var(--color-tertiary-regular);
+  padding: 19px 24px;
+  margin: 20px;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 256px;
+  height: 56px;
+  -webkit-transition: color 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
+  transition: color 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
+  width: 200px;
+}
+
+.row .col-dados .card_agendado .mudar:hover {
+  border: 2px solid var(--color-tertiary-dark);
+}
+
+.row .col-dados .card_agendado .chat {
+  font-size: 24px;
+  color: var(--color-white-regular);
+  background-color: transparent;
+  border: 2px solid var(--color-tertiary-regular);
+  padding: 19px 24px;
+  margin: 20px;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 256px;
+  height: 56px;
+  -webkit-transition: color 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
+  transition: color 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
+  width: 200px;
+}
+
+.row .col-dados .card_agendado .chat:hover {
+  border: 2px solid var(--color-tertiary-dark);
+}
+
+.row .col-dados .card_agendado #ico_date, .row .col-dados .card_agendado #ico_alarm {
+  margin: 10px;
+}
+
+.row .col-dados button {
+  font-size: 24px;
+  color: var(--color-white-regular);
+  background-color: var(--color-secondary-ligth);
+  padding: 15px 24px;
+  margin: 20px;
+  border: none;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 256px;
+  height: 56px;
+  font-size: 16px;
+  margin: 10px auto;
+}
+
+.row .col-dados button:hover {
+  background-color: var(--color-secondary-dark);
 }
 /*# sourceMappingURL=perfil.css.map */

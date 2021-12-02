@@ -47,6 +47,21 @@ html {
   border-radius: 20px;
 }
 
+.row .col-prestador .nome_qualificacao {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.row .col-prestador .nome_qualificacao img {
+  max-width: 100px;
+}
+
+.row .col-prestador .nome_qualificacao i {
+  color: var(--color-primary-regular);
+}
+
 .row .col-prestador .card_dados_pessoais {
   border: 1px solid var(--color-tertiary-regular);
   border-radius: 20px;
@@ -64,6 +79,7 @@ html {
   border: none;
   background-color: transparent;
   border-bottom: solid 1px var(--color-white-regular);
+  border-color: var(--color-tertiary-regular);
   margin-bottom: 25px;
 }
 
@@ -98,7 +114,7 @@ html {
   border-radius: 20px;
   padding: 20px;
   font-size: 14px;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 .row .col-prestador .card_endereco input {
@@ -106,6 +122,7 @@ html {
   border: none;
   background-color: transparent;
   border-bottom: solid 1px var(--color-white-regular);
+  border-color: var(--color-tertiary-regular);
   margin-bottom: 25px;
 }
 
