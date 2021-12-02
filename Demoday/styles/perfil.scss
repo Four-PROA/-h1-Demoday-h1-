@@ -15,8 +15,7 @@
         font-weight: bold;
         font-size: 16px;
     }
-    
-    
+     
     .col-cliente{
         background-color: var(--color-secondary-ligth);
         padding: 10px;
@@ -136,13 +135,14 @@
                     width: 200px;
                 
                 } 
-                .chat{
-                    @include button-secondary;
+                .acompanhar{
+                    @include button-primary;
                     width: 200px;
                 }
             
                 
             #ico_date, #ico_alarm{
+                color: var(--color-tertiary-regular);
                 margin: 10px;
             }
 
