@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icon-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/perfil_prestador.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- React CDN -->
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+  <!-- Componente header -->
+  <script type="text/babel" src="../scripts/Header.jsx"></script>
+
+  <!-- Componente footer -->
+  <script type="text/babel" src="../scripts/Footer.jsx"></script>
+  <!--Animação-->
+  <script src="../scripts/script.js"></script>
+</head>
+
+
+<body>
+  <div id="component-header"></div>
+
+  <main>
+    <div class="row">
+      <div class="col-5">
+        <div class="col-prestador">
+          <div class="nome_qualificacao">
+            <img src="" alt="">
+            <h1>Railson Costa</h1>
+            <i class="bi bi-star-fill star"></i>
+            <i class="bi bi-star-fill star"></i>
+            <i class="bi bi-star-fill star"></i>
+            <i class="bi bi-star-fill star"></i>
+            <i class="bi bi-star star"></i>
+          </div>
+          <div class="card_dados_pessoais">
+            <h3>Dados pessoais</h3>
+            <form action="">
+              <label for="numero">Nome Completo
+                <input id="numero" type="text" placeholder="Railson Costa Leite">
+              </label>
+              <label for="bairro">Celular
+                <input id="bairro" type="text" placeholder="(11) 91151-6805">
+              </label>
+              <label for="rua">E-mail
+                <input id="rua" type="text" placeholder="railson1913@gmail.com"><br>
+              </label>
+
+
+              <label for="uf">CPF <br>
+                <input id="uf" type="text" placeholder="Ex: 000.000.000-00">
+              </label>
+            </form>
+          </div>
+
+          <div class="card_endereco">
+            <h3>Meus endereços</h3>
+            <form action="">
+              <label for="numero">Endereço
+                <input id="numero" type="text" placeholder="Ex: Rua Felipina Almeira">
+              </label>
+              <label for="numero">CEP
+                <input id="numero" type="text" placeholder="Ex: 00000-000">
+              </label>
+              <label for="numero">Nº
+                <input id="numero" type="text" placeholder="Ex: 502 ">
+              </label>
+              <label for="numero">Bairro
+                <input id="numero" type="text" placeholder="Ex: Mooca">
+              </label>
+              <label for="numero">UF
+                <input id="numero" type="text" placeholder="SP">
+              </label>
+              <label for="numero">Cidade
+                <input id="numero" type="text" placeholder="Ex: São Paulo">
+              </label>
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="col-5">
+        <div class="col-dados">
+          <h2>Dados Bancários</h2>
+          <div class="card_dados_conta">
+            
+            <form action="">
+
+              <label for="">Selecione seu banco
+                <input id="status" type="text" placeholder="Ex: Banco Santander" list="faixa">
+                <datalist id="faixa">
+                  <option value="">status:</option>
+                  <option value="Serviço Iniciado"></option>
+                  <option value="Serviço em progresso"></option>
+                  <option value="Serviço concluído"></option>
+                </datalist>
+              </label>
+
+              <label for="">Selecione o tipo de conta
+                <input id="status" type="text" placeholder="Ex: Conta corrente" list="faixa">
+                <datalist id="faixa">
+                  <option value="">status:</option>
+                  <option value="Serviço Iniciado"></option>
+                  <option value="Serviço em progresso"></option>
+                  <option value="Serviço concluído"></option>
+                </datalist>
+              </label>
+
+              <label for="numero">Número da conta <br> (com o dígito)
+                <input id="numero" type="text" placeholder="Ex: 12345-6">
+              </label>
+
+              <label for="numero">Número da agência <br> (sem o dígito)
+                <input id="numero" type="text" placeholder="Ex: 1234">
+              </label>
+            </form>
+              <button>Mudar dados da conta</button>
+          </div>
+          <h2>Próximo serviço</h2>
+          <div class="card_agendado" data-step="top">
+            <h3>Aulas de escrita</h3><span>Aulas/Treinamentos</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore nobis vitae, vel laborum
+              doloremque magni soluta. Reiciendis eos ipsam numquam ea consectetur nesciunt vel nobis quia
+              possimus? Cupiditate, quas sunt!</p>
+            <span>
+              <i id="ico_date" class="bi bi-calendar-check"></i>22/11/2021
+              <i id="ico_alarm" class="bi bi-alarm"></i>09:00-18:00
+              status: não iniciado
+            </span>
+            <br>
+            <button class="mudar">Mudar status</button>
+            <button class="chat">
+              <i class="bi bi-chat-square-text"></i>
+              Chat com o cliente
+            </button>
+          </div>
+          <button>Ver outros serviços</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="component-footer"></div>
+
+</body>

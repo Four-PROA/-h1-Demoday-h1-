@@ -1,0 +1,324 @@
+* {
+  font-family: 'Nunito', sans-serif;
+}
+
+html {
+  --color-primary-dark: #E35602;
+  --color-primary-regular: #F75C00;
+  --color-primary-ligth: #F37214;
+  --color-secondary-dark: #001634;
+  --color-secondary-regular: #001A3E;
+  --color-secondary-ligth: #00265C;
+  --color-tertiary-dark: #13947B;
+  --color-tertiary-regular: #2ED9B8;
+  --color-tertiary-ligth: #67DBC5;
+  --color-white-dark: #F9F9F9;
+  --color-white-regular: #F7F6F5;
+  --color-white-ligth: #F4F0EB;
+  --color-black-dark: #151515;
+  --color-black-regular: #242424;
+  --color-error: #F13319;
+  --color-sucess: #BFFE58;
+  --color-warning: #F9D75F;
+  color: var(--color-white-ligth);
+}
+
+.row {
+  margin: 30px auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: var(--color-white-regular);
+}
+
+.row h2 {
+  margin: 20px 10px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.row h3 {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.row .col-prestador {
+  background-color: var(--color-secondary-ligth);
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.row .col-prestador .card_dados_pessoais {
+  border: 1px solid var(--color-tertiary-regular);
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 14px;
+  margin: 0 auto;
+}
+
+.row .col-prestador .card_dados_pessoais label {
+  width: 200px;
+}
+
+.row .col-prestador .card_dados_pessoais input {
+  color: white;
+  border: none;
+  background-color: transparent;
+  border-bottom: solid 1px var(--color-white-regular);
+  margin-bottom: 25px;
+}
+
+.row .col-prestador .card_dados_pessoais input:focus, .row .col-prestador .card_dados_pessoais input select:focus {
+  -webkit-box-shadow: 0 0 0 0;
+          box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+.row .col-prestador .card_dados_pessoais input::-webkit-input-placeholder {
+  color: var(--color-white-regular);
+  opacity: 0.7;
+}
+
+.row .col-prestador .card_dados_pessoais input:-ms-input-placeholder {
+  color: var(--color-white-regular);
+  opacity: 0.7;
+}
+
+.row .col-prestador .card_dados_pessoais input::-ms-input-placeholder {
+  color: var(--color-white-regular);
+  opacity: 0.7;
+}
+
+.row .col-prestador .card_dados_pessoais input::placeholder {
+  color: var(--color-white-regular);
+  opacity: 0.7;
+}
+
+.row .col-prestador .card_endereco {
+  border: 1px solid var(--color-tertiary-regular);
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 14px;
+  margin: 0 auto;
+}
+
+.row .col-prestador .card_endereco input {
+  color: white;
+  border: none;
+  background-color: transparent;
+  border-bottom: solid 1px var(--color-white-regular);
+  margin-bottom: 25px;
+}
+
+.row .col-prestador .card_endereco input:focus, .row .col-prestador .card_endereco input select:focus {
+  -webkit-box-shadow: 0 0 0 0;
+          box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+.row .col-prestador .card_endereco input::-webkit-input-placeholder {
+  color: var(--color-white-regular);
+  opacity: 0.7;
+}
+
+.row .col-prestador .card_endereco input:-ms-input-placeholder {
+  color: var(--color-white-regular);
+  opacity: 0.7;
+}
+
+.row .col-prestador .card_endereco input::-ms-input-placeholder {
+  color: var(--color-white-regular);
+  opacity: 0.7;
+}
+
+.row .col-prestador .card_endereco input::placeholder {
+  color: var(--color-white-regular);
+  opacity: 0.7;
+}
+
+.row .col-dados {
+  background-color: var(--color-primary-regular);
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.row .col-dados .card_dados_conta {
+  padding: 20px 20px 0;
+  margin: 0 auto;
+  border: 1px solid var(--color-white-regular);
+  border-radius: 20px;
+}
+
+.row .col-dados .card_dados_conta label {
+  width: 200px;
+  font-size: 12px;
+}
+
+.row .col-dados .card_dados_conta label span {
+  font-weight: bold;
+}
+
+.row .col-dados .card_dados_conta input {
+  color: var(--color-secondary-ligth);
+  background-color: var(--color-white-regular);
+  border-radius: 6px;
+  border: none;
+  padding: 6px;
+}
+
+.row .col-dados .card_dados_conta input:focus, .row .col-dados .card_dados_conta input select:focus {
+  -webkit-box-shadow: 0 0 0 0;
+          box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+.row .col-dados .card_dados_conta input::-webkit-input-placeholder {
+  color: var(--color-white-regular);
+  opacity: 0.7;
+}
+
+.row .col-dados .card_dados_conta input:-ms-input-placeholder {
+  color: var(--color-white-regular);
+  opacity: 0.7;
+}
+
+.row .col-dados .card_dados_conta input::-ms-input-placeholder {
+  color: var(--color-white-regular);
+  opacity: 0.7;
+}
+
+.row .col-dados .card_dados_conta input::placeholder {
+  color: var(--color-white-regular);
+  opacity: 0.7;
+}
+
+.row .col-dados .card_dados_conta button {
+  font-size: 24px;
+  color: var(--color-white-regular);
+  background-color: var(--color-secondary-ligth);
+  padding: 15px 24px;
+  margin: 20px;
+  border: none;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 256px;
+  height: 56px;
+  font-size: 16px;
+  margin: 10px auto;
+}
+
+.row .col-dados .card_dados_conta button:hover {
+  background-color: var(--color-secondary-dark);
+}
+
+.row .col-dados .card_agendado {
+  border: 1px solid var(--color-white-regular);
+  border-radius: 20px;
+  padding: 20px;
+  margin: 10px 0;
+}
+
+.row .col-dados .card_agendado button {
+  font-size: 14px !important;
+  width: 170px !important;
+  display: inline;
+}
+
+.row .col-dados .card_agendado .mudar {
+  font-size: 24px;
+  color: var(--color-white-regular);
+  background-color: transparent;
+  border: 2px solid var(--color-tertiary-regular);
+  padding: 19px 24px;
+  margin: 20px;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 256px;
+  height: 56px;
+  -webkit-transition: color 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
+  transition: color 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
+  width: 200px;
+}
+
+.row .col-dados .card_agendado .mudar:hover {
+  border: 2px solid var(--color-tertiary-dark);
+}
+
+.row .col-dados .card_agendado .chat {
+  font-size: 24px;
+  color: var(--color-white-regular);
+  background-color: transparent;
+  border: 2px solid var(--color-tertiary-regular);
+  padding: 19px 24px;
+  margin: 20px;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 256px;
+  height: 56px;
+  -webkit-transition: color 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
+  transition: color 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
+  width: 200px;
+}
+
+.row .col-dados .card_agendado .chat:hover {
+  border: 2px solid var(--color-tertiary-dark);
+}
+
+.row .col-dados .card_agendado #ico_date, .row .col-dados .card_agendado #ico_alarm {
+  margin: 10px;
+}
+
+.row .col-dados button {
+  font-size: 24px;
+  color: var(--color-white-regular);
+  background-color: var(--color-secondary-ligth);
+  padding: 15px 24px;
+  margin: 20px;
+  border: none;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 256px;
+  height: 56px;
+  font-size: 16px;
+  margin: 10px auto;
+}
+
+.row .col-dados button:hover {
+  background-color: var(--color-secondary-dark);
+}
+/*# sourceMappingURL=perfil_prestador.css.map */

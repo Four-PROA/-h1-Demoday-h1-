@@ -1,0 +1,158 @@
+@import 'styleGlobal';
+
+.row{
+    margin: 30px auto;
+    justify-content: space-around;
+
+    color: var(--color-white-regular);
+
+    h2{
+        margin: 20px 10px;
+        font-weight: bold;
+        font-size: 30px;
+    }
+    h3{
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .col-prestador{
+        background-color: var(--color-secondary-ligth);
+        padding: 10px;
+        border-radius: 20px;
+
+        .card_dados_pessoais{
+            border: 1px solid var(--color-tertiary-regular);
+            border-radius: 20px;
+            padding: 20px;
+            font-size: 14px;
+    
+            margin: 0 auto;
+            label{
+                width: 200px;
+            }
+            input{
+                color: white;
+                border: none;
+                background-color: transparent;
+                border-bottom: solid 1px var(--color-white-regular);
+                margin-bottom: 25px;
+                &:focus, select:focus {
+                    box-shadow: 0 0 0 0;
+                    outline: 0;
+                }   
+                &::placeholder {
+                    color: var(--color-white-regular);
+                    opacity: 0.7;
+                }
+    
+                
+            }
+    
+        }
+
+        .card_endereco{
+            border: 1px solid var(--color-tertiary-regular);
+            border-radius: 20px;
+            padding: 20px;
+            font-size: 14px;
+    
+            margin: 0 auto;
+            label{
+                
+            }
+            input{
+                color: white;
+                border: none;
+                background-color: transparent;
+                border-bottom: solid 1px var(--color-white-regular);
+                margin-bottom: 25px;
+                &:focus, select:focus {
+                    box-shadow: 0 0 0 0;
+                    outline: 0;
+                }   
+                &::placeholder {
+                    color: var(--color-white-regular);
+                    opacity: 0.7;
+                }
+    
+                
+            }
+    
+        }
+    }
+    .col-dados{
+        background-color: var(--color-primary-regular);
+        padding: 10px;
+        border-radius: 20px;
+
+        .card_dados_conta{
+            padding: 20px 20px 0;
+            margin: 0 auto;
+
+            border: 1px solid var(--color-white-regular);
+            border-radius: 20px;
+            label{
+                width: 200px;
+                font-size: 12px;
+    
+                span{
+                    font-weight: bold;
+                }
+            }
+            input{
+                color: var(--color-secondary-ligth);
+                background-color: var(--color-white-regular);
+                border-radius: 6px;
+                border: none;
+                padding: 6px;
+                &:focus, select:focus {
+                    box-shadow: 0 0 0 0;
+                    outline: 0;
+                }   
+                &::placeholder {
+                    color: var(--color-white-regular);
+                    opacity: 0.7;
+                }   
+            }
+            button{
+                @include button-primary;
+                font-size: 16px;
+                margin: 10px auto;
+            }
+    
+        }
+
+        .card_agendado{
+            border: 1px solid var(--color-white-regular);
+            border-radius: 20px;
+            padding: 20px;
+            margin: 10px 0;
+            button{
+                font-size: 14px !important;
+                width: 170px !important;
+                display: inline;
+            }
+                .mudar{
+                    @include button-secondary;
+                    width: 200px;
+                
+                } 
+                .chat{
+                    @include button-secondary;
+                    width: 200px;
+                }
+            
+                
+            #ico_date, #ico_alarm{
+                margin: 10px;
+            }
+
+        }
+        button{
+            @include button-primary;
+            font-size: 16px;
+            margin: 10px auto;
+        }
+    }
+}
