@@ -93,6 +93,10 @@ html {
   margin: 0 auto;
 }
 
+.row .card_endereco label {
+  margin: 0 30px;
+}
+
 .row .card_endereco input {
   color: white;
   border: none;

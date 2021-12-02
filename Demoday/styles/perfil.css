@@ -227,13 +227,13 @@ html {
   border: 2px solid var(--color-tertiary-dark);
 }
 
-.row .col-dados .card_agendado .chat {
+.row .col-dados .card_agendado .acompanhar {
   font-size: 24px;
   color: var(--color-white-regular);
-  background-color: transparent;
-  border: 2px solid var(--color-tertiary-regular);
-  padding: 19px 24px;
+  background-color: var(--color-secondary-ligth);
+  padding: 15px 24px;
   margin: 20px;
+  border: none;
   border-radius: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -246,18 +246,15 @@ html {
           align-items: center;
   width: 256px;
   height: 56px;
-  -webkit-transition: color 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
-  transition: color 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
-  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
-  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
   width: 200px;
 }
 
-.row .col-dados .card_agendado .chat:hover {
-  border: 2px solid var(--color-tertiary-dark);
+.row .col-dados .card_agendado .acompanhar:hover {
+  background-color: var(--color-secondary-dark);
 }
 
 .row .col-dados .card_agendado #ico_date, .row .col-dados .card_agendado #ico_alarm {
+  color: var(--color-tertiary-regular);
   margin: 10px;
 }
 
