@@ -1,0 +1,31 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#map {
+    height: 500px;
+    background-color: #ddd;
+    width: 600px;
+    margin-top: 50px;
+    margin-left: 30px;
+    border-radius: 10px;
+  }
+
+
+.ordem{
+ h4{
+     padding: 10px;
+     color: var(--color-secondary-ligth);
+ }
+}
+
+.infos{
+    border: solid 2px var(--color-black-dark);
+    p{
+        color: var(--color-black-dark);
+    }
+}
+h2 {
+    font-weight:700;
+}
