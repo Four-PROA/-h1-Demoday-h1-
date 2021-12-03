@@ -347,18 +347,60 @@ function initMap() {
         map:map,
     })
 
+    
+    marker6.addListener('click', ()=> {
+        infoWindow6.open(map, marker6)
+    }) 
+    
+    marker7.addListener('click', ()=> {
+        infoWindow7.open(map, marker7)
+    })
+    
+    marker8.addListener('click', ()=> {
+        infoWindow8.open(map, marker8)
+    })
+    
+    marker9.addListener('click', ()=> {
+        infoWindow9.open(map, marker9)
+    })
+    
+    marker10.addListener('click', ()=> {
+        infoWindow10.open(map, marker10)
+    })
+    
+    // Demarcando distancia entre os marcadores
+    
+    var rad = function(x) {
+        return x * Math.PI / 180;
+    };
+    
+    
+    var getDistance = function(marker, marker8) {
+        var R = 6378137; // Earth’s mean radius in meter
+        var dLat = rad(-26.7999400 - -26.7694400);
+        var dLong = rad(-48.7060300 - -48.6458300);
+        var a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+        Math.cos(rad(-26.7694400)) * Math.cos(rad(-26.7999400)) *
+        Math.sin(dLong / 2) * Math.sin(dLong / 2);
+        var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+        var d = R * c;
+        d = (d / 1000).toFixed(0)
+        return d // returns the distance in meter
+    };
+
+
     var infoWindow6 = new google.maps.InfoWindow({
-        content:'<div class="prestador"><i id="heart" class="bi bi-heart"></i>Wesley Silva<i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i>4,9</i></div> <div class="d-flex distance infos"> <img src="../_img/maps.png" alt=""><p>Wesley está à <span> 2km </span> de você</p></div> <button> Mudar para esse prestador</button>',
+        content: `<div class="prestador"><i id="heart" class="bi bi-heart"></i>Wesley Silva<i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i>4,9</i></div> <div class="d-flex distance infos"> <img src="../_img/maps.png" alt=""><p>Wesley está à <span> 2km </span> de você</p></div>  <button id="weswes" onclick= mudarWesley> Mudar para esse prestador</button>`,
         // maxWidth: 200,
     })
 
     var infoWindow7 = new google.maps.InfoWindow({
-        content:'<div class="prestador"><i id="heart" class="bi bi-heart"></i>Guilherme Broba<i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i>4,9</i></div> <div class="d-flex distance infos"> <img src="../_img/maps.png" alt=""><p>Guilherme está à <span> 2km </span> de você</p></div> <button> Mudar para esse prestador</button>',
+        content:`<div class="prestador"><i id="heart" class="bi bi-heart"></i>Guilherme Broba<i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i>4,9</i></div> <div class="d-flex distance infos"> <img src="../_img/maps.png" alt=""><p>Guilherme está à <span> 2km </span> de você</p></div> <button onclick= mudarGui> Mudar para esse prestador</button>`,
         // maxWidth: 200,
     })
 
     var infoWindow8 = new google.maps.InfoWindow({
-        content:'<div class="prestador"><i id="heart" class="bi bi-heart"></i>Railson Costa Leite<i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i>4,9</i></div> <div class="d-flex distance infos"> <img src="../_img/maps.png" alt=""><p>Railson está à <span> 2km </span> de você</p></div> <button> Mudar para esse prestador</button>',
+        content:'<div class="prestador"><i id="heart" class="bi bi-heart"></i>Railson Costa Leite<i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i>4,9</i></div> <div class="d-flex distance infos"> <img src="../_img/maps.png" alt=""><p>Railson está à <span id="railson"> 7km </span> de você</p></div> <button> Mudar para esse prestador</button>',
         // maxWidth: 200,
     })
 
@@ -372,45 +414,6 @@ function initMap() {
         content:'<div class="prestador"><i id="heart" class="bi bi-heart"></i>Ramos Barboza<i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i>4,9</i></div> <div class="d-flex distance infos"> <img src="../_img/maps.png" alt=""><p>Ramos está à <span> 2km </span> de você</p></div> <button> Mudar para esse prestador</button>',
         // maxWidth: 200,
     })
-    
-    marker6.addListener('click', ()=> {
-        infoWindow6.open(map, marker6)
-    }) 
-
-    marker7.addListener('click', ()=> {
-        infoWindow7.open(map, marker7)
-    })
-
-    marker8.addListener('click', ()=> {
-        infoWindow8.open(map, marker8)
-    })
-
-    marker9.addListener('click', ()=> {
-        infoWindow9.open(map, marker9)
-    })
-
-    marker10.addListener('click', ()=> {
-        infoWindow10.open(map, marker10)
-    })
-
-    // Demarcando distancia entre os marcadores
-
-    var rad = function(x) {
-        return x * Math.PI / 180;
-      };
-      
-      var getDistance = function(marker, marker8) {
-        var R = 6378137; // Earth’s mean radius in meter
-        var dLat = rad(marker8.position.lat() - marker.position.lat());
-        var dLong = rad(marker8.position.lng() - marker.position.lng());
-        var a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
-          Math.cos(rad(marker.position.lat())) * Math.cos(rad(marker8.position.lat())) *
-          Math.sin(dLong / 2) * Math.sin(dLong / 2);
-        var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-        var d = R * c;
-        console.log(d)
-        return d // returns the distance in meter
-      };
     
     function filtroEletricista() {
 
@@ -505,9 +508,9 @@ function initMap() {
             e.latLng,
             bermudaTriangle,
             filtroEletricista(),
-            console.log(getDistance),
-            console.log(marker8.position.lat()),
+            console.log(getDistance()),
             console.log("Ramon"),
+            document.getElementById("distancia").innerHTML=getDistance()+"km",
         )
     
       
