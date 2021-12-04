@@ -1,0 +1,119 @@
+* {
+  font-family: 'Nunito', sans-serif;
+}
+
+html {
+  --color-primary-dark: #E35602;
+  --color-primary-regular: #F75C00;
+  --color-primary-ligth: #F37214;
+  --color-secondary-dark: #001634;
+  --color-secondary-regular: #001A3E;
+  --color-secondary-ligth: #00265C;
+  --color-tertiary-dark: #13947B;
+  --color-tertiary-regular: #2ED9B8;
+  --color-tertiary-ligth: #67DBC5;
+  --color-white-dark: #F9F9F9;
+  --color-white-regular: #F7F6F5;
+  --color-white-ligth: #F4F0EB;
+  --color-black-dark: #151515;
+  --color-black-regular: #242424;
+  --color-error: #F13319;
+  --color-sucess: #BFFE58;
+  --color-warning: #F9D75F;
+  color: var(--color-white-ligth);
+}
+
+.dados {
+  margin-left: 208px;
+  margin-top: 50px;
+  padding: 10px;
+  width: 351px;
+  height: 235px;
+  color: var(--color-white-regular);
+  background-color: var(--color-secondary-ligth);
+  border-radius: 10px;
+}
+
+.dados input {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--color-white-regular);
+  line-height: 170%;
+  margin-bottom: 12px;
+  color: var(--color-white-regular);
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid var(--color-tertiary-ligth);
+  width: 140px;
+  margin-right: 40px;
+}
+
+.dados input:focus {
+  -webkit-box-shadow: 0 0 0 0;
+          box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+.dados p {
+  font-weight: 700;
+  font-size: 12px;
+  color: var(--color-white-regular);
+  line-height: 170%;
+  margin-bottom: 0px;
+}
+
+.dados .edit p {
+  margin-left: 180px;
+}
+
+.dados .completed input {
+  width: 320px;
+}
+
+.product {
+  margin-top: 50px;
+  margin-right: 133px;
+  width: 521px;
+  padding: 10px;
+  height: auto;
+  background-color: var(--color-primary-regular);
+  color: var(--color-white-regular);
+  border-radius: 10px;
+}
+
+.definicao {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#btn {
+  font-size: 24px;
+  color: var(--color-white-regular);
+  background-color: var(--color-secondary-ligth);
+  padding: 15px 24px;
+  margin: 20px;
+  border: none;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 256px;
+  height: 56px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+#btn:hover {
+  background-color: var(--color-secondary-dark);
+}
+/*# sourceMappingURL=pagamento.css.map */

@@ -1,0 +1,69 @@
+@import '../../../styles/styleGlobal.scss';
+.dados{
+    margin-left: 208px;
+    margin-top: 50px;
+    padding: 10px;
+    width: 351px;
+    height:235px;
+    color: var( --color-white-regular);
+    background-color: var(--color-secondary-ligth);
+    border-radius: 10px;
+
+    
+    input{
+        @include p-bold-short-text; 
+        color: var( --color-white-regular);
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid var(--color-tertiary-ligth);
+        width: 140px;
+        margin-right: 40px;
+        &:focus{
+            box-shadow: 0 0 0 0;
+            outline: 0;
+        }
+    }
+
+    p{
+        @include small-bold; 
+        margin-bottom: 0px;
+    }
+
+    .edit{
+        p{
+            margin-left: 180px ;
+        }
+    }
+
+    .completed{
+        input{
+            width: 320px;
+        }
+    }
+
+
+}
+
+//pagamentos
+
+.product {
+    margin-top: 50px;
+    margin-right: 133px;
+    width: 521px;
+    padding: 10px;
+    height: auto;
+    background-color: var( --color-primary-regular);
+    color: var(--color-white-regular);
+    border-radius: 10px;
+}
+
+.definicao {
+    display: flex;
+    justify-content: space-between;
+}
+
+#btn {
+    @include button-primary;
+    padding: 10px;
+    margin:0 auto;
+}
