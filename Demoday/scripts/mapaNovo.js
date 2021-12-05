@@ -348,24 +348,24 @@ function initMap() {
     })
 
     
-    marker16.addListener('click', ()=> {
-        infoWindow16.open(map, marker6)
+    marker1.addListener('click', ()=> {
+        infoWindow1.open(map, marker1)
     }) 
     
-    marker17.addListener('click', ()=> {
-        infoWindow17.open(map, marker7)
+    marker2.addListener('click', ()=> {
+        infoWindow2.open(map, marker2)
     })
     
-    marker18.addListener('click', ()=> {
-        infoWindow18.open(map, marker8)
+    marker3.addListener('click', ()=> {
+        infoWindow3.open(map, marker3)
     })
     
-    marker19.addListener('click', ()=> {
-        infoWindow19.open(map, marker9)
+    marker4.addListener('click', ()=> {
+        infoWindow4.open(map, marker4)
     })
     
-    marker20.addListener('click', ()=> {
-        infoWindow20.open(map, marker10)
+    marker5.addListener('click', ()=> {
+        infoWindow5.open(map, marker5)
     })
     
     // Demarcando distancia entre os marcadores
@@ -375,12 +375,12 @@ function initMap() {
     };
     
     
-    var getDistance = function(marker, marker8) {
+    var getDistance1= function(marker, marker8) {
         var R = 6378137; // Earth’s mean radius in meter
-        var dLat = rad(-26.7999400 - -26.7694400);
-        var dLong = rad(-48.7060300 - -48.6458300);
+        var dLat = rad(-26.7910400 - -26.7694400); // lat dos dois 2-marker
+        var dLong = rad(-48.6478900 - -48.6458300); // long dos dois 2-marker
         var a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
-        Math.cos(rad(-26.7694400)) * Math.cos(rad(-26.7999400)) *
+        Math.cos(rad(-26.7694400)) * Math.cos(rad(-26.7910400)) * // lat 1-marker
         Math.sin(dLong / 2) * Math.sin(dLong / 2);
         var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
         var d = R * c;
@@ -389,104 +389,104 @@ function initMap() {
     };
 
 
-    var infoWindow16 = new google.maps.InfoWindow({
-        content: `<div class="prestador"><i id="heart" class="bi bi-heart"></i>Wesley Silva<i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i>4,9</i></div> <div class="d-flex distance infos"> <img src="../_img/maps.png" alt=""><p>Wesley está à <span> 2km </span> de você</p></div>  <button id="weswes" onclick= mudarWesley> Mudar para esse prestador</button>`,
+    var infoWindow1 = new google.maps.InfoWindow({
+        content: `<div class="prestador"><i id="heart" class="bi bi-heart"></i>Salamão<i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i>4,9</i></div> <div class="d-flex distance infos"> <img src="../_img/maps.png" alt=""><p>Salomão está à <span> 2km </span> de você</p></div>  <button id="weswes" onclick= mudarWesley> Mudar para esse prestador</button>`,
         // maxWidth: 200,
     })
 
-    var infoWindow17 = new google.maps.InfoWindow({
-        content:`<div class="prestador"><i id="heart" class="bi bi-heart"></i>Guilherme Broba<i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i>4,9</i></div> <div class="d-flex distance infos"> <img src="../_img/maps.png" alt=""><p>Guilherme está à <span> 2km </span> de você</p></div> <button onclick= mudarGui> Mudar para esse prestador</button>`,
+    var infoWindow2 = new google.maps.InfoWindow({
+        content:`<div class="prestador"><i id="heart" class="bi bi-heart"></i>Lucas Santos<i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i>4,9</i></div> <div class="d-flex distance infos"> <img src="../_img/maps.png" alt=""><p>Lucas está à <span> 2km </span> de você</p></div> <button onclick= mudarGui> Mudar para esse prestador</button>`,
         // maxWidth: 200,
     })
 
-    var infoWindow18 = new google.maps.InfoWindow({
-        content:'<div class="prestador"><i id="heart" class="bi bi-heart"></i>Railson Costa Leite<i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i>4,9</i></div> <div class="d-flex distance infos"> <img src="../_img/maps.png" alt=""><p>Railson está à <span id="railson"> 7km </span> de você</p></div> <button> Mudar para esse prestador</button>',
+    var infoWindow3 = new google.maps.InfoWindow({
+        content:'<div class="prestador"><i id="heart" class="bi bi-heart"></i>Ramon<i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i>4,9</i></div> <div class="d-flex distance infos"> <img src="../_img/maps.png" alt=""><p>Ramon está à <span id="railson"> 2km </span> de você</p></div> <button> Mudar para esse prestador</button>',
         // maxWidth: 200,
     })
 
-    var infoWindow19 = new google.maps.InfoWindow({
-        content:'<div class="prestador"><i id="heart" class="bi bi-heart"></i>Carlos Felipe<i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i>4,9</i></div> <div class="d-flex distance infos"> <img src="../_img/maps.png" alt=""><p>Carlos está à <span> 2km </span> de você</p></div> <button> Mudar para esse prestador</button>',
+    var infoWindow4 = new google.maps.InfoWindow({
+        content:'<div class="prestador"><i id="heart" class="bi bi-heart"></i>Marcos Aba<i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i>4,9</i></div> <div class="d-flex distance infos"> <img src="../_img/maps.png" alt=""><p>Marcos está à <span> 2km </span> de você</p></div> <button> Mudar para esse prestador</button>',
 
         // maxWidth: 200,
     })
 
-    var infoWindow20 = new google.maps.InfoWindow({
-        content:'<div class="prestador"><i id="heart" class="bi bi-heart"></i>Ramos Barboza<i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i>4,9</i></div> <div class="d-flex distance infos"> <img src="../_img/maps.png" alt=""><p>Ramos está à <span> 2km </span> de você</p></div> <button> Mudar para esse prestador</button>',
+    var infoWindow5 = new google.maps.InfoWindow({
+        content:'<div class="prestador"><i id="heart" class="bi bi-heart"></i>Edivaldo Silva<i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i>4,9</i></div> <div class="d-flex distance infos"> <img src="../_img/maps.png" alt=""><p>Edival está à <span> 2km </span> de você</p></div> <button> Mudar para esse prestador</button>',
         // maxWidth: 200,
     })
     
-    function filtroDiarista() {
+    function filtroEncanador() {
 
-        if(marker1.title != 'Diarista') {
+        if(marker1.title != 'Encanador') {
             marker1.setMap(null)
             console.log(marker1)   
         }
-         if(marker2.title != 'Diarista') {
+         if(marker2.title != 'Encanador') {
             marker2.setMap(null)
             console.log(marker2)   
         }
-         if(marker3.title != 'Diarista') {
+         if(marker3.title != 'Encanador') {
             marker3.setMap(null)
             console.log(marker3)   
         }
-         if(marker4.title != 'Diarista') {
+         if(marker4.title != 'Encanador') {
             marker4.setMap(null)
             console.log(marker4)   
         }
-         if(marker5.title != 'Diarista') {
+         if(marker5.title != 'Encanador') {
             marker5.setMap(null)
             console.log(marker5)   
         }
-         if(marker6.title != 'Diarista') {
+         if(marker6.title != 'Encanador') {
             marker6.setMap(null)
             console.log(marker6)   
         }
-         if(marker7.title != 'Diarista') {
+         if(marker7.title != 'Encanador') {
             marker7.setMap(null)
             console.log(marker7)   
         }
-         if(marker8.title != 'Diarista') {
+         if(marker8.title != 'Encanador') {
             marker8.setMap(null)
             console.log(marker8)   
         }
-         if(marker9.title != 'Diarista') {
+         if(marker9.title != 'Encanador') {
             marker9.setMap(null)
             console.log(marker9)   
         }
-         if(marker10.title != 'Diarista') {
+         if(marker10.title != 'Encanador') {
             marker10.setMap(null)
             console.log(marker10)   
-        } if(marker11.title != 'Diarista') {
+        } if(marker11.title != 'Encanador') {
             marker11.setMap(null)
             console.log(marker11)   
-        } if(marker12.title != 'Diarista') {
+        } if(marker12.title != 'Encanador') {
             marker12.setMap(null)
             console.log(marker12)   
-        } if(marker13.title != 'Diarista') {
+        } if(marker13.title != 'Encanador') {
             marker13.setMap(null)
             console.log(marker13)   
-        } if(marker14.title != 'Diarista') {
+        } if(marker14.title != 'Encanador') {
             marker14.setMap(null)
             console.log(marker14)   
-        } if(marker15.title != 'Diarista') {
+        } if(marker15.title != 'Encanador') {
             marker15.setMap(null)
             console.log(marker15)   
-        } if(marker16.title != 'Diarista') {
+        } if(marker16.title != 'Encanador') {
             marker16.setMap(null)
             console.log(marker16)   
-        } if(marker17.title != 'Diarista') {
+        } if(marker17.title != 'Encanador') {
             marker17.setMap(null)
             console.log(marker17)   
-        } if(marker18.title != 'Diarista') {
+        } if(marker18.title != 'Encanador') {
             marker18.setMap(null)
             console.log(marker18)   
-        } if(marker19.title != 'Diarista') {
+        } if(marker19.title != 'Encanador') {
             marker19.setMap(null)
             console.log(marker19)   
-        } if(marker20.title != 'Diarista') {
+        } if(marker20.title != 'Encanador') {
             marker20.setMap(null)
             console.log(marker20)   
-        } if(marker6.title != 'Diarista') {
+        } if(marker6.title != 'Encanador') {
             marker6.setMap(null)
             console.log(marker6)   
         } 
@@ -507,10 +507,10 @@ function initMap() {
         const filtros = google.maps.geometry.poly.containsLocation(
             e.latLng,
             bermudaTriangle,
-            filtroDiarista(),
-            console.log(getDistance()),
+            filtroEncanador(),
+            console.log(getDistance1()),
             console.log("Ramon"),
-            document.getElementById("distancia").innerHTML=getDistance()+"km",
+            document.getElementById("distancia").innerHTML=getDistance1()+"km",
         )
     
       

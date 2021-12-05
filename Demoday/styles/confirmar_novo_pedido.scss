@@ -12,6 +12,13 @@ h5{
     background-color: var(--color-primary-regular);
     padding: 20px;
     border-radius: 10px;
+
+    .d-flex{
+        p {
+            margin-top: 12px;
+            margin-left: 80px;
+        }
+    }
 }
 .valor{
     @include x-p-bold-short-text;
