@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="../scripts/Header2.css">
   <link rel="stylesheet" href="../scripts/Footer2.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" href="../scripts/mapa.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,7 +55,7 @@
             <i class="bi bi-star-fill star"></i>
             <i class="bi bi-star-fill star"></i>
             <i class="bi bi-star-fill star"></i>
-            <i>4,19</i>
+            <i>4,9</i>
         </div>
 
         <div class="Rua">
@@ -123,6 +124,19 @@
         <button class="cancel">Cancelar o pedido de serviço</button>
 
     </div>
+
+    <div class="col-6 ordem">
+        <h4>Clique na área fora do circulo para aplicar o filtro</h4>
+        <div  id="map"></div>
+
+    </div>
+    
+</div>
+
+<script src="../scripts/mapaNovo.js"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAae4HDwMWNfsen1AuDA73Q9Uxp3TXACHE&callback=initMap"
+async defer></script>
 
 
     <div id="component-footer2"></div>

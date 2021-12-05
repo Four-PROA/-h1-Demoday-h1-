@@ -150,7 +150,7 @@ function initMap() {
     var marker = new google.maps.Marker({
         map: map,
         title: 'Sua atual localização',
-        icon: href="../_img/preto.png",
+        icon: href="../_img/1.png",
         animation:google.maps.Animation.BOUNCE,
         // ou DROP
     })
@@ -159,7 +159,7 @@ function initMap() {
         position: {lat: -26.7999400,lng: -48.6478300},
         map: map,
         title: 'Encanador',
-        icon: href="../_img/1.png",
+        icon: href="../_img/preto.png",
         animation:google.maps.Animation.DROP,
         // ou DROP
     })
@@ -168,7 +168,7 @@ function initMap() {
         position: {lat: -26.9009400,lng: -48.6678300},
         map: map,
         title: 'Encanador',
-        icon: href="../_img/1.png",
+        icon: href="../_img/preto.png",
         animation:google.maps.Animation.DROP,
         // ou DROP
     })
@@ -177,7 +177,7 @@ function initMap() {
         position: {lat: -26.7910400,lng: -48.6478900},
         map: map,
         title: 'Encanador',
-        icon: href="../_img/1.png",
+        icon: href="../_img/preto.png",
         animation:google.maps.Animation.DROP,
         // ou DROP
     })
@@ -186,7 +186,7 @@ function initMap() {
         position: {lat: -26.7999400,lng: -48.6478300},
         map: map,
         title: 'Encanador',
-        icon: href="../_img/1.png",
+        icon: href="../_img/preto.png",
         animation:google.maps.Animation.DROP,
         // ou DROP
     })
@@ -195,7 +195,7 @@ function initMap() {
         position: {lat: -26.8200450,lng: -48.6487090},
         map: map,
         title: 'Encanador',
-        icon: href="../_img/1.png",
+        icon: href="../_img/preto.png",
         animation:google.maps.Animation.DROP,
         // ou DROP
     })
@@ -204,7 +204,7 @@ function initMap() {
         position: {lat: -26.8234567,lng: -48.7078300},
         map: map,
         title: 'Eletricista',
-        icon: href="../_img/1.png",
+        icon: href="../_img/preto.png",
         animation:google.maps.Animation.DROP,
         // ou DROP
     })
@@ -213,7 +213,7 @@ function initMap() {
         position: {lat: -26.8344567,lng: -48.7098300},
         map: map,
         title: 'Eletricista',
-        icon: href="../_img/1.png",
+        icon: href="../_img/preto.png",
         animation:google.maps.Animation.DROP,
         // ou DROP
     })
@@ -222,7 +222,7 @@ function initMap() {
         position: {lat: -26.7999400,lng: -48.7060300},
         map: map,
         title: 'Eletricista',
-        icon: href="../_img/1.png",
+        icon: href="../_img/preto.png",
         animation:google.maps.Animation.DROP,
         // ou DROP
     })
@@ -231,7 +231,7 @@ function initMap() {
         position: {lat: -26.7009400,lng: -48.7050300},
         map: map,
         title: 'Eletricista',
-        icon: href="../_img/1.png",
+        icon: href="../_img/preto.png",
         animation:google.maps.Animation.DROP,
         // ou DROP
     })
@@ -240,7 +240,7 @@ function initMap() {
         position: {lat: -26.7029400,lng: -48.7080300},
         map: map,
         title: 'Eletricista',
-        icon: href="../_img/1.png",
+        icon: href="../_img/preto.png",
         animation:google.maps.Animation.DROP,
         // ou DROP
     })
@@ -249,7 +249,7 @@ function initMap() {
         position: {lat: -26.7500400,lng: -48.7080350},
         map: map,
         title: 'Mecanico',
-        icon: href="../_img/1.png",
+        icon: href="../_img/preto.png",
         animation:google.maps.Animation.DROP,
         // ou DROP
     })
@@ -258,7 +258,7 @@ function initMap() {
         position: {lat: -26.7815490,lng: -48.5998300},
         map: map,
         title: 'Mecanico',
-        icon: href="../_img/1.png",
+        icon: href="../_img/preto.png",
         animation:google.maps.Animation.DROP,
         // ou DROP
     })
@@ -267,7 +267,7 @@ function initMap() {
         position: {lat: -26.7900490,lng: -48.5999800},
         map: map,
         title: 'Mecanico',
-        icon: href="../_img/1.png",
+        icon: href="../_img/preto.png",
         animation:google.maps.Animation.DROP,
         // ou DROP
     })
@@ -276,7 +276,7 @@ function initMap() {
         position: {lat: -26.8087400,lng: -48.6908300},
         map: map,
         title: 'Mecanico',
-        icon: href="../_img/1.png",
+        icon: href="../_img/preto.png",
         animation:google.maps.Animation.DROP,
         // ou DROP
     })
@@ -285,7 +285,7 @@ function initMap() {
         position: {lat: -26.8010000,lng: -48.6990300},
         map: map,
         title: 'Mecanico',
-        icon: href="../_img/1.png",
+        icon: href="../_img/preto.png",
         animation:google.maps.Animation.DROP,
         // ou DROP
     })
@@ -293,7 +293,7 @@ function initMap() {
         position: {lat: -26.8799400,lng: -48.6478300},
         map: map,
         title: 'Diarista',
-        icon: href="../_img/1.png",
+        icon: href="../_img/preto.png",
         animation:google.maps.Animation.DROP,
         // ou DROP
     })
@@ -302,7 +302,7 @@ function initMap() {
         position: {lat: -26.7001000,lng: -48.7660300},
         map: map,
         title: 'Diarista',
-        icon: href="../_img/1.png",
+        icon: href="../_img/preto.png",
         animation:google.maps.Animation.DROP,
         // ou DROP
     })
@@ -311,7 +311,7 @@ function initMap() {
         position: {lat: -26.8000700,lng: -48.6429000},
         map: map,
         title: 'Diarista',
-        icon: href="../_img/1.png",
+        icon: href="../_img/preto.png",
         animation:google.maps.Animation.DROP,
         // ou DROP
     })
@@ -320,7 +320,7 @@ function initMap() {
         position: {lat: -26.7299400,lng: -48.6988900},
         map: map,
         title: 'Diarista',
-        icon: href="../_img/1.png",
+        icon: href="../_img/preto.png",
         animation:google.maps.Animation.DROP,
         // ou DROP
     })
@@ -329,7 +329,7 @@ function initMap() {
         position: {lat: -26.7399400,lng: -48.6990900},
         map: map,
         title: 'Diarista',
-        icon: href="../_img/1.png",
+        icon: href="../_img/preto.png",
         animation:google.maps.Animation.DROP,
         // ou DROP
     })
@@ -348,24 +348,24 @@ function initMap() {
     })
 
     
-    marker6.addListener('click', ()=> {
-        infoWindow6.open(map, marker6)
+    marker16.addListener('click', ()=> {
+        infoWindow16.open(map, marker6)
     }) 
     
-    marker7.addListener('click', ()=> {
-        infoWindow7.open(map, marker7)
+    marker17.addListener('click', ()=> {
+        infoWindow17.open(map, marker7)
     })
     
-    marker8.addListener('click', ()=> {
-        infoWindow8.open(map, marker8)
+    marker18.addListener('click', ()=> {
+        infoWindow18.open(map, marker8)
     })
     
-    marker9.addListener('click', ()=> {
-        infoWindow9.open(map, marker9)
+    marker19.addListener('click', ()=> {
+        infoWindow19.open(map, marker9)
     })
     
-    marker10.addListener('click', ()=> {
-        infoWindow10.open(map, marker10)
+    marker20.addListener('click', ()=> {
+        infoWindow20.open(map, marker10)
     })
     
     // Demarcando distancia entre os marcadores
@@ -389,104 +389,104 @@ function initMap() {
     };
 
 
-    var infoWindow6 = new google.maps.InfoWindow({
+    var infoWindow16 = new google.maps.InfoWindow({
         content: `<div class="prestador"><i id="heart" class="bi bi-heart"></i>Wesley Silva<i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i>4,9</i></div> <div class="d-flex distance infos"> <img src="../_img/maps.png" alt=""><p>Wesley está à <span> 2km </span> de você</p></div>  <button id="weswes" onclick= mudarWesley> Mudar para esse prestador</button>`,
         // maxWidth: 200,
     })
 
-    var infoWindow7 = new google.maps.InfoWindow({
-        content:`<div class="prestador"><i id="heart" class="bi bi-heart"></i>Guilherme <i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i>4,9</i></div> <div class="d-flex distance infos"> <img src="../_img/maps.png" alt=""><p>Gui está à <span> 2km </span> de você</p></div> <button onclick= mudarGui> Mudar para esse prestador</button>`,
+    var infoWindow17 = new google.maps.InfoWindow({
+        content:`<div class="prestador"><i id="heart" class="bi bi-heart"></i>Guilherme Broba<i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i>4,9</i></div> <div class="d-flex distance infos"> <img src="../_img/maps.png" alt=""><p>Guilherme está à <span> 2km </span> de você</p></div> <button onclick= mudarGui> Mudar para esse prestador</button>`,
         // maxWidth: 200,
     })
 
-    var infoWindow8 = new google.maps.InfoWindow({
+    var infoWindow18 = new google.maps.InfoWindow({
         content:'<div class="prestador"><i id="heart" class="bi bi-heart"></i>Railson Costa Leite<i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i>4,9</i></div> <div class="d-flex distance infos"> <img src="../_img/maps.png" alt=""><p>Railson está à <span id="railson"> 7km </span> de você</p></div> <button> Mudar para esse prestador</button>',
         // maxWidth: 200,
     })
 
-    var infoWindow9 = new google.maps.InfoWindow({
+    var infoWindow19 = new google.maps.InfoWindow({
         content:'<div class="prestador"><i id="heart" class="bi bi-heart"></i>Carlos Felipe<i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i>4,9</i></div> <div class="d-flex distance infos"> <img src="../_img/maps.png" alt=""><p>Carlos está à <span> 2km </span> de você</p></div> <button> Mudar para esse prestador</button>',
 
         // maxWidth: 200,
     })
 
-    var infoWindow10 = new google.maps.InfoWindow({
+    var infoWindow20 = new google.maps.InfoWindow({
         content:'<div class="prestador"><i id="heart" class="bi bi-heart"></i>Ramos Barboza<i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i class="bi bi-star-fill star"></i><i>4,9</i></div> <div class="d-flex distance infos"> <img src="../_img/maps.png" alt=""><p>Ramos está à <span> 2km </span> de você</p></div> <button> Mudar para esse prestador</button>',
         // maxWidth: 200,
     })
     
-    function filtroEletricista() {
+    function filtroDiarista() {
 
-        if(marker1.title != 'Eletricista') {
+        if(marker1.title != 'Diarista') {
             marker1.setMap(null)
             console.log(marker1)   
         }
-         if(marker2.title != 'Eletricista') {
+         if(marker2.title != 'Diarista') {
             marker2.setMap(null)
             console.log(marker2)   
         }
-         if(marker3.title != 'Eletricista') {
+         if(marker3.title != 'Diarista') {
             marker3.setMap(null)
             console.log(marker3)   
         }
-         if(marker4.title != 'Eletricista') {
+         if(marker4.title != 'Diarista') {
             marker4.setMap(null)
             console.log(marker4)   
         }
-         if(marker5.title != 'Eletricista') {
+         if(marker5.title != 'Diarista') {
             marker5.setMap(null)
             console.log(marker5)   
         }
-         if(marker6.title != 'Eletricista') {
+         if(marker6.title != 'Diarista') {
             marker6.setMap(null)
             console.log(marker6)   
         }
-         if(marker7.title != 'Eletricista') {
+         if(marker7.title != 'Diarista') {
             marker7.setMap(null)
             console.log(marker7)   
         }
-         if(marker8.title != 'Eletricista') {
+         if(marker8.title != 'Diarista') {
             marker8.setMap(null)
             console.log(marker8)   
         }
-         if(marker9.title != 'Eletricista') {
+         if(marker9.title != 'Diarista') {
             marker9.setMap(null)
             console.log(marker9)   
         }
-         if(marker10.title != 'Eletricista') {
+         if(marker10.title != 'Diarista') {
             marker10.setMap(null)
             console.log(marker10)   
-        } if(marker11.title != 'Eletricista') {
+        } if(marker11.title != 'Diarista') {
             marker11.setMap(null)
             console.log(marker11)   
-        } if(marker12.title != 'Eletricista') {
+        } if(marker12.title != 'Diarista') {
             marker12.setMap(null)
             console.log(marker12)   
-        } if(marker13.title != 'Eletricista') {
+        } if(marker13.title != 'Diarista') {
             marker13.setMap(null)
             console.log(marker13)   
-        } if(marker14.title != 'Eletricista') {
+        } if(marker14.title != 'Diarista') {
             marker14.setMap(null)
             console.log(marker14)   
-        } if(marker15.title != 'Eletricista') {
+        } if(marker15.title != 'Diarista') {
             marker15.setMap(null)
             console.log(marker15)   
-        } if(marker16.title != 'Eletricista') {
+        } if(marker16.title != 'Diarista') {
             marker16.setMap(null)
             console.log(marker16)   
-        } if(marker17.title != 'Eletricista') {
+        } if(marker17.title != 'Diarista') {
             marker17.setMap(null)
             console.log(marker17)   
-        } if(marker18.title != 'Eletricista') {
+        } if(marker18.title != 'Diarista') {
             marker18.setMap(null)
             console.log(marker18)   
-        } if(marker19.title != 'Eletricista') {
+        } if(marker19.title != 'Diarista') {
             marker19.setMap(null)
             console.log(marker19)   
-        } if(marker20.title != 'Eletricista') {
+        } if(marker20.title != 'Diarista') {
             marker20.setMap(null)
             console.log(marker20)   
-        } if(marker6.title != 'Eletricista') {
+        } if(marker6.title != 'Diarista') {
             marker6.setMap(null)
             console.log(marker6)   
         } 
@@ -507,7 +507,7 @@ function initMap() {
         const filtros = google.maps.geometry.poly.containsLocation(
             e.latLng,
             bermudaTriangle,
-            filtroEletricista(),
+            filtroDiarista(),
             console.log(getDistance()),
             console.log("Ramon"),
             document.getElementById("distancia").innerHTML=getDistance()+"km",
