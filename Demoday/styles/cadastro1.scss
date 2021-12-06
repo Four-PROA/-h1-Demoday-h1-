@@ -22,6 +22,12 @@
             .col-6{
                 width: 500px;
 
+                i{
+                    position: relative;
+                    right: 20px;
+                    color: var(--color-tertiary-regular)
+                }
+
                 input{
                     @include h5-bold;
                     font-size: 16px;

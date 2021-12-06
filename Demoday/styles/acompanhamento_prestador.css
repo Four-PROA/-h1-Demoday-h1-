@@ -257,6 +257,10 @@ html {
           justify-content: space-between;
 }
 
+.row .card_status label {
+  margin-right: 20px;
+}
+
 .row .card_status input {
   color: var(--color-white-regular);
   width: 210px;
@@ -290,6 +294,11 @@ html {
 .row .card_status input::placeholder {
   color: var(--color-white-regular);
   opacity: 0.7;
+}
+
+.row .card_status i {
+  position: relative;
+  right: 30px;
 }
 
 .row .card_status button {

@@ -8,9 +8,6 @@ body{
 }
 /* HEADER--------------------------------------------------------- */
 
-// .nav-item{
-//     margin-left: 20px;
-// }
 
 .herosection{
     background-color: var(--color-primary-ligth);
@@ -39,8 +36,6 @@ body{
     }
 
 }
-
-
 
 .dimension_img{
     width: 530px;
@@ -139,7 +134,7 @@ body{
     color: #fff;
     height: 680px;
 }
-.servico_blue img{
+.services img{
     width: 86px;
     height: 86px;
 }
@@ -207,9 +202,15 @@ body{
 
         font-size: 14px;
 
-    .img {
-        height: 55%;
-    }
+        .img {
+            height: 55%;
+
+            img{
+               position: relative;
+               top: 20px;
+               left: 55px;
+            }
+        }
 
     .text {
         height: 47%;

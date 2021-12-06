@@ -16,26 +16,26 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/agendamentos_prestador.css">
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
 
-      <!-- React CDN -->
-  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <!-- React CDN -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
-  <!-- Componente header -->
-  <script type="text/babel" src="../scripts/Header.jsx"></script>
+    <!-- Componente header -->
+    <script type="text/babel" src="../scripts/Header.jsx"></script>
 
-  <!-- Componente footer -->
-  <script type="text/babel" src="../scripts/Footer.jsx"></script>
+    <!-- Componente footer -->
+    <script type="text/babel" src="../scripts/Footer.jsx"></script>
 
-  <!--Animação-->
-  <script src="../scripts/script.js"></script>
+    <!--Animação-->
+    <script src="../scripts/script.js"></script>
 </head>
 
 <body>
@@ -57,11 +57,14 @@
                             status: não iniciado
                         </span>
                         <br>
-                        <button class="mudar">Mudar status</button>
-                        <button class="chat">
-                            <i class="bi bi-chat-square-text"></i>
-                            Chat com o cliente
-                        </button>
+                        <div class="d-flex">
+                            <button class="mudar">Mudar status</button>
+                            <button class="chat">
+                                <i class="bi bi-chat-square-text"></i>
+                                Chat com o cliente
+                            </button>
+                        </div>
+
                     </div>
                     <div class="card_agendado" data-step="top">
                         <h3>Aulas de escrita</h3><span>Aulas/Treinamentos</span>
@@ -74,13 +77,15 @@
                             status: não iniciado
                         </span>
                         <br>
-                        <button class="mudar">Mudar status</button>
-                        <button class="chat">
-                            <i class="bi bi-chat-square-text"></i>
-                            Chat com o cliente
-                        </button>
+                        <div class="d-flex">
+                            <button class="mudar">Mudar status</button>
+                            <button class="chat">
+                                <i class="bi bi-chat-square-text"></i>
+                                Chat com o cliente
+                            </button>
+                        </div>
                     </div>
-                    
+
                 </div>
                 <div class="col-5 historico">
                     <h2>Histórico</h2>
@@ -130,7 +135,7 @@
                         </a>
                         <button class="avaliar">Avaliar</button>
                     </div>
-                     <div class="card_hitorico" data-step="top">
+                    <div class="card_hitorico" data-step="top">
                         <h3>Aulas de escrita</h3><span>Aulas/Treinamento</span>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat facere ipsam
                             architecto placeat rerum expedita itaque nostrum ratione excepturi molestias, ducimus,

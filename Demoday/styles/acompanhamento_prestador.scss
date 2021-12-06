@@ -173,6 +173,9 @@
             display: flex;
             justify-content: space-between;
         }
+        label{
+            margin-right: 20px;
+        }
         input{
             color: var(--color-white-regular);
             width: 210px;
@@ -189,6 +192,11 @@
                 color: var(--color-white-regular);
                 opacity: 0.7;
             }
+        }
+
+        i{
+            position: relative;
+            right: 30px;
         }
 
         button{

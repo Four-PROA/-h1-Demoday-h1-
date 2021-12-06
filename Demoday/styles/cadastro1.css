@@ -60,6 +60,12 @@ html {
   width: 500px;
 }
 
+.registration__dimension-container .col-6 i {
+  position: relative;
+  right: 20px;
+  color: var(--color-tertiary-regular);
+}
+
 .registration__dimension-container .col-6 input {
   font-weight: 700;
   font-size: 24px;

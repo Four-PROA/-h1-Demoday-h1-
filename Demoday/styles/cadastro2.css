@@ -98,6 +98,17 @@ html {
   opacity: 0.7;
 }
 
+.registration__dimension-container .col-6 form {
+  margin-top: 50px;
+}
+
+.registration__dimension-container .col-6 form i {
+  position: relative;
+  right: 25px;
+  font-size: 20px;
+  color: var(--color-tertiary-regular);
+}
+
 .registration__dimension-container .col-6 form button {
   background-color: transparent;
   width: 0px;
@@ -141,14 +152,21 @@ html {
 }
 
 .registration__dimension-container .col-6 hr {
+  margin: 40px 0 0 10px;
+  width: 400px;
   height: 2px;
-  color: black;
+  color: var(--color-tertiary-regular);
+  opacity: 1;
 }
 
 .registration__dimension-container .col-6 span {
+  background-color: var(--color-primary-ligth);
+  padding: 10px 20px;
   font-size: 24px;
   color: var(--color-white-regular);
-  margin: 0px 30px;
+  position: relative;
+  top: -25px;
+  left: 180px;
 }
 
 .registration__dimension-container .col-6 .redirecionar {

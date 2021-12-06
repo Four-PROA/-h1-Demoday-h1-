@@ -250,7 +250,7 @@ body {
   height: 680px;
 }
 
-.servico_blue img {
+.services img {
   width: 86px;
   height: 86px;
 }
@@ -326,6 +326,12 @@ body {
 
 .vantagens .card .img {
   height: 55%;
+}
+
+.vantagens .card .img img {
+  position: relative;
+  top: 20px;
+  left: 55px;
 }
 
 .vantagens .card .text {

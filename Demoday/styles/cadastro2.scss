@@ -42,6 +42,13 @@
                 }
 
                 form{
+                    margin-top: 50px;
+                    i{
+                        position: relative;
+                        right: 25px;
+                        font-size: 20px;
+                        color: var(--color-tertiary-regular);
+                    }
                     button{
                         background-color: transparent;
                         width: 0px;
@@ -64,12 +71,19 @@
                     margin-top: 20px;
                 }
                 hr{
+                    margin: 40px 0 0 10px;
+                    width: 400px;
                     height: 2px;
-                    color: black;
+                    color: var(--color-tertiary-regular);
+                    opacity: 1;
                 }
                 span {
+                    background-color: var(--color-primary-ligth);
+                    padding: 10px 20px;
                     @include h5-regular;
-                    margin: 0px 30px;
+                    position: relative;
+                    top: -25px;
+                    left: 180px;
                 }
                 .redirecionar{
                     display: flex;
