@@ -2,6 +2,10 @@
   font-family: 'Nunito', sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 html {
   --color-primary-dark: #E35602;
   --color-primary-regular: #F75C00;

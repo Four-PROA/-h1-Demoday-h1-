@@ -2,6 +2,10 @@
   font-family: 'Nunito', sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 html {
   --color-primary-dark: #E35602;
   --color-primary-regular: #F75C00;
@@ -21,6 +25,10 @@ html {
   --color-sucess: #BFFE58;
   --color-warning: #F9D75F;
   color: var(--color-white-ligth);
+}
+
+a {
+  text-decoration: none;
 }
 
 .registration__dimension {
