@@ -15,6 +15,7 @@
     }
     
     input{
+        
         @include p-bold-short-text; 
         color: var( --color-white-regular);
         background-color: transparent;

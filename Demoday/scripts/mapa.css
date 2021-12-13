@@ -13,11 +13,6 @@ html, body {
   border-radius: 10px;
 }
 
-.ordem {
-  margin-left: 600px;
-  margin-bottom: 50px;
-}
-
 .ordem h4 {
   padding: 10px;
   color: var(--color-secondary-ligth);

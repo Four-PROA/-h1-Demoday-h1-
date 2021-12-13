@@ -41,7 +41,7 @@ submitBtn.addEventListener("click", function(){
 
   setTimeout(function(){
     alert("Cadastro feito com sucesso");
-    location.reload();
+    window.open("../html/analisar_prestador.html", "../html/analisar_prestador.html");
   },800);
 });
 
