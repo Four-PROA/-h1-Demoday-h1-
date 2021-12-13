@@ -7,25 +7,25 @@ function Footer() {
 
       <div className="icons">
         <div className="redes">
-        <p><a href="#"><i className="fa fa-facebook" aria-hidden="true"></i></a></p>
+        <p><a href="https://www.facebook.com/Casterizzi-107265091812337"><i className="fa fa-facebook" aria-hidden="true"></i></a></p>
             </div>
         <br/>
         <div className="redes">
-        <p><a href="#"><i className="fa fa-twitter" aria-hidden="true"></i></a></p>
+        <p><a href="https://twitter.com/GrupofourP"><i className="fa fa-twitter" aria-hidden="true"></i></a></p>
             </div>
         <br/>
         <div className="redes">
-        <p><a href="#"><i className="fa fa-linkedin" aria-hidden="true"></i></a></p>
+        <p><a href="https://www.linkedin.com/company/casterizzi/"><i className="fa fa-linkedin" aria-hidden="true"></i></a></p>
             </div>
         <br/>
         <div className="redes">
-        <p><a href="#"> <i className="fa fa-instagram" aria-hidden="true"></i></a></p>
+        <p><a href="https://www.instagram.com/casterizzi/"> <i className="fa fa-instagram" aria-hidden="true"></i></a></p>
         </div>
         <div className="redes">
         <p><a href="#"> <i className="fa fa-youtube" aria-hidden="true"></i></a></p>
         </div>
         <div className="redes">
-        <p><a href="#"> <i className="fa fa-pinterest" aria-hidden="true"></i></a></p>
+        <p><a href="https://pin.it/4TQudnD"> <i className="fa fa-pinterest" aria-hidden="true"></i></a></p>
         </div>
       </div>
 
